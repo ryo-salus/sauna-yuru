@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="プライベート薪サウナ Yu-Ru（ゆる）。鹿児島県霧島市の田園風景と桜島を望む、完全貸切の高級薪サウナ。日常の多忙から解放され、心を空っぽにする至高の休息を提供します。">
+    <meta name="keywords" content="プライベートサウナ, 薪サウナ, 鹿児島, 霧島, 高級サウナ, 貸切サウナ, テントサウナ, トレーラーサウナ">
+    <meta property="og:title" content="プライベート薪サウナ Yu-Ru | ゆるんで、ととのう">
+    <meta property="og:description" content="鹿児島の田園風景と桜島を望む、完全貸切の高級プライベート薪サウナ。日常の多忙から解放される、究極の癒し空間。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuru-sauna.jp"> <!-- 仮のURL -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>プライベート薪サウナ Yu-Ru | ゆるんで、ととのう。</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yu-black': '#1A1A1A',
+                        'yu-green': '#0B120C',
+                        'yu-gold': '#D4AF37',
+                        'yu-text': '#F3F4F6',
+                        'yu-subtext': '#9CA3AF',
+                        'yu-dark': '#050a06',
+                    },
+                    fontFamily: {
+                        'serif': ['"Noto Serif JP"', 'serif'],
+                        'sans': ['"Noto Sans JP"', 'sans-serif'],
+                        'cinzel': ['"Cinzel"', 'serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050a06; /* 非常に深い緑黒 */
+            color: #F3F4F6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hero Section Background (固定の森林画像) */
+        #hero-section {
+            background-image: linear-gradient(rgba(5, 10, 6, 0.4), rgba(11, 18, 12, 0.7)), url('9785296776461547175.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+        }
+
+        /* 縦書き設定 */
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            letter-spacing: 0.3em;
+        }
+
+        /* ぼかし背景グラデーション */
+        .bg-glass {
+            background: rgba(11, 18, 12, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        /* カスタムスクロールバー */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050a06; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+
+        /* 画像のホバーエフェクト */
+        .img-hover-zoom {
+            overflow: hidden;
+        }
+        .img-hover-zoom img {
+            transition: transform 0.7s ease;
+        }
+        .img-hover-zoom:hover img {
+            transform: scale(1.05);
+        }
+
+        /* サウンドウェーブアニメーション */
+        @keyframes soundwave {
+            0% { transform: scaleY(0.5); }
+            50% { transform: scaleY(1.2); }
+            100% { transform: scaleY(0.5); }
+        }
+        .playing .bar {
+            animation: soundwave 1s infinite ease-in-out;
+        }
+        .playing .bar:nth-child(1) { animation-delay: 0s; }
+        .playing .bar:nth-child(2) { animation-delay: 0.2s; }
+        .playing .bar:nth-child(3) { animation-delay: 0.4s; }
+
+        /* ロゴ画像の白抜き（反転）処理 */
+        .logo-invert {
+            filter: invert(1) brightness(2); /* 白黒反転して明るさを強調 */
+            mix-blend-mode: screen; /* 黒い背景部分を透過させる */
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <header class="fixed w-full top-0 z-50 bg-glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center space-x-2 hover:opacity-80 transition">
+                        <img src="image_38ecfe.png" alt="Yu-Ru Logo" class="h-10 w-auto logo-invert" onerror="this.src='https://placehold.co/100x40/050a06/D4AF37?text=Yu-Ru'">
+                        <span class="font-cinzel text-xl tracking-widest text-yu-gold hidden sm:block">Yu-Ru</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#concept" class="text-sm font-serif hover:text-yu-gold transition">Concept</a>
+                    <a href="#rooms" class="text-sm font-serif hover:text-yu-gold transition">Rooms</a>
+                    <a href="#amenities" class="text-sm font-serif hover:text-yu-gold transition">Amenities</a>
+                    <a href="#faq" class="text-sm font-serif hover:text-yu-gold transition">FAQ / Access</a>
+                    <a href="#reserve" class="ml-4 px-6 py-2 border border-yu-gold text-yu-gold hover:bg-yu-gold hover:text-yu-black transition duration-300 font-serif tracking-wider">
+                        ご予約
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-yu-text hover:text-yu-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-yu-green border-b border-yu-gold/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#concept" class="block px-3 py-3 text-base font-serif hover:text-yu-gold">Concept</a>
+                <a href="#rooms" class="block px-3 py-3 text-base font-serif hover:text-yu-gold">Rooms</a>
+                <a href="#amenities" class="block px-3 py-3 text-base font-serif hover:text-yu-gold">Amenities</a>
+                <a href="#faq" class="block px-3 py-3 text-base font-serif hover:text-yu-gold">FAQ / Access</a>
+                <a href="#reserve" class="block px-3 py-3 mt-4 mx-4 bg-yu-gold text-yu-black font-serif">ご予約</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section" class="relative h-screen flex items-center justify-center">
+            <!-- Overlay gradient to ensure text readability -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-yu-green/30 to-yu-dark"></div>
+            
+            <div class="relative z-10 text-center px-4">
+                <p class="font-serif text-sm md:text-lg text-yu-gold tracking-[0.5em] mb-6 drop-shadow-lg">プライベート薪サウナ</p>
+                
+                <!-- ヒーローセクションにもロゴを大きく配置 -->
+                <img src="image_38ecfe.png" alt="Yu-Ru Logo" class="h-32 md:h-48 mx-auto mb-6 logo-invert opacity-90" onerror="this.style.display='none'">
+                
+                <h1 class="font-cinzel text-4xl md:text-6xl lg:text-7xl tracking-widest text-white mb-8 drop-shadow-2xl">Yu-Ru</h1>
+                <p class="font-serif text-xl md:text-3xl tracking-[0.3em] text-white font-light drop-shadow-lg">ゆるんで、ととのう。</p>
+            </div>
+
+            <!-- Sound Toggle Button -->
+            <button id="sound-toggle" class="absolute bottom-10 right-10 z-20 flex items-center space-x-3 text-yu-gold hover:text-white transition group">
+                <span class="text-xs tracking-widest font-serif opacity-70 group-hover:opacity-100">SOUND</span>
+                <div id="sound-bars" class="flex space-x-1 h-4 items-end">
+                    <div class="bar w-1 h-1 bg-current transition-all"></div>
+                    <div class="bar w-1 h-2 bg-current transition-all"></div>
+                    <div class="bar w-1 h-3 bg-current transition-all"></div>
+                </div>
+            </button>
+            
+            <!-- Hidden Audio Element for ambient sound -->
+            <audio id="ambient-sound" loop>
+                <source src="https://cdn.freesound.org/previews/187/187560_1648170-lq.mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+                <span class="text-[10px] tracking-widest text-yu-subtext mb-2">SCROLL</span>
+                <div class="w-[1px] h-12 bg-gradient-to-b from-yu-gold to-transparent"></div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="py-32 relative bg-yu-dark">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-cinzel text-3xl md:text-5xl text-yu-gold mb-16">Concept</h2>
+                
+                <div class="font-serif text-lg md:text-xl leading-loose tracking-widest text-yu-text space-y-12">
+                    <p>日常の多忙から心を空っぽにし、<br class="hidden md:block">童心に帰る場所。</p>
+                    <!-- 薪を焚べる体験を追加 -->
+                    <p>自らの手で薪を焚べ、炎を育てる。<br class="hidden md:block">パチパチと爆ぜる音と香りに包まれるひととき。</p>
+                    <p>正面には瑞々しい田園風景が広がり、<br class="hidden md:block">遠くに臨むのは雄大な桜島。</p>
+                    <p>飾らない自然の中に身を委ね、<br class="hidden md:block">ただ、火と水と向き合う。</p>
+                    <p class="text-yu-gold font-medium mt-16">「来週、また戻りたくなる」<br>真の休息を求める大人の方々へ贈る、究極のプライベート空間。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rooms Section -->
+        <section id="rooms" class="py-24 bg-yu-green relative border-t border-yu-gold/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <p class="text-yu-gold font-serif tracking-widest text-sm mb-4">選べる3つのタイプ</p>
+                    <h2 class="font-cinzel text-4xl md:text-5xl">Three Experiences</h2>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="overflow-x-auto mb-20 pb-4">
+                    <table class="w-full text-left border-collapse min-w-[800px]">
+                        <thead>
+                            <tr class="border-b-2 border-yu-gold">
+                                <th class="p-4 text-white font-serif font-normal w-1/4">タイプの比較</th>
+                                <th class="p-4 text-white font-cinzel text-xl w-1/4 bg-yu-gold/5">Premium</th>
+                                <th class="p-4 text-white font-cinzel text-xl w-1/4">Standard</th>
+                                <th class="p-4 text-white font-cinzel text-xl w-1/4">Simple</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-serif text-sm md:text-base divide-y divide-white/20">
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-4 text-white">サウナ形式</td>
+                                <td class="p-4 text-white font-bold bg-yu-gold/5">最高品質トレーラーサウナ</td>
+                                <td class="p-4 text-white">テントサウナ</td>
+                                <td class="p-4 text-white">テントサウナ</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-4 text-white">ロケーション</td>
+                                <td class="p-4 text-white bg-yu-gold/5">田園風景と遠くの桜島</td>
+                                <td class="p-4 text-white">鹿児島の大自然の中</td>
+                                <td class="p-4 text-white">自然豊かなレジャー空間</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-4 text-white">設備</td>
+                                <td class="p-4 text-white font-bold bg-yu-gold/5">専用ジャグジー・至高の外気浴</td>
+                                <td class="p-4 text-white">自然の水風呂・休憩スペース</td>
+                                <td class="p-4 text-white font-medium">五右衛門水風呂・休憩スペース</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-4 text-white">アメニティ<br><span class="text-xs">（全室タオル等完備・手ぶらOK）</span></td>
+                                <td class="p-4 text-white bg-yu-gold/5">ドライヤー：<span class="font-cinzel">ReFa</span></td>
+                                <td class="p-4 text-white">ドライヤー：<span class="font-cinzel">Dyson</span></td>
+                                <td class="p-4 text-white">ドライヤー：<span class="font-cinzel">Dyson</span></td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-4 text-white">ご利用シーン</td>
+                                <td class="p-4 text-white bg-yu-gold/5">至高の癒し・特別な休息</td>
+                                <td class="p-4 text-white">自然を満喫・原点回帰</td>
+                                <td class="p-4 text-white">友人とのレジャー・エンタメ</td>
+                            </tr>
+                            <tr class="border-b border-yu-gold">
+                                <td class="p-4 text-white">基本料金 (2名様まで)</td>
+                                <td class="p-4 text-white font-cinzel text-lg bg-yu-gold/5">¥14,000<span class="text-sm font-sans">〜</span></td>
+                                <td class="p-4 text-white font-cinzel text-lg">¥12,000<span class="text-sm font-sans">〜</span></td>
+                                <td class="p-4 text-white font-cinzel text-lg">¥10,000<span class="text-sm font-sans">〜</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <!-- 全プラン共通の注記を整理・強調 -->
+                    <div class="text-right text-xs mt-4 font-sans space-y-1">
+                        <p class="text-white">※全プラン共通：土日祝は各プラン ＋2,000円</p>
+                        <p class="text-yu-subtext">※全プラン共通：<span class="text-white">ウェルカムドリンク付き</span> / 選べるアロマロウリュ可能</p>
+                        <p class="text-yu-subtext">※全プラン共通：3名様以上はお一人様につき +2,000円<span class="text-yu-gold">（5名様以上は要相談）</span></p>
+                        <p class="text-yu-gold font-bold text-sm mt-2"><i class="fa-solid fa-triangle-exclamation mr-1"></i>水着は必ずご持参ください（レンタルはございません）</p>
+                    </div>
+                </div>
+
+                <!-- Room Details Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Premium -->
+                    <div class="bg-yu-black border border-yu-gold/30 p-1 flex flex-col group relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yu-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                        <div class="h-64 img-hover-zoom overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Premium Trailer Sauna" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition duration-700">
+                            <div class="absolute top-4 left-4 bg-yu-gold text-yu-black text-xs font-bold px-3 py-1 tracking-widest">至高の癒し</div>
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col relative z-10">
+                            <h3 class="font-cinzel text-2xl text-yu-gold mb-2">Premium</h3>
+                            <p class="font-serif text-sm text-yu-subtext mb-6">最高品質のトレーラーサウナと専用ジャグジー。</p>
+                            <p class="font-sans text-sm text-yu-text leading-relaxed mb-8 flex-grow">
+                                全ての設備をこだわり抜いた至高の空間。正面に広がる田園風景と、その奥に佇む桜島を眺めながら、日常を忘れる究極の休息を提供します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Standard -->
+                    <div class="bg-yu-black border border-white/10 p-1 flex flex-col group">
+                        <div class="h-64 img-hover-zoom overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Standard Tent Sauna" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 transition duration-700">
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col">
+                            <h3 class="font-cinzel text-2xl text-white mb-2">Standard</h3>
+                            <p class="font-serif text-sm text-yu-subtext mb-6">クオリティと自然環境の調和。</p>
+                            <p class="font-sans text-sm text-yu-text leading-relaxed mb-8 flex-grow">
+                                鹿児島の大自然をダイレクトに感じるテントサウナ。自ら薪をくべ、火の熱気、自然の水風呂、風の音。最初から最後まで自然を満喫できる、原点回帰の本格体験をご用意しました。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Simple -->
+                    <div class="bg-yu-black border border-white/10 p-1 flex flex-col group">
+                        <div class="h-64 img-hover-zoom overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Simple Tent Sauna" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 transition duration-700">
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col">
+                            <h3 class="font-cinzel text-2xl text-white mb-2">Simple</h3>
+                            <p class="font-serif text-sm text-yu-subtext mb-6">カジュアルな大人の遊び場。</p>
+                            <p class="font-sans text-sm text-yu-text leading-relaxed mb-8 flex-grow">
+                                リーズナブルにテントサウナの魅力を味わえるコース。昔ながらの<span class="text-yu-gold">「五右衛門水風呂」</span>でクールダウンを楽しめます。レジャー感覚で楽しみたい方や、友人同士でのエンタメ利用に最適です。本格的な「ととのい」を身近に。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SNS Links Section -->
+        <section class="py-16 bg-yu-green overflow-hidden border-t border-b border-white/5 text-center">
+            <div class="max-w-3xl mx-auto px-4">
+                <p class="font-serif text-yu-gold text-sm tracking-widest mb-4">Official SNS</p>
+                <h2 class="font-cinzel text-3xl mb-8 text-white">Instagram</h2>
+                <p class="text-yu-subtext text-sm font-sans mb-8 leading-relaxed">
+                    最新情報や、季節によって表情を変える施設の様子をお届けしております。<br>
+                    その空気感を、ぜひご覧ください。
+                </p>
+                <a href="#" target="_blank" class="inline-flex items-center justify-center space-x-3 border border-white/20 text-white px-8 py-4 hover:border-yu-gold hover:text-yu-gold transition duration-300 font-serif tracking-widest text-sm group">
+                    <i class="fa-brands fa-instagram text-xl group-hover:scale-110 transition duration-300"></i>
+                    <span>公式Instagramを見る</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ & Access Section -->
+        <section id="faq" class="py-24 bg-yu-dark relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-16">
+                
+                <!-- FAQ -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-cinzel text-3xl text-yu-gold mb-10">FAQ & Information</h2>
+                    <div class="space-y-6 font-sans">
+                        <!-- Q1 -->
+                        <div class="border-b border-white/10 pb-4">
+                            <h4 class="text-white text-lg font-medium mb-2 flex items-start">
+                                <span class="text-yu-gold font-cinzel mr-3">Q.</span> 予約と決済の方法について教えてください。
+                            </h4>
+                            <p class="text-yu-subtext text-sm pl-8 leading-relaxed">完全事前決済制となっております。Webサイトからのご予約時に、クレジットカード（Square決済）にてお支払いをお願いいたします。当日の現金のやり取りはございません。</p>
+                        </div>
+                        <!-- Q2 -->
+                        <div class="border-b border-white/10 pb-4">
+                            <h4 class="text-white text-lg font-medium mb-2 flex items-start">
+                                <span class="text-yu-gold font-cinzel mr-3">Q.</span> 何名まで利用できますか？
+                            </h4>
+                            <p class="text-yu-subtext text-sm pl-8 leading-relaxed">
+                                1グループ基本4名様までのご利用となります。全プラン、2名様までは同一料金です。3名様以上の場合は、お一人様につき追加料金（+2,000円）を頂戴いたします。
+                                <br><span class="text-yu-gold mt-1 inline-block">※5名様以上でのご利用をご希望の場合は、事前にお問い合わせよりご相談ください。</span>
+                            </p>
+                        </div>
+                        <!-- Q3 -->
+                        <div class="border-b border-white/10 pb-4">
+                            <h4 class="text-white text-lg font-medium mb-2 flex items-start">
+                                <span class="text-yu-gold font-cinzel mr-3">Q.</span> キャンセルポリシーを教えてください。
+                            </h4>
+                            <p class="text-yu-subtext text-sm pl-8 leading-relaxed">3日前までのキャンセルは無料で承ります。2日前〜前日は50%、当日のキャンセルおよび無断キャンセルの場合は100%のキャンセル料を申し受けます。</p>
+                        </div>
+                        <!-- Q4 -->
+                        <div class="border-b border-white/10 pb-4">
+                            <h4 class="text-white text-lg font-medium mb-2 flex items-start">
+                                <span class="text-yu-gold font-cinzel mr-3">Q.</span> 駐車場はありますか？持参するものはありますか？
+                            </h4>
+                            <p class="text-yu-subtext text-sm pl-8 leading-relaxed">
+                                無料駐車場をご用意しております。タオルやシャンプー等、さらにはウェルカムドリンクも完備しております。<br>
+                                <span class="text-yu-gold font-bold border-b border-yu-gold/50 inline-block mt-2">※サウナをご利用の際の「水着」は必ずご持参ください。（レンタルは行っておりません）</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Access / Map -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-cinzel text-3xl text-yu-gold mb-10">Access</h2>
+                    <div class="bg-yu-green p-6 border border-white/10">
+                        <p class="font-serif text-white mb-2 tracking-widest">プライベート薪サウナ Yu-Ru</p>
+                        <p class="text-yu-subtext text-sm mb-6">〒899-2201 鹿児島県姶良市加治木町小山田2144</p>
+                        
+                        <!-- Map Placeholder -->
+                        <div class="w-full h-64 bg-yu-black border border-white/5 relative flex items-center justify-center overflow-hidden mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.593740306121!2d130.6548!3d31.7342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e8d2e964bfa1f%3A0xcb13532db2f0db3b!2z6bm_5YWQ5bO2!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" width="100%" height="100%" style="border:0; filter: grayscale(100%) invert(90%) contrast(1.2);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="text-xs text-yu-subtext font-sans space-y-1">
+                            <p>鹿児島空港から 車で約15分</p>
+                            <p>加治木ICから 車で約5分</p>
+                            <p>鹿児島市街地から 車で約40分</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Square Reservation CTA Section -->
+        <section id="reserve" class="py-24 bg-gradient-to-b from-yu-dark to-yu-black relative text-center">
+            <div class="max-w-3xl mx-auto px-4">
+                <h2 class="font-cinzel text-4xl text-white mb-6">Reservation</h2>
+                <p class="font-serif text-yu-subtext mb-10 leading-relaxed tracking-widest">
+                    当日は手ぶらで、スマートに。<br>
+                    完全キャッシュレス・事前決済制を採用しております。<br>
+                    ご希望のタイプと日時をお選びください。
+                </p>
+                
+                <!-- Square Booking Button Mock -->
+                <a href="https://squareup.com/appointments/book/your-id" target="_blank" class="inline-block bg-yu-gold text-yu-black font-serif text-lg tracking-widest px-12 py-4 hover:bg-white hover:text-yu-black transition duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                    空き状況の確認・ご予約
+                </a>
+                <p class="text-xs text-yu-subtext mt-6">Squareの安全な決済システムへ移動します。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-yu-black py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left flex flex-col items-center md:items-start">
+                <img src="image_38ecfe.png" alt="Yu-Ru Logo" class="h-12 w-auto mb-3 logo-invert opacity-70" onerror="this.style.display='none'">
+                <span class="font-cinzel text-2xl text-yu-gold tracking-widest block mb-1">Yu-Ru</span>
+                <span class="text-xs text-yu-subtext">プライベート薪サウナ</span>
+            </div>
+            
+            <div class="flex space-x-6 mb-6 md:mb-0">
+                <a href="#" class="text-yu-subtext hover:text-yu-gold transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="text-yu-subtext hover:text-[#06C755] transition"><i class="fa-brands fa-line text-xl"></i></a>
+            </div>
+            
+            <div class="text-center md:text-right text-xs text-yu-subtext font-sans space-y-2">
+                <p><a href="#" class="hover:text-white transition">特定商取引法に基づく表記</a> | <a href="#" class="hover:text-white transition">プライバシーポリシー</a></p>
+                <p>&copy; 2026 Yu-Ru Private Sauna. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating LINE Button -->
+    <a href="https://lin.ee/your-id" target="_blank" class="fixed bottom-24 md:bottom-6 right-6 z-40 bg-[#06C755] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:scale-110 transition duration-300 group">
+        <i class="fa-brands fa-line text-3xl"></i>
+        <span class="absolute right-16 bg-yu-black text-white text-xs whitespace-nowrap px-3 py-2 rounded opacity-0 group-hover:opacity-100 transition duration-300 border border-white/10 pointer-events-none">お問い合わせ・最新情報</span>
+    </a>
+
+    <!-- Desktop Fixed Reserve Button -->
+    <a href="#reserve" class="hidden md:flex fixed right-0 top-1/2 transform -translate-y-1/2 z-50 bg-yu-gold text-yu-black py-8 px-2 text-sm font-serif tracking-widest hover:bg-white transition duration-300 shadow-[-5px_0_15px_rgba(0,0,0,0.3)] items-center justify-center group" style="writing-mode: vertical-rl; text-orientation: upright;">
+        <span class="group-hover:scale-105 transition duration-300">空き状況・ご予約</span>
+    </a>
+
+    <!-- Mobile Fixed Reserve Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-yu-dark/95 backdrop-blur-md border-t border-yu-gold/20 p-4 flex justify-center items-center shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
+        <a href="#reserve" class="w-full bg-yu-gold text-yu-black text-center py-3 font-serif text-base tracking-widest hover:bg-white transition shadow-lg">空き状況・ご予約</a>
+    </div>
+
+    <script>
+        // 1. Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        });
+
+        // 閉じる処理（リンククリック時）
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // 2. Ambient Sound Toggle Logic
+        const soundToggle = document.getElementById('sound-toggle');
+        const audio = document.getElementById('ambient-sound');
+        const soundBars = document.getElementById('sound-bars');
+        let isPlaying = false;
+
+        soundToggle.addEventListener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                soundBars.classList.remove('playing');
+                soundToggle.querySelector('span').innerText = 'SOUND OFF';
+            } else {
+                audio.volume = 0.4;
+                audio.play().then(() => {
+                    soundBars.classList.add('playing');
+                    soundToggle.querySelector('span').innerText = 'SOUND ON';
+                }).catch(e => {
+                    console.log("Audio play failed:", e);
+                });
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // 3. Header Background Blur on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-glass');
+                header.classList.remove('bg-transparent', 'border-transparent');
+            } else {
+                header.classList.add('bg-transparent', 'border-transparent');
+                header.classList.remove('bg-glass');
+            }
+        });
+    </script>
+</body>
+</html>
