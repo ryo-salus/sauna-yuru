@@ -112,15 +112,6 @@
         .img-hover-zoom:hover img { transform: scale(1.04); }
 
         /* ===== Sound Wave ===== */
-        @keyframes soundwave {
-            0%, 100% { transform: scaleY(0.4); }
-            50% { transform: scaleY(1.2); }
-        }
-        .playing .bar { animation: soundwave 1.1s infinite ease-in-out; }
-        .playing .bar:nth-child(1) { animation-delay: 0s; }
-        .playing .bar:nth-child(2) { animation-delay: 0.22s; }
-        .playing .bar:nth-child(3) { animation-delay: 0.44s; }
-
         /* ===== Logo ===== */
         .logo-invert {
             filter: invert(1) brightness(1.8);
@@ -193,7 +184,7 @@
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="#" class="flex items-center space-x-3 hover:opacity-75 transition duration-300">
-                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-9 w-auto logo-invert">
+                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-14 sm:h-9 w-auto logo-invert">
                         <span class="font-cinzel text-lg tracking-[0.25em] text-white hidden sm:block">Yu-Ru</span>
                     </a>
                 </div>
@@ -238,18 +229,6 @@
                 <p class="font-serif text-base md:text-xl tracking-[0.4em] text-yu-text/80 font-light">ゆるんで、ととのう。</p>
             </div>
 
-            <button id="sound-toggle" class="absolute bottom-10 right-10 z-20 flex items-center space-x-3 text-yu-gold/60 hover:text-yu-gold transition duration-300 group">
-                <span class="text-[10px] tracking-[0.35em] font-serif opacity-80 group-hover:opacity-100">SOUND</span>
-                <div id="sound-bars" class="flex space-x-[3px] h-4 items-end">
-                    <div class="bar w-[2px] h-1 bg-current"></div>
-                    <div class="bar w-[2px] h-2 bg-current"></div>
-                    <div class="bar w-[2px] h-3 bg-current"></div>
-                </div>
-            </button>
-
-            <audio id="ambient-sound" loop>
-                <source src="https://cdn.freesound.org/previews/187/187560_1648170-lq.mp3" type="audio/mpeg">
-            </audio>
 
             <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
                 <span class="text-[9px] tracking-[0.45em] text-yu-subtext mb-3">SCROLL</span>
@@ -319,9 +298,9 @@
                             </tr>
                             <tr class="hover:bg-white/3 transition duration-300">
                                 <td class="p-5 text-yu-subtext text-xs tracking-widest">アメニティ</td>
-                                <td class="p-5 text-yu-text bg-yu-gold/5">手ぶらOK / ウェルカムドリンク付</td>
-                                <td class="p-5 text-yu-text/80">手ぶらOK / ウェルカムドリンク付</td>
-                                <td class="p-5 text-yu-text/80">手ぶらOK / ウェルカムドリンク付</td>
+                                <td class="p-5 text-yu-text bg-yu-gold/5">ウェルカムドリンク付</td>
+                                <td class="p-5 text-yu-text/80">ウェルカムドリンク付</td>
+                                <td class="p-5 text-yu-text/80">ウェルカムドリンク付</td>
                             </tr>
                             <tr class="hover:bg-white/3 transition duration-300">
                                 <td class="p-5 text-yu-subtext text-xs tracking-widest">ご利用シーン</td>
@@ -361,7 +340,7 @@
                     <!-- Premium -->
                     <div class="room-card room-card-premium flex flex-col group overflow-hidden">
                         <div class="h-60 img-hover-zoom relative">
-                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/03/IMG_5906.jpg" alt="Premium Trailer Sauna" class="room-img w-full h-full object-cover opacity-90 transition duration-700">
+                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg" alt="Premium Trailer Sauna" class="room-img w-full h-full object-cover opacity-95 transition duration-700" style="filter: contrast(1.08) saturate(0.85) brightness(0.92) sepia(0.12);">
                             <div class="absolute top-4 left-4 bg-yu-gold text-yu-black text-[10px] font-cinzel font-normal px-3 py-1 tracking-[0.2em]">Premium</div>
                         </div>
                         <div class="p-8 flex-grow flex flex-col">
@@ -570,25 +549,6 @@
             });
         });
 
-        const soundToggle = document.getElementById('sound-toggle');
-        const audio = document.getElementById('ambient-sound');
-        const soundBars = document.getElementById('sound-bars');
-        let isPlaying = false;
-
-        soundToggle.addEventListener('click', () => {
-            if (isPlaying) {
-                audio.pause();
-                soundBars.classList.remove('playing');
-                soundToggle.querySelector('span').innerText = 'SOUND';
-            } else {
-                audio.volume = 0.35;
-                audio.play().then(() => {
-                    soundBars.classList.add('playing');
-                    soundToggle.querySelector('span').innerText = 'SOUND ON';
-                }).catch(e => console.log("Audio play failed:", e));
-            }
-            isPlaying = !isPlaying;
-        });
 
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
