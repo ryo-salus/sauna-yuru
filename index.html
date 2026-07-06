@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -230,6 +230,31 @@
                 <div class="flex flex-col items-center animate-bounce">
                     <span class="text-[9px] tracking-[0.45em] text-yu-subtext mb-3">SCROLL</span>
                     <div class="w-[1px] h-12 bg-gradient-to-b from-yu-gold/60 to-transparent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="py-24 bg-yu-green relative border-t border-yu-gold/8">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14">
+                    <span class="section-label">お知らせ・特集</span>
+                    <h2 class="section-heading font-cinzel text-2xl md:text-3xl text-white">News</h2>
+                </div>
+
+                <div class="divide-y divide-white/8 border-t border-b border-white/8">
+                    <a href="特集/bbq.html" class="group flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-6 px-2 hover:bg-white/3 transition duration-300">
+                        <div class="flex items-center gap-4 flex-shrink-0">
+                            <span class="font-cinzel text-xs tracking-[0.2em] text-yu-subtext">2026.07.05</span>
+                            <span class="border border-yu-gold/60 text-yu-gold text-[10px] tracking-[0.2em] px-3 py-1 font-serif">新プラン</span>
+                        </div>
+                        <p class="font-serif text-sm md:text-base text-yu-text/80 tracking-wider group-hover:text-yu-gold transition duration-300 flex-grow">
+                            貸切サウナ×サ飯BBQプランをはじめました
+                        </p>
+                        <span class="hidden sm:block text-yu-subtext group-hover:text-yu-gold group-hover:translate-x-1 transition duration-300 flex-shrink-0">
+                            <i class="fa-solid fa-arrow-right-long text-sm"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>

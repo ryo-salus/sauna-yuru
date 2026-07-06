@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="プライベート薪サウナ Yu-Ru の貸切サウナ×サ飯BBQプラン。2〜20名まで、すべてのサウナ利用可能。BBQセット完備・食材持ち込みOK。鹿児島の大自然の中で、ととのいとサ飯を心ゆくまで。">
+    <meta property="og:title" content="サウナ×サ飯BBQプラン | プライベート薪サウナ Yu-Ru">
+    <meta property="og:description" content="貸切で楽しむ特別プラン。サウナで汗を流したあとは、大自然の中でBBQ。2〜20名・BBQセット完備・食材持ち込みOK。">
+    <meta property="og:type" content="website">
+
+    <title>サウナ×サ飯BBQプラン | プライベート薪サウナ Yu-Ru</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yu-black': '#1A1A1A',
+                        'yu-green': '#0B120C',
+                        'yu-gold': '#C9A84C',
+                        'yu-gold-light': '#E8D5A3',
+                        'yu-text': '#EDE8DF',
+                        'yu-subtext': '#8A8A8A',
+                        'yu-dark': '#050a06',
+                    },
+                    fontFamily: {
+                        'serif': ['"Noto Serif JP"', 'serif'],
+                        'cinzel': ['"Cinzel"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { font-size: 16px; }
+        body {
+            background-color: #050a06;
+            color: #EDE8DF;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "palt" 1;
+            letter-spacing: 0.06em;
+        }
+        .section-label {
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 300;
+            font-size: 0.7rem;
+            letter-spacing: 0.45em;
+            color: #C9A84C;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .section-heading {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            position: relative;
+            display: inline-block;
+        }
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 2.5rem;
+            height: 1px;
+            background: #C9A84C;
+            margin: 1.2rem auto 0;
+        }
+        .bg-glass {
+            background: rgba(5, 10, 6, 0.82);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(201, 168, 76, 0.18);
+        }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #050a06; }
+        ::-webkit-scrollbar-thumb { background: rgba(201, 168, 76, 0.5); border-radius: 2px; }
+        .logo-invert {
+            filter: invert(1) brightness(1.8);
+            mix-blend-mode: lighten;
+        }
+        .gold-line {
+            width: 40px;
+            height: 1px;
+            background: #C9A84C;
+            margin: 0 auto;
+        }
+        .info-card {
+            border: 1px solid rgba(201, 168, 76, 0.15);
+            background: #0e1a0f;
+            transition: border-color 0.5s ease;
+        }
+        .info-card:hover {
+            border-color: rgba(201, 168, 76, 0.45);
+        }
+        .price-table td, .price-table th {
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 300;
+            letter-spacing: 0.06em;
+        }
+        .price-table .cinzel {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+        }
+        #bbq-hero {
+            background-image: linear-gradient(rgba(5, 10, 6, 0.55), rgba(11, 18, 12, 0.88)), url('https://sauna-jpn.com/wp-content/uploads/2026/04/Gemini_Generated_Image_88jien88jien88ji.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-glass transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../index.html" class="flex items-center space-x-3 hover:opacity-75 transition duration-300">
+                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-14 sm:h-9 w-auto logo-invert">
+                        <span class="font-cinzel text-lg tracking-[0.25em] text-white hidden sm:block">Yu-Ru</span>
+                    </a>
+                </div>
+                <nav class="flex space-x-6 md:space-x-10 items-center">
+                    <a href="../index.html" class="text-xs tracking-[0.25em] text-yu-text/70 hover:text-yu-gold transition duration-300 font-serif hidden sm:block">トップページ</a>
+                    <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="px-5 md:px-7 py-2.5 border border-yu-gold/70 text-yu-gold hover:bg-yu-gold hover:text-yu-black transition duration-400 font-serif text-xs tracking-[0.25em]">
+                        ご予約・ご相談
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="bbq-hero" class="relative min-h-screen flex items-center justify-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-yu-green/20 to-yu-dark"></div>
+
+            <div class="relative z-10 text-center px-4 py-40 flex flex-col items-center justify-center">
+                <p class="inline-block border border-yu-gold/70 text-yu-gold px-6 py-2 text-xs tracking-[0.4em] mb-10 font-serif">
+                    SPECIAL PLAN
+                </p>
+                <p class="section-label text-center">Yu-Ruで楽しむ</p>
+                <h1 class="font-serif text-4xl md:text-6xl tracking-[0.15em] text-white font-normal mb-6 drop-shadow-2xl leading-snug">
+                    サウナ<span class="font-cinzel text-yu-gold mx-1 md:mx-2">×</span>サ飯BBQ
+                </h1>
+                <div class="gold-line mb-8"></div>
+                <p class="font-serif text-sm md:text-lg tracking-[0.3em] text-yu-text/80 font-light mb-14">
+                    貸切で楽しむ、特別プラン。
+                </p>
+                <p class="font-serif text-sm md:text-base text-yu-text/70 leading-loose tracking-wider max-w-xl font-light">
+                    薪サウナで深くととのったあとは、<br class="md:hidden">大自然の中でBBQを。<br>
+                    炎と水、そして美味しい「サ飯」。<br class="md:hidden">贅沢な一日を、完全貸切で。
+                </p>
+            </div>
+        </section>
+
+        <!-- Plan Overview -->
+        <section class="py-28 bg-yu-dark relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="section-label">Plan Overview</span>
+                    <h2 class="section-heading font-cinzel text-3xl md:text-4xl text-white">Sauna &amp; BBQ</h2>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
+                    <div class="info-card p-6 md:p-8 text-center">
+                        <i class="fa-solid fa-user-group text-yu-gold text-2xl mb-4"></i>
+                        <p class="text-[10px] tracking-[0.3em] text-yu-subtext mb-2">ご利用人数</p>
+                        <p class="font-serif text-yu-text text-sm md:text-base tracking-widest">2〜20名</p>
+                    </div>
+                    <div class="info-card p-6 md:p-8 text-center">
+                        <i class="fa-solid fa-yen-sign text-yu-gold text-2xl mb-4"></i>
+                        <p class="text-[10px] tracking-[0.3em] text-yu-subtext mb-2">ご料金</p>
+                        <p class="font-serif text-yu-text text-sm md:text-base tracking-widest">¥50,000（税込）〜</p>
+                    </div>
+                    <div class="info-card p-6 md:p-8 text-center">
+                        <i class="fa-solid fa-fire-burner text-yu-gold text-2xl mb-4"></i>
+                        <p class="text-[10px] tracking-[0.3em] text-yu-subtext mb-2">設備</p>
+                        <p class="font-serif text-yu-text text-sm md:text-base tracking-widest">BBQセット完備</p>
+                    </div>
+                    <div class="info-card p-6 md:p-8 text-center">
+                        <i class="fa-solid fa-bag-shopping text-yu-gold text-2xl mb-4"></i>
+                        <p class="text-[10px] tracking-[0.3em] text-yu-subtext mb-2">お持ち込み</p>
+                        <p class="font-serif text-yu-text text-sm md:text-base tracking-widest">食材・ドリンクOK</p>
+                    </div>
+                </div>
+
+                <div class="text-center border border-yu-gold/50 bg-yu-gold/8 px-8 py-6">
+                    <p class="font-serif text-yu-gold tracking-[0.2em] text-sm md:text-base">
+                        <i class="fa-solid fa-star text-xs mr-2 opacity-70"></i>すべてのサウナ利用可能<i class="fa-solid fa-star text-xs ml-2 opacity-70"></i>
+                    </p>
+                    <p class="font-serif text-yu-gold/70 text-xs tracking-[0.1em] mt-2 font-light">
+                        Premium・Standard、すべてのサウナが入り放題。ご自由に行き来してお楽しみいただけます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Time & Price -->
+        <section class="py-28 bg-yu-green relative border-t border-yu-gold/8">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="section-label">時間・料金</span>
+                    <h2 class="section-heading font-cinzel text-3xl md:text-4xl text-white">Schedule &amp; Price</h2>
+                </div>
+
+                <div class="overflow-x-auto pb-4">
+                    <table class="price-table w-full text-left border-collapse min-w-[560px]">
+                        <thead>
+                            <tr class="border-b border-yu-gold/60">
+                                <th class="p-5 text-yu-subtext font-serif font-light text-xs tracking-widest w-1/3">&nbsp;</th>
+                                <th class="p-5 text-yu-gold cinzel text-lg tracking-[0.2em] w-1/3 bg-yu-gold/5 font-cinzel font-normal">平日</th>
+                                <th class="p-5 text-white cinzel text-lg tracking-[0.2em] w-1/3 font-cinzel font-normal">休日</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/8 text-sm">
+                            <tr class="hover:bg-white/3 transition duration-300">
+                                <td class="p-5 text-yu-subtext text-xs tracking-widest">ご利用時間</td>
+                                <td class="p-5 text-yu-text bg-yu-gold/5">11:00〜15:00</td>
+                                <td class="p-5 text-yu-text/80">11:00〜15:00<br>15:30〜19:30</td>
+                            </tr>
+                            <tr class="border-b border-yu-gold/30">
+                                <td class="p-5 text-yu-subtext text-xs tracking-widest">ご料金（1組）</td>
+                                <td class="p-5 bg-yu-gold/5"><span class="cinzel font-cinzel text-yu-gold text-base tracking-widest">¥50,000</span><span class="text-xs text-yu-subtext ml-2">税込</span></td>
+                                <td class="p-5"><span class="cinzel font-cinzel text-yu-text text-base tracking-widest">¥60,000</span><span class="text-xs text-yu-subtext ml-2">税込</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Notes -->
+                <div class="mt-16 border border-yu-gold/15 bg-yu-dark/60 p-8 md:p-10">
+                    <p class="section-label">ご利用にあたって</p>
+                    <ul class="space-y-4 font-serif text-sm text-yu-text/70 leading-loose tracking-wider font-light">
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>食材のご用意はございません。お好きな食材・ドリンクをご持参ください（持ち込み自由）。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>紙皿・紙コップ・お箸などはご用意しております。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>ゴミ捨てをご希望の場合は、別途1,000円を頂戴いたします。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>20名以上でのご利用をご希望の場合は、事前にご相談ください。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>サウナご利用時は、全プラン・全エリアにおいて水着のご着用が必須です。お忘れの場合はご入場いただけません。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-28 bg-yu-dark border-t border-yu-gold/8 text-center">
+            <div class="max-w-2xl mx-auto px-4">
+                <span class="section-label">Reservation</span>
+                <h2 class="section-heading font-cinzel text-2xl md:text-3xl mb-12 text-white font-normal tracking-[0.2em]">Contact</h2>
+                <p class="font-serif text-yu-subtext text-sm mb-12 leading-loose tracking-wider font-light">
+                    ご予約・ご相談は、公式LINEにて承っております。<br>
+                    ご希望の日時・人数をお気軽にお知らせください。
+                </p>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="inline-block bg-yu-gold text-yu-black font-serif text-sm tracking-[0.3em] px-14 py-4 hover:bg-yu-gold-light transition duration-400 shadow-[0_0_30px_rgba(201,168,76,0.2)]">
+                    <i class="fa-brands fa-line mr-3"></i>公式LINEで予約・相談する
+                </a>
+                <p class="mt-10">
+                    <a href="../index.html" class="font-serif text-xs tracking-[0.25em] text-yu-subtext hover:text-yu-gold transition duration-300">
+                        ← トップページへ戻る
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-yu-dark border-t border-white/5 pt-16 pb-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-10 w-auto mb-3 logo-invert opacity-60 mx-auto">
+            <p class="font-cinzel text-sm tracking-[0.3em] text-yu-text/60 mb-8">Yu-Ru</p>
+
+            <div class="flex justify-center space-x-6 mb-10">
+                <a href="https://www.instagram.com/sauna_yu_ru/" target="_blank" rel="noopener noreferrer" class="text-yu-subtext hover:text-yu-gold transition duration-300"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="text-yu-subtext hover:text-[#06C755] transition duration-300"><i class="fa-brands fa-line text-lg"></i></a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[10px] md:text-xs text-yu-subtext mb-10 tracking-widest font-serif">
+                <a href="../tokushoho.html" class="hover:text-yu-gold transition-colors">特定商取引法に基づく表記</a>
+                <a href="../privacy-policy.html" class="hover:text-yu-gold transition-colors">プライバシーポリシー</a>
+                <a href="../cancel-policy.html" class="hover:text-yu-gold transition-colors">キャンセルポリシー</a>
+            </div>
+
+            <p class="text-[10px] text-yu-subtext/60 font-cinzel tracking-[0.35em] uppercase">© 2026 Yu-Ru. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
