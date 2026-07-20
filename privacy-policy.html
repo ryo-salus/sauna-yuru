@@ -285,5 +285,23 @@
         </div>
     </footer>
 
+    <script>
+        // GA4: LINE・Square予約リンクのクリック計測
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href]').forEach(function (link) {
+                var href = link.href;
+                var eventName = null;
+                if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
+                else if (href.indexOf('book.squareup.com') !== -1) eventName = 'square_booking_click';
+                if (eventName) {
+                    link.addEventListener('click', function () {
+                        if (typeof gtag === 'function') {
+                            gtag('event', eventName, { link_url: href, page_location: location.href });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
