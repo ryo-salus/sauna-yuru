@@ -17,6 +17,10 @@
 
     <title>特定商取引法に基づく表記 | プライベート薪サウナ Yu-Ru</title>
 
+    <link rel="canonical" href="https://sauna-yuru.netlify.app/tokushoho">
+    <link rel="icon" type="image/png" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+    <link rel="apple-touch-icon" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -171,7 +175,7 @@
                             </tr>
                             <tr>
                                 <th class="text-left p-5 md:p-6">所在地</th>
-                                <td class="p-5 md:p-6 text-yu-text/80">〒899-2201<br>鹿児島県姶良市加治木町小山田2144</td>
+                                <td class="p-5 md:p-6 text-yu-text/80">〒899-5203<br>鹿児島県姶良市加治木町小山田2144</td>
                             </tr>
                             <tr>
                                 <th class="text-left p-5 md:p-6">電話番号</th>
@@ -267,5 +271,23 @@
         </div>
     </footer>
 
+    <script>
+        // GA4: LINE・Square予約リンクのクリック計測
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href]').forEach(function (link) {
+                var href = link.href;
+                var eventName = null;
+                if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
+                else if (href.indexOf('book.squareup.com') !== -1) eventName = 'square_booking_click';
+                if (eventName) {
+                    link.addEventListener('click', function () {
+                        if (typeof gtag === 'function') {
+                            gtag('event', eventName, { link_url: href, page_location: location.href });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
