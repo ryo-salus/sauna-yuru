@@ -19,7 +19,7 @@
     <meta property="og:description" content="鹿児島の田園風景と桜島を望む、完全貸切の高級プライベート薪サウナ。日常の多忙から解放される、究極の癒し空間。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sauna-yuru.netlify.app/">
-    <meta property="og:image" content="https://sauna-yuru.netlify.app/9785296776461547175.jpeg">
+    <meta property="og:image" content="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg">
     <meta property="og:site_name" content="プライベート薪サウナ Yu-Ru">
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
@@ -105,7 +105,7 @@
 
         /* ===== Hero ===== */
         #hero-section {
-            background-image: linear-gradient(rgba(5, 10, 6, 0.35), rgba(11, 18, 12, 0.75)), url('9785296776461547175.jpeg');
+            background-image: linear-gradient(rgba(5, 10, 6, 0.35), rgba(11, 18, 12, 0.75));
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -203,7 +203,7 @@
         "alternateName": "Yu-Ru",
         "description": "鹿児島県姶良市の田園風景と桜島を望む、完全貸切の高級プライベート薪サウナ。トレーラーサウナとテントサウナの2タイプを完備。鹿児島空港から車で約10分。",
         "url": "https://sauna-yuru.netlify.app/",
-        "image": "https://sauna-yuru.netlify.app/9785296776461547175.jpeg",
+        "image": "https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg",
         "email": "private.sauna.yuru@gmail.com",
         "priceRange": "¥10,000〜¥16,000",
         "currenciesAccepted": "JPY",
@@ -287,7 +287,7 @@
                 </nav>
 
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-yu-text/70 hover:text-yu-gold focus:outline-none transition">
+                    <button id="mobile-menu-btn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu" class="text-yu-text/70 hover:text-yu-gold focus:outline-none transition">
                         <i class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -311,7 +311,7 @@
 
             <div class="relative z-10 text-center px-4 flex flex-col items-center justify-center" style="padding-bottom: 6rem;">
                 <p class="section-label text-center mb-8">プライベート薪サウナ</p>
-                <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-28 md:h-44 mx-auto mb-8 logo-invert opacity-85">
+                <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-28 md:h-44 mx-auto mb-8 logo-invert opacity-85" fetchpriority="high" decoding="async">
                 <h1 class="font-cinzel text-4xl md:text-6xl lg:text-7xl tracking-[0.22em] text-white mb-10 font-light drop-shadow-2xl">Yu-Ru<span class="sr-only">｜鹿児島・姶良の完全貸切プライベート薪サウナ</span></h1>
                 <div class="gold-line mb-8"></div>
                 <p class="font-serif text-base md:text-xl tracking-[0.4em] text-yu-text/80 font-light mb-16">ゆるんで、ととのう。</p>
@@ -448,7 +448,7 @@
                     <!-- Premium -->
                     <div class="room-card room-card-premium flex flex-col group overflow-hidden">
                         <div class="h-60 img-hover-zoom relative">
-                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg" alt="Premium Trailer Sauna" class="room-img w-full h-full object-cover opacity-95 transition duration-700" style="filter: contrast(1.08) saturate(0.85) brightness(0.92) sepia(0.12);">
+                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg" alt="Premium Trailer Sauna" class="room-img w-full h-full object-cover opacity-95 transition duration-700" style="filter: contrast(1.08) saturate(0.85) brightness(0.92) sepia(0.12);" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-yu-gold text-yu-black text-[10px] font-cinzel font-normal px-3 py-1 tracking-[0.2em]">Premium</div>
                         </div>
                         <div class="p-8 flex-grow flex flex-col">
@@ -466,7 +466,7 @@
                     <!-- Standard -->
                     <div class="room-card flex flex-col group overflow-hidden">
                         <div class="h-60 img-hover-zoom relative">
-                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/04/Gemini_Generated_Image_88jien88jien88ji.png" alt="Standard Tent Sauna" class="room-img w-full h-full object-cover opacity-90 transition duration-700">
+                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/04/Gemini_Generated_Image_88jien88jien88ji.png" alt="Standard Tent Sauna" class="room-img w-full h-full object-cover opacity-90 transition duration-700" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-white/15 backdrop-blur-sm border border-white/30 text-white text-[10px] font-cinzel font-normal px-3 py-1 tracking-[0.2em]">Standard</div>
                         </div>
                         <div class="p-8 flex-grow flex flex-col">
@@ -488,7 +488,7 @@
         <!-- BBQ Special Banner -->
         <section id="bbq-banner" class="relative py-28 md:py-36 overflow-hidden border-t border-yu-gold/20">
             <div class="absolute inset-0">
-                <img src="https://sauna-jpn.com/wp-content/uploads/2026/03/IMG_5906.jpg" alt="" class="w-full h-full object-cover">
+                <img src="https://sauna-jpn.com/wp-content/uploads/2026/03/IMG_5906.jpg" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
                 <div class="absolute inset-0 bg-gradient-to-r from-yu-dark via-yu-dark/85 to-yu-dark/40"></div>
             </div>
 
@@ -546,27 +546,27 @@
                     <h2 class="section-heading section-heading-left font-cinzel text-2xl text-yu-gold mb-14 font-normal tracking-[0.18em]">FAQ & Information</h2>
                     <div class="space-y-8">
                         <div class="border-b border-white/8 pb-7">
-                            <h4 class="faq-q text-yu-text text-sm mb-3 flex items-start">
+                            <h3 class="faq-q text-yu-text text-sm mb-3 flex items-start">
                                 <span class="text-yu-gold font-cinzel font-normal mr-4 text-base tracking-widest flex-shrink-0">Q.</span>予約と決済の方法について教えてください。
-                            </h4>
+                            </h3>
                             <p class="faq-a pl-8">完全事前決済制となっております。Webサイトからのご予約時に、クレジットカード（Square決済）にてお支払いをお願いいたします。当日の現金のやり取りはございません。</p>
                         </div>
                         <div class="border-b border-white/8 pb-7">
-                            <h4 class="faq-q text-yu-text text-sm mb-3 flex items-start">
+                            <h3 class="faq-q text-yu-text text-sm mb-3 flex items-start">
                                 <span class="text-yu-gold font-cinzel font-normal mr-4 text-base tracking-widest flex-shrink-0">Q.</span>何名まで利用できますか？
-                            </h4>
+                            </h3>
                             <p class="faq-a pl-8">4名様以内でのご利用を推奨しております。グループ全員で完全貸切の空間をお楽しみいただけます。料金は人数に関わらず一律です。</p>
                         </div>
                         <div class="border-b border-white/8 pb-7">
-                            <h4 class="faq-q text-yu-text text-sm mb-3 flex items-start">
+                            <h3 class="faq-q text-yu-text text-sm mb-3 flex items-start">
                                 <span class="text-yu-gold font-cinzel font-normal mr-4 text-base tracking-widest flex-shrink-0">Q.</span>定休日はありますか？
-                            </h4>
+                            </h3>
                             <p class="faq-a pl-8">毎週<span class="text-yu-text font-normal">月曜日・木曜日</span>が定休日となっております。祝日と重なる場合も同様に休業いたします。</p>
                         </div>
                         <div class="border-b border-white/8 pb-7">
-                            <h4 class="faq-q text-yu-text text-sm mb-3 flex items-start">
+                            <h3 class="faq-q text-yu-text text-sm mb-3 flex items-start">
                                 <span class="text-yu-gold font-cinzel font-normal mr-4 text-base tracking-widest flex-shrink-0">Q.</span>駐車場はありますか？持参するものはありますか？
-                            </h4>
+                            </h3>
                             <p class="faq-a pl-8">無料駐車場をご用意しております。タオルやシャンプー等のアメニティは完備しております。<br><br><span class="text-yu-gold font-normal">— 水着のご持参をおすすめします —</span><br>当施設では全プランにおいて水着のご着用をお願いしております。お忘れの場合はレンタル水着（1,000円）もございますが、枚数に限りがあり、ご用意できない場合はご入場いただけません。</p>
                         </div>
                     </div>
@@ -582,7 +582,7 @@
                         <p class="font-serif text-yu-subtext text-xs mb-7 tracking-wider font-light">定休日：<span class="text-yu-text/70">毎週月曜・木曜</span></p>
 
                         <div class="w-full h-60 bg-yu-black border border-white/5 overflow-hidden mb-6">
-                            <iframe src="https://maps.google.com/maps?q=鹿児島県姶良市加治木町小山田2144&output=embed&hl=ja&z=16" width="100%" height="100%" style="border:0; filter: grayscale(80%) contrast(1.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://maps.google.com/maps?q=鹿児島県姶良市加治木町小山田2144&output=embed&hl=ja&z=16" title="プライベート薪サウナ Yu-Ru の所在地（Googleマップ）" width="100%" height="100%" style="border:0; filter: grayscale(80%) contrast(1.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="grid grid-cols-3 gap-3">
                             <div class="text-center border border-white/8 px-2 py-4 hover:border-yu-gold/30 transition duration-300">
@@ -626,14 +626,14 @@
     <footer class="bg-yu-black py-14 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-center md:text-left flex flex-col items-center md:items-start">
-                <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-10 w-auto mb-3 logo-invert opacity-60">
+                <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-10 w-auto mb-3 logo-invert opacity-60" loading="lazy" decoding="async">
                 <span class="font-cinzel text-xl text-yu-gold tracking-[0.25em] block mb-1 font-normal">Yu-Ru</span>
                 <span class="text-[11px] text-yu-subtext font-serif tracking-widest font-light">プライベート薪サウナ</span>
             </div>
 
             <div class="flex space-x-6">
-                <a href="https://www.instagram.com/sauna_yu_ru/" target="_blank" rel="noopener noreferrer" class="text-yu-subtext hover:text-yu-gold transition duration-300"><i class="fa-brands fa-instagram text-lg"></i></a>
-                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="text-yu-subtext hover:text-[#06C755] transition duration-300"><i class="fa-brands fa-line text-lg"></i></a>
+                <a href="https://www.instagram.com/sauna_yu_ru/" target="_blank" rel="noopener noreferrer" aria-label="公式Instagram" class="text-yu-subtext hover:text-yu-gold transition duration-300"><i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i></a>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" aria-label="公式LINE" class="text-yu-subtext hover:text-[#06C755] transition duration-300"><i class="fa-brands fa-line text-lg" aria-hidden="true"></i></a>
             </div>
 
             <div class="text-center md:text-right font-serif text-[11px] text-yu-subtext space-y-2 font-light tracking-wider">
@@ -644,7 +644,7 @@
     </footer>
 
     <!-- Floating LINE Button -->
-    <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="fixed bottom-24 md:bottom-8 right-6 z-40 bg-[#06C755] text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:scale-110 transition duration-300 group">
+    <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" aria-label="公式LINEで問い合わせる" class="fixed bottom-24 md:bottom-8 right-6 z-40 bg-[#06C755] text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:scale-110 transition duration-300 group">
         <i class="fa-brands fa-line text-2xl"></i>
         <span class="absolute right-14 bg-yu-black text-white text-[11px] whitespace-nowrap px-3 py-2 opacity-0 group-hover:opacity-100 transition duration-300 border border-white/10 pointer-events-none font-serif tracking-wider">お問い合わせ・最新情報</span>
     </a>
@@ -668,6 +668,9 @@
             menu.classList.toggle('hidden');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-xmark');
+            const opened = !menu.classList.contains('hidden');
+            btn.setAttribute('aria-expanded', String(opened));
+            btn.setAttribute('aria-label', opened ? 'メニューを閉じる' : 'メニューを開く');
         });
 
         menu.querySelectorAll('a').forEach(link => {
@@ -675,6 +678,8 @@
                 menu.classList.add('hidden');
                 icon.classList.add('fa-bars');
                 icon.classList.remove('fa-xmark');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.setAttribute('aria-label', 'メニューを開く');
             });
         });
 
