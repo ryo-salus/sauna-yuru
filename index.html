@@ -205,7 +205,7 @@
         "url": "https://sauna-yuru.netlify.app/",
         "image": "https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg",
         "email": "private.sauna.yuru@gmail.com",
-        "priceRange": "¥10,000〜¥16,000",
+        "priceRange": "¥10,000〜¥14,000",
         "currenciesAccepted": "JPY",
         "paymentAccepted": "クレジットカード",
         "address": {
@@ -418,15 +418,10 @@
                                 <td class="p-5 text-yu-text bg-yu-gold/5">至高の癒し・特別な休息</td>
                                 <td class="p-5 text-yu-text/80">自然を満喫・原点回帰</td>
                             </tr>
-                            <tr class="hover:bg-white/3 transition duration-300">
-                                <td class="p-5 text-yu-subtext text-xs tracking-widest">平日料金</td>
+                            <tr class="border-b border-yu-gold/30">
+                                <td class="p-5 text-yu-subtext text-xs tracking-widest">ご利用料金<br><span class="text-[10px] opacity-70">全日均一</span></td>
                                 <td class="p-5 bg-yu-gold/5"><span class="cinzel font-cinzel text-yu-gold text-base tracking-widest">¥14,000</span></td>
                                 <td class="p-5"><span class="cinzel font-cinzel text-yu-text text-base tracking-widest">¥10,000</span></td>
-                            </tr>
-                            <tr class="border-b border-yu-gold/30">
-                                <td class="p-5 text-yu-subtext text-xs tracking-widest">土日祝料金</td>
-                                <td class="p-5 bg-yu-gold/5"><span class="cinzel font-cinzel text-yu-gold text-base tracking-widest">¥16,000</span></td>
-                                <td class="p-5"><span class="cinzel font-cinzel text-yu-text text-base tracking-widest">¥12,000</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -614,7 +609,7 @@
                     ご希望のタイプと日時をお選びください。
                 </p>
 
-                <a href="https://book.squareup.com/appointments/c2nrkvd7nznd5o/location/L5GV56R8MWH92/services" target="_blank" rel="noopener noreferrer" class="inline-block bg-yu-gold text-yu-black font-serif text-sm tracking-[0.3em] px-14 py-4 hover:bg-yu-gold-light transition duration-400 shadow-[0_0_30px_rgba(201,168,76,0.2)]">
+                <a href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer" class="inline-block bg-yu-gold text-yu-black font-serif text-sm tracking-[0.3em] px-14 py-4 hover:bg-yu-gold-light transition duration-400 shadow-[0_0_30px_rgba(201,168,76,0.2)]">
                     空き状況の確認・ご予約
                 </a>
                 <p class="text-[11px] text-yu-subtext mt-7 tracking-widest font-serif font-light">Square の安全な決済システムへ移動します。</p>
@@ -650,13 +645,13 @@
     </a>
 
     <!-- Desktop Fixed Reserve Button -->
-    <a href="https://book.squareup.com/appointments/c2nrkvd7nznd5o/location/L5GV56R8MWH92/services" target="_blank" rel="noopener noreferrer" class="hidden md:flex fixed right-0 top-1/2 transform -translate-y-1/2 z-50 bg-yu-gold text-yu-black py-8 px-2.5 text-[11px] font-serif tracking-[0.25em] hover:bg-yu-gold-light transition duration-400 shadow-[-4px_0_20px_rgba(0,0,0,0.4)] items-center justify-center" style="writing-mode: vertical-rl; text-orientation: upright;">
+    <a href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer" class="hidden md:flex fixed right-0 top-1/2 transform -translate-y-1/2 z-50 bg-yu-gold text-yu-black py-8 px-2.5 text-[11px] font-serif tracking-[0.25em] hover:bg-yu-gold-light transition duration-400 shadow-[-4px_0_20px_rgba(0,0,0,0.4)] items-center justify-center" style="writing-mode: vertical-rl; text-orientation: upright;">
         空き状況・ご予約
     </a>
 
     <!-- Mobile Fixed Reserve Bar -->
     <div class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-yu-dark/96 backdrop-blur-md border-t border-yu-gold/15 p-3.5 flex justify-center shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
-        <a href="https://book.squareup.com/appointments/c2nrkvd7nznd5o/location/L5GV56R8MWH92/services" target="_blank" rel="noopener noreferrer" class="w-full bg-yu-gold text-yu-black text-center py-3 font-serif text-sm tracking-[0.25em] hover:bg-yu-gold-light transition duration-300">空き状況・ご予約</a>
+        <a href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer" class="w-full bg-yu-gold text-yu-black text-center py-3 font-serif text-sm tracking-[0.25em] hover:bg-yu-gold-light transition duration-300">空き状況・ご予約</a>
     </div>
 
     <script>
@@ -700,7 +695,7 @@
                 var href = link.href;
                 var eventName = null;
                 if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
-                else if (href.indexOf('book.squareup.com') !== -1) eventName = 'square_booking_click';
+                else if (href.indexOf('square.site') !== -1 || href.indexOf('squareup.com') !== -1) eventName = 'square_booking_click';
                 if (eventName) {
                     link.addEventListener('click', function () {
                         if (typeof gtag === 'function') {

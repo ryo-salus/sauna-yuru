@@ -296,7 +296,7 @@
                 var href = link.href;
                 var eventName = null;
                 if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
-                else if (href.indexOf('book.squareup.com') !== -1) eventName = 'square_booking_click';
+                else if (href.indexOf('square.site') !== -1 || href.indexOf('squareup.com') !== -1) eventName = 'square_booking_click';
                 if (eventName) {
                     link.addEventListener('click', function () {
                         if (typeof gtag === 'function') {

@@ -198,7 +198,7 @@
                                 <th class="text-left p-5 md:p-6">販売価格</th>
                                 <td class="p-5 md:p-6 text-yu-text/80">
                                     各プランの利用料金は、ご予約ページおよびトップページの料金表に記載しております。<br>
-                                    （平日 ¥10,000 〜 土日祝 ¥16,000／いずれも税込・1組あたり）
+                                    （¥10,000 〜 ¥14,000／全日均一・税込・1組あたり）
                                 </td>
                             </tr>
                             <tr>
@@ -278,7 +278,7 @@
                 var href = link.href;
                 var eventName = null;
                 if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
-                else if (href.indexOf('book.squareup.com') !== -1) eventName = 'square_booking_click';
+                else if (href.indexOf('square.site') !== -1 || href.indexOf('squareup.com') !== -1) eventName = 'square_booking_click';
                 if (eventName) {
                     link.addEventListener('click', function () {
                         if (typeof gtag === 'function') {

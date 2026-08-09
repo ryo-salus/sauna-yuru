@@ -198,7 +198,8 @@
                     <div class="info-card p-6 md:p-8 text-center">
                         <i class="fa-solid fa-yen-sign text-yu-gold text-2xl mb-4"></i>
                         <p class="text-[10px] tracking-[0.3em] text-yu-subtext mb-2">ご料金</p>
-                        <p class="font-serif text-yu-text text-sm md:text-base tracking-widest">¥50,000（税込）〜</p>
+                        <p class="font-serif text-yu-text text-sm md:text-base tracking-widest">¥50,000（税込）</p>
+                        <p class="font-serif text-yu-gold text-[11px] tracking-widest mt-1.5">全日均一</p>
                     </div>
                     <div class="info-card p-6 md:p-8 text-center">
                         <i class="fa-solid fa-fire-burner text-yu-gold text-2xl mb-4"></i>
@@ -247,9 +248,8 @@
                                 <td class="p-5 text-yu-text/80">10:30〜14:30<br>15:30〜19:30</td>
                             </tr>
                             <tr class="border-b border-yu-gold/30">
-                                <td class="p-5 text-yu-subtext text-xs tracking-widest">ご料金（1組）</td>
-                                <td class="p-5 bg-yu-gold/5"><span class="cinzel font-cinzel text-yu-gold text-base tracking-widest">¥50,000</span><span class="text-xs text-yu-subtext ml-2">税込</span></td>
-                                <td class="p-5"><span class="cinzel font-cinzel text-yu-text text-base tracking-widest">¥60,000</span><span class="text-xs text-yu-subtext ml-2">税込</span></td>
+                                <td class="p-5 text-yu-subtext text-xs tracking-widest">ご料金（1組）<br><span class="text-[10px] opacity-70">全日均一</span></td>
+                                <td class="p-5 bg-yu-gold/5 text-center" colspan="2"><span class="cinzel font-cinzel text-yu-gold text-base tracking-widest">¥50,000</span><span class="text-xs text-yu-subtext ml-2">税込</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -333,7 +333,7 @@
                 var href = link.href;
                 var eventName = null;
                 if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
-                else if (href.indexOf('book.squareup.com') !== -1) eventName = 'square_booking_click';
+                else if (href.indexOf('square.site') !== -1 || href.indexOf('squareup.com') !== -1) eventName = 'square_booking_click';
                 if (eventName) {
                     link.addEventListener('click', function () {
                         if (typeof gtag === 'function') {
