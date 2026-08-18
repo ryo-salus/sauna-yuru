@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMCCEZTTVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JMCCEZTTVN');
+    </script>
+
+    <meta name="description" content="毎月20日・30日は「Yu-Ruの日」。鹿児島のプライベート薪サウナ Yu-Ru が、20日はStandardを5,000円、30日はPremiumを7,000円（いずれも税込）でご提供します。月に二度だけの特別価格。">
+    <meta property="og:title" content="Yu-Ruの日｜毎月20日・30日は特別価格｜プライベート薪サウナ Yu-Ru">
+    <meta property="og:description" content="月に二度だけ、いつもの贅沢を特別な価格で。20日はStandard 5,000円、30日はPremium 7,000円（税込）。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sauna-yuru.netlify.app/yuruday">
+    <meta property="og:image" content="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg">
+    <meta property="og:site_name" content="プライベート薪サウナ Yu-Ru">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="canonical" href="https://sauna-yuru.netlify.app/yuruday">
+    <link rel="icon" type="image/png" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+    <link rel="apple-touch-icon" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+
+    <title>Yu-Ruの日｜毎月20日・30日は特別価格｜プライベート薪サウナ Yu-Ru</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yu-black': '#1A1A1A',
+                        'yu-green': '#0B120C',
+                        'yu-gold': '#C9A84C',
+                        'yu-gold-light': '#E8D5A3',
+                        'yu-text': '#EDE8DF',
+                        'yu-subtext': '#8A8A8A',
+                        'yu-dark': '#050a06',
+                    },
+                    fontFamily: {
+                        'serif': ['"Noto Serif JP"', 'serif'],
+                        'cinzel': ['"Cinzel"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { font-size: 16px; }
+        body {
+            background-color: #050a06;
+            color: #EDE8DF;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "palt" 1;
+            letter-spacing: 0.06em;
+        }
+        .section-label {
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 300;
+            font-size: 0.7rem;
+            letter-spacing: 0.45em;
+            color: #C9A84C;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .section-heading {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            position: relative;
+            display: inline-block;
+        }
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 2.5rem;
+            height: 1px;
+            background: #C9A84C;
+            margin: 1.2rem auto 0;
+        }
+        .bg-glass {
+            background: rgba(5, 10, 6, 0.82);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(201, 168, 76, 0.18);
+        }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #050a06; }
+        ::-webkit-scrollbar-thumb { background: rgba(201, 168, 76, 0.5); border-radius: 2px; }
+        .logo-invert {
+            filter: invert(1) brightness(1.8);
+            mix-blend-mode: lighten;
+        }
+        .gold-line {
+            width: 40px;
+            height: 1px;
+            background: #C9A84C;
+            margin: 0 auto;
+        }
+        .info-card {
+            border: 1px solid rgba(201, 168, 76, 0.15);
+            background: #0e1a0f;
+            transition: border-color 0.5s ease;
+        }
+        .info-card:hover { border-color: rgba(201, 168, 76, 0.45); }
+
+        /* ヒーロー */
+        #yuruday-hero {
+            background-image: linear-gradient(rgba(5, 10, 6, 0.62), rgba(11, 18, 12, 0.90)), url('https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        /* 日付バッジ */
+        .day-badge {
+            font-family: 'Cinzel', serif;
+            font-weight: 500;
+            line-height: 1;
+        }
+        /* 価格カード */
+        .price-card {
+            border: 1px solid rgba(201, 168, 76, 0.25);
+            background: linear-gradient(180deg, #0e1a0f 0%, #0a140b 100%);
+        }
+        .price-card.is-premium {
+            border-color: rgba(201, 168, 76, 0.55);
+            box-shadow: 0 0 30px rgba(201, 168, 76, 0.12);
+        }
+        .old-price {
+            text-decoration: line-through;
+            text-decoration-thickness: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-glass transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="https://sauna-yuru.netlify.app/" class="flex items-center space-x-3 hover:opacity-75 transition duration-300">
+                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-14 sm:h-9 w-auto logo-invert">
+                        <span class="font-cinzel text-lg tracking-[0.25em] text-white hidden sm:block">Yu-Ru</span>
+                    </a>
+                </div>
+                <nav class="flex space-x-6 md:space-x-10 items-center">
+                    <a href="https://sauna-yuru.netlify.app/" class="text-xs tracking-[0.25em] text-yu-text/70 hover:text-yu-gold transition duration-300 font-serif hidden sm:block">トップページ</a>
+                    <a href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer" class="px-5 md:px-7 py-2.5 border border-yu-gold/70 text-yu-gold hover:bg-yu-gold hover:text-yu-black transition duration-400 font-serif text-xs tracking-[0.25em]">
+                        ご予約
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="yuruday-hero" class="relative min-h-screen flex items-center justify-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-yu-green/20 to-yu-dark"></div>
+
+            <div class="relative z-10 text-center px-4 py-40 flex flex-col items-center justify-center">
+                <p class="inline-block border border-yu-gold/70 text-yu-gold px-6 py-2 text-xs tracking-[0.4em] mb-10 font-serif">
+                    毎月20日・30日
+                </p>
+                <h1 class="font-cinzel text-5xl md:text-7xl tracking-[0.1em] text-white font-normal mb-2 drop-shadow-2xl">
+                    Yu-Ru<span class="font-serif text-3xl md:text-5xl">の日</span>
+                </h1>
+                <div class="gold-line my-8"></div>
+                <p class="font-serif text-base md:text-2xl tracking-[0.2em] text-yu-text/90 font-light leading-relaxed mb-12">
+                    月に二度だけ、<br class="md:hidden">いつもの贅沢を特別な価格で。
+                </p>
+
+                <!-- 価格サマリー -->
+                <div class="flex flex-col sm:flex-row items-stretch gap-4 md:gap-6 w-full max-w-2xl">
+                    <div class="flex-1 border border-white/15 bg-yu-dark/60 backdrop-blur-sm px-6 py-5">
+                        <p class="font-cinzel text-yu-text/70 text-xs tracking-[0.25em] mb-2">20<span class="font-serif">日</span> ｜ Standard</p>
+                        <p class="font-cinzel text-white text-3xl md:text-4xl tracking-widest">5,000<span class="font-serif text-sm font-light text-yu-subtext ml-1">円</span></p>
+                    </div>
+                    <div class="flex-1 border border-yu-gold/50 bg-yu-gold/10 backdrop-blur-sm px-6 py-5">
+                        <p class="font-cinzel text-yu-gold/80 text-xs tracking-[0.25em] mb-2">30<span class="font-serif">日</span> ｜ Premium</p>
+                        <p class="font-cinzel text-yu-gold text-3xl md:text-4xl tracking-widest">7,000<span class="font-serif text-sm font-light text-yu-gold/60 ml-1">円</span></p>
+                    </div>
+                </div>
+                <p class="font-serif text-[11px] text-yu-subtext mt-4 tracking-wider">いずれも税込・1組あたり／2時間の完全貸切</p>
+            </div>
+        </section>
+
+        <!-- 特別価格 詳細 -->
+        <section class="py-28 bg-yu-dark relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="section-label">特別価格</span>
+                    <h2 class="section-heading font-cinzel text-3xl md:text-4xl text-white">Special Price</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+                    <!-- 20日 Standard -->
+                    <div class="price-card p-8 md:p-10 text-center">
+                        <p class="day-badge text-yu-text/60 text-5xl md:text-6xl mb-2">20</p>
+                        <p class="font-serif text-xs tracking-[0.3em] text-yu-subtext mb-6">DAY ／ 毎月20日</p>
+                        <div class="w-8 h-px bg-white/20 mx-auto mb-6"></div>
+                        <h3 class="font-cinzel text-xl tracking-[0.2em] text-white mb-1">Standard</h3>
+                        <p class="font-serif text-xs text-yu-subtext tracking-widest mb-8">こだわりのテントサウナ</p>
+
+                        <p class="font-serif text-sm text-yu-subtext old-price mb-2">通常 10,000円</p>
+                        <p class="font-cinzel text-white text-5xl tracking-widest">
+                            5,000<span class="font-serif text-base font-light text-yu-subtext ml-2">円</span>
+                        </p>
+                        <p class="font-serif text-[11px] text-yu-subtext mt-3 tracking-wider">税込／2時間・完全貸切</p>
+                    </div>
+
+                    <!-- 30日 Premium -->
+                    <div class="price-card is-premium p-8 md:p-10 text-center">
+                        <p class="day-badge text-yu-gold/70 text-5xl md:text-6xl mb-2">30</p>
+                        <p class="font-serif text-xs tracking-[0.3em] text-yu-gold/60 mb-6">DAY ／ 毎月30日</p>
+                        <div class="w-8 h-px bg-yu-gold/40 mx-auto mb-6"></div>
+                        <h3 class="font-cinzel text-xl tracking-[0.2em] text-yu-gold mb-1">Premium</h3>
+                        <p class="font-serif text-xs text-yu-subtext tracking-widest mb-8">極上トレーラーサウナ</p>
+
+                        <p class="font-serif text-sm text-yu-subtext old-price mb-2">通常 14,000円</p>
+                        <p class="font-cinzel text-yu-gold text-5xl tracking-widest">
+                            7,000<span class="font-serif text-base font-light text-yu-gold/60 ml-2">円</span>
+                        </p>
+                        <p class="font-serif text-[11px] text-yu-subtext mt-3 tracking-wider">税込／2時間・完全貸切</p>
+                    </div>
+
+                </div>
+
+                <p class="text-center font-serif text-sm text-yu-text/70 leading-loose tracking-wider mt-12">
+                    ご利用時間は通常営業と同じです。ご予約状況に応じて、お好きなお時間をお選びいただけます。
+                </p>
+            </div>
+        </section>
+
+        <!-- ご利用にあたって -->
+        <section class="py-24 bg-yu-green border-t border-yu-gold/8">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14">
+                    <span class="section-label">ご利用にあたって</span>
+                    <h2 class="section-heading font-cinzel text-2xl md:text-3xl text-white">Information</h2>
+                </div>
+
+                <div class="border border-yu-gold/15 bg-yu-dark/60 p-8 md:p-10">
+                    <ul class="space-y-4 font-serif text-sm text-yu-text/70 leading-loose tracking-wider font-light">
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span><strong class="text-yu-text font-normal">2月は30日がないため、月末日（28日／閏年は29日）にPremiumを実施</strong>いたします。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span><strong class="text-yu-text font-normal">実施日が定休日（毎週月曜・木曜）と重なる場合は、前日に繰り上げて実施</strong>いたします。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>対象となるサウナは、20日はStandard、30日はPremiumのみです。他のサウナは通常料金でのご利用となります。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>Webからの完全事前予約・事前決済制です。ご予約状況により、ご希望に沿えない場合がございます。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>水風呂・休憩スペース・ウェルカムドリンク・アメニティは通常どおりご利用いただけます。</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="w-1 h-1 bg-yu-gold rounded-full mt-3 flex-shrink-0"></span>
+                            <span>水着のご着用をお願いしております。お忘れの場合はレンタル水着（1,000円）もございますが、枚数に限りがあり、ご用意できない場合はご利用いただけません。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-28 bg-yu-dark border-t border-yu-gold/8 text-center">
+            <div class="max-w-2xl mx-auto px-4">
+                <span class="section-label">Reservation</span>
+                <h2 class="section-heading font-cinzel text-2xl md:text-3xl mb-12 text-white font-normal tracking-[0.2em]">Booking</h2>
+                <p class="font-serif text-yu-subtext text-sm mb-12 leading-loose tracking-wider font-light">
+                    「Yu-Ruの日」は月に二度だけの特別価格です。<br>
+                    ご希望の日程が決まりましたら、お早めにご予約ください。
+                </p>
+                <a href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer" class="inline-block bg-yu-gold text-yu-black font-serif text-sm tracking-[0.3em] px-14 py-4 hover:bg-yu-gold-light transition duration-400 shadow-[0_0_30px_rgba(201,168,76,0.2)]">
+                    空き状況・ご予約
+                </a>
+                <p class="mt-10">
+                    <a href="https://sauna-yuru.netlify.app/" class="font-serif text-xs tracking-[0.25em] text-yu-subtext hover:text-yu-gold transition duration-300">
+                        ← トップページへ戻る
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-yu-dark border-t border-white/5 pt-16 pb-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-10 w-auto mb-3 logo-invert opacity-60 mx-auto" loading="lazy" decoding="async">
+            <p class="font-cinzel text-sm tracking-[0.3em] text-yu-text/60 mb-8">Yu-Ru</p>
+
+            <div class="flex justify-center space-x-6 mb-10">
+                <a href="https://www.instagram.com/sauna_yu_ru/" target="_blank" rel="noopener noreferrer" aria-label="公式Instagram" class="text-yu-subtext hover:text-yu-gold transition duration-300"><i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i></a>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" aria-label="公式LINE" class="text-yu-subtext hover:text-[#06C755] transition duration-300"><i class="fa-brands fa-line text-lg" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[10px] md:text-xs text-yu-subtext mb-10 tracking-widest font-serif">
+                <a href="../tokushoho.html" class="hover:text-yu-gold transition-colors">特定商取引法に基づく表記</a>
+                <a href="../privacy-policy.html" class="hover:text-yu-gold transition-colors">プライバシーポリシー</a>
+                <a href="../cancel-policy.html" class="hover:text-yu-gold transition-colors">キャンセルポリシー</a>
+            </div>
+
+            <p class="text-[10px] text-yu-subtext/60 font-cinzel tracking-[0.35em] uppercase">© 2026 Yu-Ru. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // GA4: LINE・Square予約リンクのクリック計測
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href]').forEach(function (link) {
+                var href = link.href;
+                var eventName = null;
+                if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
+                else if (href.indexOf('square.site') !== -1 || href.indexOf('squareup.com') !== -1) eventName = 'square_booking_click';
+                if (eventName) {
+                    link.addEventListener('click', function () {
+                        if (typeof gtag === 'function') {
+                            gtag('event', eventName, { link_url: href, page_location: location.href });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
