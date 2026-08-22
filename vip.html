@@ -29,7 +29,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Serif+JP:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -38,23 +38,24 @@
                 extend: {
                     fontFamily: {
                         serif: ['"Noto Serif JP"', 'serif'],
-                        en: ['"Cormorant Garamond"', 'serif'],
+                        // サイト全体と統一（TOP・BBQ・Yu-Ruの日と同じ Cinzel）
+                        en: ['"Cinzel"', 'serif'],
                     },
                     colors: {
+                        // サイト共通のカラーに統一
                         gold: {
-                            DEFAULT: '#D4AF37',
-                            light: '#F3E5AB',
+                            DEFAULT: '#C9A84C',
+                            light: '#E8D5A3',
                             dark: '#AA8822',
                         },
-                        // VIPページの黒と差別化するための深い森の緑
                         forest: {
-                            950: '#08100A', // ほぼ黒の深緑
-                            900: '#0F1C12', // 深緑
-                            800: '#1A2F1D', // 濃い緑
+                            950: '#050a06', // yu-dark と同一
+                            900: '#0B120C', // yu-green と同一
+                            800: '#0e1a0f', // カード背景（TOPの room-card と同一）
                         }
                     },
                     backgroundImage: {
-                        'gold-gradient': 'linear-gradient(135deg, #AA8822 0%, #D4AF37 50%, #F3E5AB 100%)',
+                        'gold-gradient': 'linear-gradient(135deg, #AA8822 0%, #C9A84C 50%, #E8D5A3 100%)',
                     }
                 }
             }
@@ -62,9 +63,13 @@
     </script>
     <style>
         body {
-            background-color: #08100A; /* bg-forest-950 */
-            color: #f5f5f5;
+            background-color: #050a06; /* サイト共通の背景色 */
+            color: #EDE8DF;            /* サイト共通の文字色 */
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "palt" 1;
+            letter-spacing: 0.06em;
         }
         .fade-up {
             opacity: 0;
@@ -109,36 +114,32 @@
             transform: rotate(180deg);
         }
 
-        /* Premium Button Styles */
+        /* ボタン：TOP・BBQ・Yu-Ruの日と同一のフラットなゴールド */
         .btn-premium {
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, #AA8822 0%, #D4AF37 50%, #F3E5AB 100%);
-            color: #08100A; /* bg-forest-950 */
-            transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-            box-shadow: 0 10px 20px -5px rgba(212, 175, 55, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-            z-index: 1;
-        }
-        .btn-premium::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
-            transform: skewX(-20deg);
-            animation: shine 4s infinite;
-            z-index: -1;
+            background: #C9A84C;
+            color: #1A1A1A;
+            font-family: 'Noto Serif JP', serif;
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 0 30px rgba(201, 168, 76, 0.2);
         }
         .btn-premium:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 15px 30px -5px rgba(212, 175, 55, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+            background: #E8D5A3;
+            box-shadow: 0 0 35px rgba(201, 168, 76, 0.35);
         }
-        @keyframes shine {
-            0% { left: -100%; }
-            20% { left: 200%; }
-            100% { left: 200%; }
+
+        /* ロゴ：TOP・BBQ・Yu-Ruの日と同一の処理 */
+        .logo-invert {
+            filter: invert(1) brightness(1.8);
+            mix-blend-mode: lighten;
+        }
+
+        /* 見出し：TOPページの section-heading と同じ金の下線 */
+        .section-rule {
+            display: block;
+            width: 2.5rem;
+            height: 1px;
+            background: #C9A84C;
+            margin: 1.2rem auto 0;
         }
     </style>
 </head>
@@ -146,14 +147,18 @@
 
     <!-- Header -->
     <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-forest-950/80 backdrop-blur-md border-b border-white/10" id="header">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex justify-between items-center">
-            <a href="https://sauna-yuru.netlify.app/" class="hover:opacity-80 transition-opacity">
-                <div class="font-en text-xl md:text-2xl tracking-widest text-gold font-semibold">Yu-Ru</div>
-            </a>
-            <!-- モバイルでも表示されるように hidden を削除し、パディングを調整 -->
-            <a href="https://lin.ee/Wq2CP7B" target="_blank" rel="noopener noreferrer" class="inline-block btn-premium px-4 py-2 md:px-6 md:py-2.5 rounded-sm text-xs md:text-sm font-bold tracking-wider">
-                お問い合わせ
-            </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="https://sauna-yuru.netlify.app/" class="flex items-center space-x-3 hover:opacity-75 transition duration-300">
+                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-14 sm:h-9 w-auto logo-invert">
+                        <span class="font-en text-lg tracking-[0.25em] text-white hidden sm:block">Yu-Ru</span>
+                    </a>
+                </div>
+                <a href="#contact" class="inline-block btn-premium px-4 py-2 md:px-6 md:py-2.5 rounded-sm text-xs md:text-sm font-bold tracking-wider">
+                    導入のご相談
+                </a>
+            </div>
         </div>
     </header>
 
@@ -166,7 +171,7 @@
         </div>
 
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
-            <div class="fade-up inline-block border border-gold text-gold px-5 py-2 rounded-full text-xs md:text-sm tracking-widest mb-8 bg-forest-950/50 backdrop-blur-sm shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+            <div class="fade-up inline-block border border-gold text-gold px-5 py-2 rounded-full text-xs md:text-sm tracking-widest mb-8 bg-forest-950/50 backdrop-blur-sm shadow-[0_0_15px_rgba(201,168,76,0.2)]">
                 <span class="font-bold">法人・福利厚生向け</span> 回数買い切りプラン
             </div>
 
@@ -179,9 +184,12 @@
                 <span class="mt-5 block text-2xl md:text-4xl lg:text-5xl opacity-90 text-gray-200">健康経営を支える、<br class="md:hidden">至高のプライベート空間。</span>
             </h1>
 
-            <div class="fade-up delay-300">
-                <a href="#courses" class="inline-block btn-premium px-12 py-5 rounded-sm text-lg md:text-xl font-bold tracking-widest">
-                    法人プランを見る
+            <div class="fade-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#courses" class="inline-block btn-premium px-10 py-4 md:px-12 md:py-5 rounded-sm text-base md:text-xl font-bold tracking-widest">
+                    プランと料金を見る
+                </a>
+                <a href="#contact" class="inline-block border border-gold/70 text-gold px-10 py-4 md:px-12 md:py-5 rounded-sm text-base md:text-xl font-bold tracking-widest hover:bg-gold hover:text-forest-950 transition-colors backdrop-blur-sm bg-forest-950/40">
+                    導入を相談する
                 </a>
             </div>
         </div>
@@ -192,7 +200,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-20 md:mb-32 fade-up">
                 <p class="font-en text-gold tracking-[0.3em] mb-4 text-xs md:text-sm font-semibold">CONCEPT</p>
-                <h2 class="text-2xl md:text-4xl tracking-widest font-semibold text-white">日常を忘却する、3つのこだわり</h2>
+                <h2 class="text-2xl md:text-4xl tracking-widest font-semibold text-white">福利厚生に、Yu-Ruが選ばれる理由</h2>
                 <div class="w-8 h-px bg-gold mx-auto mt-8"></div>
             </div>
 
@@ -206,9 +214,9 @@
                     </div>
                     <div class="w-full md:w-1/2 fade-up delay-100 relative">
                         <div class="absolute -top-16 -left-6 font-en text-8xl text-white/5 font-bold pointer-events-none hidden md:block">01</div>
-                        <h3 class="text-xl md:text-2xl font-semibold mb-6 tracking-wider text-gold text-center md:text-left relative z-10">五感を研ぎ澄ます「薪サウナ」</h3>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-6 tracking-wider text-gold text-center md:text-left relative z-10">「使われない福利厚生」になりません</h3>
                         <p class="text-gray-300 leading-loose tracking-wide text-sm md:text-base text-center md:text-left">
-                            こだわりの薪ストーブを採用。電熱式では決して味わえない、パチパチとはぜる音、柔らかな熱、そして深い森のような薪の香り。原始的な炎の揺らぎを見つめながら、心身を解放し、極上のリラックスへと誘います。
+                            制度だけ整えても使われない——福利厚生でよくある課題です。Yu-Ruは薪ストーブならではの香りと炎の揺らぎ、完全貸切という体験そのものに価値があるため、「行きたいから行く」が自然に生まれます。買い切り制なので、使った分だけが無駄なく成果になります。
                         </p>
                     </div>
                 </div>
@@ -222,9 +230,9 @@
                     </div>
                     <div class="w-full md:w-1/2 fade-up delay-100 relative">
                         <div class="absolute -top-16 -right-6 font-en text-8xl text-white/5 font-bold pointer-events-none hidden md:block">02</div>
-                        <h3 class="text-xl md:text-2xl font-semibold mb-6 tracking-wider text-gold text-center md:text-left relative z-10">穏やかな「大自然の借景」</h3>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-6 tracking-wider text-gold text-center md:text-left relative z-10">完全貸切だから、社内利用に向いています</h3>
                         <p class="text-gray-300 leading-loose tracking-wide text-sm md:text-base text-center md:text-left">
-                            田園や木々といった自然に囲まれた風景を独り占め。誰の目も気にせず自然の息吹を感じながら、至高の自然外気浴をご堪能ください。
+                            他のお客様と一切顔を合わせない完全貸切です。上司と部下、経営者同士、社員とそのご家族——誰と過ごしても周囲を気にする必要がありません。チーム単位のリトリートや、社外の方をお招きする接待利用にも安心してお使いいただけます。
                         </p>
                     </div>
                 </div>
@@ -238,9 +246,9 @@
                     </div>
                     <div class="w-full md:w-1/2 fade-up delay-100 relative">
                         <div class="absolute -top-16 -left-6 font-en text-8xl text-white/5 font-bold pointer-events-none hidden md:block">03</div>
-                        <h3 class="text-xl md:text-2xl font-semibold mb-6 tracking-wider text-gold text-center md:text-left relative z-10">働く人が「深く休める」空間</h3>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-6 tracking-wider text-gold text-center md:text-left relative z-10">月額不要。予算が読める買い切り制</h3>
                         <p class="text-gray-300 leading-loose tracking-wide text-sm md:text-base text-center md:text-left">
-                            日々のストレスから離れ、心身をゆるめるために。誰にも邪魔されない完全プライベートな貸切空間で、静かに自分と向き合う時間を。働き方が多様化する今、深く休まるひとときは、これからの大切なセルフケアです。
+                            毎月の固定費が発生する契約ではなく、ご利用回数分を一度ご購入いただくだけの買い切り制です。追加費用が発生しないため予算計画が立てやすく、稟議も通しやすい設計にしています。鹿児島空港から車で約10分と、出張や来客の前後にも組み込みやすい立地です。
                         </p>
                     </div>
                 </div>
@@ -266,10 +274,10 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
                 <!-- 100回プラン -->
-                <div class="fade-up bg-forest-900 border border-gold/50 rounded-sm overflow-hidden group relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(212,175,55,0.15)] transition-all duration-300">
+                <div class="fade-up bg-forest-900 border border-gold/50 rounded-sm overflow-hidden group relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(201,168,76,0.15)] transition-all duration-300">
                     <div class="absolute top-0 right-0 bg-gold text-forest-950 px-4 py-1.5 font-bold text-xs tracking-widest z-10 shadow-sm">最もお得</div>
                     <div class="h-56 relative overflow-hidden">
-                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/03/IMG_5906.jpg" alt="100回プラン" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg" alt="極上トレーラーサウナ" loading="lazy" decoding="async" style="object-position:center 45%;" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                          <div class="absolute top-0 left-0 bg-forest-950/60 backdrop-blur-sm text-gold px-5 py-2 font-bold tracking-widest text-xs uppercase">100 Times</div>
                     </div>
                     <div class="p-8">
@@ -286,9 +294,9 @@
                 </div>
 
                 <!-- 50回プラン -->
-                <div class="fade-up delay-100 bg-forest-900 border border-white/10 rounded-sm overflow-hidden group hover:border-gold/30 hover:shadow-[0_0_20px_rgba(212,175,55,0.1)] transition-all duration-300 relative shadow-md">
+                <div class="fade-up delay-100 bg-forest-900 border border-white/10 rounded-sm overflow-hidden group hover:border-gold/30 hover:shadow-[0_0_20px_rgba(201,168,76,0.1)] transition-all duration-300 relative shadow-md">
                     <div class="h-56 relative overflow-hidden">
-                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/04/Gemini_Generated_Image_88jien88jien88ji.png" alt="50回プラン" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/08/80026F87-CD1B-46F7-BD61-ECD6B61131C6.png" alt="ロウリュとサウナストーン" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-0 left-0 bg-forest-950/60 backdrop-blur-sm text-white px-5 py-2 font-bold tracking-widest text-xs uppercase">50 Times</div>
                     </div>
                     <div class="p-8">
@@ -305,9 +313,9 @@
                 </div>
 
                 <!-- 25回プラン -->
-                <div class="fade-up delay-200 bg-forest-900 border border-white/10 rounded-sm overflow-hidden group hover:border-gold/30 hover:shadow-[0_0_20px_rgba(212,175,55,0.1)] transition-all duration-300 relative shadow-md">
+                <div class="fade-up delay-200 bg-forest-900 border border-white/10 rounded-sm overflow-hidden group hover:border-gold/30 hover:shadow-[0_0_20px_rgba(201,168,76,0.1)] transition-all duration-300 relative shadow-md">
                     <div class="h-56 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=1080&auto=format&fit=crop" alt="25回プラン" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <img src="https://sauna-jpn.com/wp-content/uploads/2026/08/IMG_6299.jpg" alt="桜島と田園風景" loading="lazy" decoding="async" style="object-position:center 42%;" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-0 left-0 bg-forest-950/60 backdrop-blur-sm text-white px-5 py-2 font-bold tracking-widest text-xs uppercase">25 Times</div>
                     </div>
                     <div class="p-8">
@@ -323,33 +331,141 @@
                     </div>
                 </div>
             </div>
+
+            <!-- プラン直下のCTA -->
+            <div class="mt-16 md:mt-20 text-center fade-up">
+                <p class="text-gray-300 text-sm md:text-base mb-6 tracking-wider">
+                    ご利用人数やお支払い方法など、貴社に合わせてご案内いたします。
+                </p>
+                <a href="#contact" class="inline-block btn-premium px-10 py-4 md:px-14 md:py-5 rounded-sm text-base md:text-lg font-bold tracking-widest">
+                    導入について相談する（無料）
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 導入の流れ -->
+    <section class="py-24 md:py-28 bg-forest-900 border-t border-white/5 relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <p class="font-en text-gold tracking-[0.3em] mb-4 text-xs md:text-sm font-semibold">FLOW</p>
+                <h2 class="text-2xl md:text-3xl tracking-widest font-semibold text-white">ご導入までの流れ</h2>
+                <div class="w-8 h-px bg-gold mx-auto mt-8"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-5">
+                <div class="fade-up bg-forest-950 border border-white/10 p-7 relative">
+                    <p class="font-en text-gold/40 text-4xl font-bold mb-3">01</p>
+                    <h3 class="text-white text-base font-semibold mb-3 tracking-wider">お問い合わせ</h3>
+                    <p class="text-gray-400 text-xs leading-loose">フォームまたは公式LINEよりご連絡ください。ご検討中のプランが未定でも構いません。</p>
+                </div>
+                <div class="fade-up delay-100 bg-forest-950 border border-white/10 p-7 relative">
+                    <p class="font-en text-gold/40 text-4xl font-bold mb-3">02</p>
+                    <h3 class="text-white text-base font-semibold mb-3 tracking-wider">ご案内・お見積もり</h3>
+                    <p class="text-gray-400 text-xs leading-loose">担当者より、プラン内容とお支払い方法をご案内します。ご希望に応じてお見積もりをお出しします。</p>
+                </div>
+                <div class="fade-up delay-200 bg-forest-950 border border-white/10 p-7 relative">
+                    <p class="font-en text-gold/40 text-4xl font-bold mb-3">03</p>
+                    <h3 class="text-white text-base font-semibold mb-3 tracking-wider">ご契約</h3>
+                    <p class="text-gray-400 text-xs leading-loose">内容にご納得いただけましたら、ご契約・お支払いのお手続きに進みます。</p>
+                </div>
+                <div class="fade-up delay-300 bg-forest-950 border border-gold/30 p-7 relative">
+                    <p class="font-en text-gold/60 text-4xl font-bold mb-3">04</p>
+                    <h3 class="text-gold text-base font-semibold mb-3 tracking-wider">ご利用開始</h3>
+                    <p class="text-gray-400 text-xs leading-loose">以降は、ご利用のたびにご予約いただくだけ。回数を使い切るまでご自由にお使いいただけます。</p>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-400 text-xs md:text-sm mt-10 tracking-wider fade-up">
+                ご導入前に施設をご覧になりたい場合は、見学も承っております。お気軽にお申し付けください。
+            </p>
         </div>
     </section>
 
     <!-- Closing (CTA) -->
-    <section class="py-32 relative overflow-hidden" id="cta">
+    <section class="py-24 md:py-32 relative overflow-hidden scroll-mt-20" id="contact">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1582282577232-090c8aef9f35?q=80&w=2070&auto=format&fit=crop'); filter: grayscale(50%) brightness(0.3);"></div>
             <div class="absolute inset-0 bg-forest-950/80"></div>
         </div>
 
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <p class="fade-up font-en text-gold tracking-[0.3em] mb-4 text-xs md:text-sm font-semibold">CONTACT</p>
             <h2 class="fade-up text-2xl md:text-4xl font-semibold tracking-widest leading-relaxed mb-8 text-white">
-                至高のプライベート空間を、<br>貴社の福利厚生に。
+                導入のご相談・お見積もり
             </h2>
 
-            <p class="fade-up delay-100 text-base md:text-lg text-gray-300 leading-loose mb-12">
-                従業員の健康増進・福利厚生として、<br class="hidden md:block">
-                <strong class="text-gold text-xl border-b border-gold/50 pb-1 mx-1">回数買い切りプラン</strong> をご用意しております。<br>
-                <span class="text-xs md:text-sm text-gray-400 mt-5 block">※プラン内容やお支払い方法など、お気軽にご相談ください。</span>
+            <p class="fade-up delay-100 text-base md:text-lg text-gray-300 leading-loose mb-14">
+                プラン内容・お見積もり・施設見学など、<br class="hidden md:block">
+                どのようなご相談でも承ります。<span class="text-gold">ご相談は無料です。</span><br>
+                <span class="text-xs md:text-sm text-gray-400 mt-5 block">※ご検討段階でのお問い合わせも歓迎いたします。しつこい営業は一切いたしません。</span>
             </p>
 
-            <p class="fade-up delay-200 text-lg md:text-xl font-medium text-white mb-12 tracking-widest">貴社の健康経営に、極上の「ととのい」を。</p>
+            <!-- 問い合わせフォーム -->
+            <div class="fade-up delay-200 bg-forest-950/85 backdrop-blur-sm border border-gold/25 p-7 md:p-12 text-left">
+                <form name="corporate-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks">
+                    <input type="hidden" name="form-name" value="corporate-inquiry">
+                    <p class="hidden"><label>この欄は空のままにしてください：<input name="bot-field"></label></p>
 
-            <div class="fade-up delay-300">
-                <a href="https://lin.ee/Wq2CP7B" target="_blank" rel="noopener noreferrer" class="inline-block btn-premium px-12 py-5 md:px-20 md:py-6 rounded-sm text-xl md:text-2xl font-bold tracking-widest">
-                    法人プランを相談する
-                </a>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 mb-6">
+                        <div>
+                            <label for="company" class="block text-xs text-gold tracking-widest mb-2">貴社名 <span class="text-gray-500">（必須）</span></label>
+                            <input type="text" id="company" name="貴社名" required autocomplete="organization"
+                                class="w-full bg-forest-900 border border-white/15 text-white text-sm px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                        <div>
+                            <label for="name" class="block text-xs text-gold tracking-widest mb-2">ご担当者名 <span class="text-gray-500">（必須）</span></label>
+                            <input type="text" id="name" name="ご担当者名" required autocomplete="name"
+                                class="w-full bg-forest-900 border border-white/15 text-white text-sm px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs text-gold tracking-widest mb-2">メールアドレス <span class="text-gray-500">（必須）</span></label>
+                            <input type="email" id="email" name="メールアドレス" required autocomplete="email"
+                                class="w-full bg-forest-900 border border-white/15 text-white text-sm px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                        <div>
+                            <label for="tel" class="block text-xs text-gold tracking-widest mb-2">お電話番号 <span class="text-gray-500">（任意）</span></label>
+                            <input type="tel" id="tel" name="お電話番号" autocomplete="tel"
+                                class="w-full bg-forest-900 border border-white/15 text-white text-sm px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="plan" class="block text-xs text-gold tracking-widest mb-2">ご検討中のプラン <span class="text-gray-500">（任意）</span></label>
+                        <select id="plan" name="ご検討中のプラン"
+                            class="w-full bg-forest-900 border border-white/15 text-white text-sm px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            <option value="未定・相談したい">未定・相談したい</option>
+                            <option value="100回プラン">100回プラン（800,000円）</option>
+                            <option value="50回プラン">50回プラン（450,000円）</option>
+                            <option value="25回プラン">25回プラン（250,000円）</option>
+                            <option value="まずは施設見学を希望">まずは施設見学を希望</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-8">
+                        <label for="message" class="block text-xs text-gold tracking-widest mb-2">ご相談内容 <span class="text-gray-500">（任意）</span></label>
+                        <textarea id="message" name="ご相談内容" rows="4"
+                            class="w-full bg-forest-900 border border-white/15 text-white text-sm px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors resize-y"
+                            placeholder="ご利用予定人数、お支払い方法のご希望、ご質問などをご記入ください。"></textarea>
+                    </div>
+
+                    <p class="text-[11px] text-gray-400 leading-loose mb-7">
+                        ご入力いただいた情報は、お問い合わせへの対応にのみ使用いたします。詳しくは<a href="../privacy-policy.html" class="text-gold hover:text-gold-light underline underline-offset-2">プライバシーポリシー</a>をご確認ください。
+                    </p>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn-premium px-12 py-4 md:px-16 md:py-5 rounded-sm text-base md:text-lg font-bold tracking-widest cursor-pointer">
+                            この内容で相談する
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-9 pt-7 border-t border-white/10 text-center">
+                    <p class="text-xs text-gray-400 tracking-wider mb-4">お急ぎの場合や、まずは気軽に聞いてみたい場合は</p>
+                    <a href="https://lin.ee/Wq2CP7B" target="_blank" rel="noopener noreferrer" class="inline-block border border-gold/60 text-gold px-8 py-3 rounded-sm text-sm tracking-widest hover:bg-gold hover:text-forest-950 transition-colors">
+                        公式LINEで相談する
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -364,6 +480,45 @@
             </div>
 
             <div class="space-y-2 fade-up delay-100">
+                <!-- 法人向けFAQ 01 -->
+                <div class="faq-item border-b border-white/10 pb-2">
+                    <button class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="text-base md:text-lg text-gray-200 font-medium tracking-wide pr-4 group-hover:text-gold transition-colors">支払い方法は選べますか？請求書払いは可能ですか？</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-500 group-hover:text-gold transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content text-gray-300 text-sm md:text-base leading-loose">
+                        <div class="pb-6 pr-8">
+                            お支払い方法は、貴社のご事情に合わせてご相談を承っております。社内規程や経理処理の都合などがございましたら、お問い合わせの際にお知らせください。可能な範囲で柔軟に対応いたします。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 法人向けFAQ 02 -->
+                <div class="faq-item border-b border-white/10 pb-2">
+                    <button class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="text-base md:text-lg text-gray-200 font-medium tracking-wide pr-4 group-hover:text-gold transition-colors">購入した回数は、誰でも使えますか？</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-500 group-hover:text-gold transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content text-gray-300 text-sm md:text-base leading-loose">
+                        <div class="pb-6 pr-8">
+                            はい。社員の方はもちろん、そのご家族や、接待でお招きするお客様など、貴社の判断でご自由にご利用いただけます。ご利用者を限定する必要はございません。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 法人向けFAQ 03 -->
+                <div class="faq-item border-b border-white/10 pb-2">
+                    <button class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="text-base md:text-lg text-gray-200 font-medium tracking-wide pr-4 group-hover:text-gold transition-colors">契約前に施設を見学できますか？</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-500 group-hover:text-gold transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content text-gray-300 text-sm md:text-base leading-loose">
+                        <div class="pb-6 pr-8">
+                            はい、承っております。写真だけでは伝わりにくい空間の広さや雰囲気を、ご契約前にご確認いただけます。ご希望の日程をお問い合わせフォームまたは公式LINEよりお知らせください。
+                        </div>
+                    </div>
+                </div>
+
                 <!-- FAQ Item 1 -->
                 <div class="faq-item border-b border-white/10 pb-2">
                     <button class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.parentElement.classList.toggle('active')">
