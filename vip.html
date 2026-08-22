@@ -343,8 +343,128 @@
         </div>
     </section>
 
+    <!-- 通常ご予約との比較 -->
+    <section class="py-24 md:py-32 bg-forest-900 border-t border-white/5 relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <p class="font-en text-gold tracking-[0.3em] mb-4 text-xs md:text-sm font-semibold">COMPARISON</p>
+                <h2 class="text-2xl md:text-3xl tracking-widest font-semibold text-white">通常ご予約との比較</h2>
+                <span class="section-rule"></span>
+                <p class="text-gray-300 mt-8 max-w-2xl mx-auto leading-loose text-sm md:text-base">
+                    法人プランは、ご利用のたびにお好きなサウナをお選びいただけます。<br class="hidden md:block">
+                    最上位の Premium（通常14,000円）をご利用の場合で比較しています。
+                </p>
+            </div>
+
+            <!-- 金額の比較：カード形式（全デバイス共通・横スクロールなし） -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+
+                <!-- 100回 -->
+                <div class="fade-up relative border border-gold/40 bg-gradient-to-b from-forest-800 to-forest-950 p-7 md:p-8">
+                    <span class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold to-transparent"></span>
+                    <p class="text-center text-white text-base tracking-[0.2em] mb-7">100回プラン</p>
+                    <div class="flex items-center justify-between text-xs mb-3">
+                        <span class="text-gray-500 tracking-wider">通常ご予約なら</span>
+                        <span class="text-gray-500 line-through font-en tracking-wider">1,400,000円</span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs pb-6 border-b border-white/10">
+                        <span class="text-gray-400 tracking-wider">法人プラン</span>
+                        <span class="text-white font-en text-sm tracking-wider">800,000円</span>
+                    </div>
+                    <div class="pt-6 text-center">
+                        <p class="text-[10px] text-gold/70 tracking-[0.3em] mb-2">SAVE</p>
+                        <p class="font-en text-gold text-3xl md:text-4xl tracking-wider leading-none">600,000<span class="font-serif text-sm ml-1">円</span></p>
+                    </div>
+                </div>
+
+                <!-- 50回 -->
+                <div class="fade-up delay-100 relative border border-white/10 bg-forest-950 p-7 md:p-8">
+                    <p class="text-center text-white text-base tracking-[0.2em] mb-7">50回プラン</p>
+                    <div class="flex items-center justify-between text-xs mb-3">
+                        <span class="text-gray-500 tracking-wider">通常ご予約なら</span>
+                        <span class="text-gray-500 line-through font-en tracking-wider">700,000円</span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs pb-6 border-b border-white/10">
+                        <span class="text-gray-400 tracking-wider">法人プラン</span>
+                        <span class="text-white font-en text-sm tracking-wider">450,000円</span>
+                    </div>
+                    <div class="pt-6 text-center">
+                        <p class="text-[10px] text-gold/70 tracking-[0.3em] mb-2">SAVE</p>
+                        <p class="font-en text-gold text-3xl md:text-4xl tracking-wider leading-none">250,000<span class="font-serif text-sm ml-1">円</span></p>
+                    </div>
+                </div>
+
+                <!-- 25回 -->
+                <div class="fade-up delay-200 relative border border-white/10 bg-forest-950 p-7 md:p-8">
+                    <p class="text-center text-white text-base tracking-[0.2em] mb-7">25回プラン</p>
+                    <div class="flex items-center justify-between text-xs mb-3">
+                        <span class="text-gray-500 tracking-wider">通常ご予約なら</span>
+                        <span class="text-gray-500 line-through font-en tracking-wider">350,000円</span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs pb-6 border-b border-white/10">
+                        <span class="text-gray-400 tracking-wider">法人プラン</span>
+                        <span class="text-white font-en text-sm tracking-wider">250,000円</span>
+                    </div>
+                    <div class="pt-6 text-center">
+                        <p class="text-[10px] text-gold/70 tracking-[0.3em] mb-2">SAVE</p>
+                        <p class="font-en text-gold text-3xl md:text-4xl tracking-wider leading-none">100,000<span class="font-serif text-sm ml-1">円</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 運用面の比較：2カラム対比（横スクロールなし） -->
+            <div class="mt-16 md:mt-20 fade-up">
+                <p class="text-center text-xs text-gold tracking-[0.3em] mb-10">運用面のちがい</p>
+
+                <div class="border border-white/10 bg-forest-950">
+                    <!-- 見出し行 -->
+                    <div class="grid grid-cols-2 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.2fr)] border-b border-gold/25">
+                        <div class="hidden md:block px-6 py-4"></div>
+                        <div class="px-5 md:px-6 py-4 text-center md:text-left text-[11px] md:text-xs text-gray-400 tracking-[0.2em]">都度ご予約</div>
+                        <div class="px-5 md:px-6 py-4 text-center md:text-left text-[11px] md:text-xs text-gold tracking-[0.2em] bg-gold/[0.06]">法人プラン</div>
+                    </div>
+
+                    <!-- 各項目 -->
+                    <div class="divide-y divide-white/[0.08]">
+                        <div class="grid grid-cols-2 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.2fr)]">
+                            <p class="col-span-2 md:col-span-1 px-5 md:px-6 pt-5 md:py-6 text-[11px] md:text-xs text-gray-500 tracking-[0.2em]">お支払い</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-gray-400 leading-relaxed">ご利用のたびに決済</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-white leading-relaxed bg-gold/[0.06]">最初に一括のみ</p>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.2fr)]">
+                            <p class="col-span-2 md:col-span-1 px-5 md:px-6 pt-5 md:py-6 text-[11px] md:text-xs text-gray-500 tracking-[0.2em]">経理処理</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-gray-400 leading-relaxed">利用回数分の精算が発生</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-white leading-relaxed bg-gold/[0.06]">1回で完結</p>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.2fr)]">
+                            <p class="col-span-2 md:col-span-1 px-5 md:px-6 pt-5 md:py-6 text-[11px] md:text-xs text-gray-500 tracking-[0.2em]">予算管理</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-gray-400 leading-relaxed">利用状況により変動</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-white leading-relaxed bg-gold/[0.06]">導入時に確定</p>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.2fr)]">
+                            <p class="col-span-2 md:col-span-1 px-5 md:px-6 pt-5 md:py-6 text-[11px] md:text-xs text-gray-500 tracking-[0.2em]">ご利用者</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-gray-400 leading-relaxed">ご予約者ご本人</p>
+                            <p class="px-5 md:px-6 py-4 md:py-6 text-xs md:text-sm text-white leading-relaxed bg-gold/[0.06]">社員・ご家族・取引先も可</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-500 text-[11px] md:text-xs mt-8 leading-loose fade-up">
+                ※「通常ご予約なら」は、Premium（14,000円／2時間・税込）を各回数分ご利用いただいた場合の金額です。
+            </p>
+
+            <div class="mt-14 text-center fade-up">
+                <a href="#contact" class="inline-block btn-premium px-10 py-4 md:px-14 md:py-5 rounded-sm text-base md:text-lg font-bold tracking-widest">
+                    導入について相談する（無料）
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- 導入の流れ -->
-    <section class="py-24 md:py-28 bg-forest-900 border-t border-white/5 relative">
+    <section class="py-24 md:py-28 bg-forest-950 border-t border-white/5 relative">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-16 fade-up">
                 <p class="font-en text-gold tracking-[0.3em] mb-4 text-xs md:text-sm font-semibold">FLOW</p>
@@ -353,22 +473,22 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-5">
-                <div class="fade-up bg-forest-950 border border-white/10 p-7 relative">
+                <div class="fade-up bg-forest-900 border border-white/10 p-7 relative">
                     <p class="font-en text-gold/40 text-4xl font-bold mb-3">01</p>
                     <h3 class="text-white text-base font-semibold mb-3 tracking-wider">お問い合わせ</h3>
                     <p class="text-gray-400 text-xs leading-loose">フォームまたは公式LINEよりご連絡ください。ご検討中のプランが未定でも構いません。</p>
                 </div>
-                <div class="fade-up delay-100 bg-forest-950 border border-white/10 p-7 relative">
+                <div class="fade-up delay-100 bg-forest-900 border border-white/10 p-7 relative">
                     <p class="font-en text-gold/40 text-4xl font-bold mb-3">02</p>
                     <h3 class="text-white text-base font-semibold mb-3 tracking-wider">ご案内・お見積もり</h3>
                     <p class="text-gray-400 text-xs leading-loose">担当者より、プラン内容とお支払い方法をご案内します。ご希望に応じてお見積もりをお出しします。</p>
                 </div>
-                <div class="fade-up delay-200 bg-forest-950 border border-white/10 p-7 relative">
+                <div class="fade-up delay-200 bg-forest-900 border border-white/10 p-7 relative">
                     <p class="font-en text-gold/40 text-4xl font-bold mb-3">03</p>
                     <h3 class="text-white text-base font-semibold mb-3 tracking-wider">ご契約</h3>
                     <p class="text-gray-400 text-xs leading-loose">内容にご納得いただけましたら、ご契約・お支払いのお手続きに進みます。</p>
                 </div>
-                <div class="fade-up delay-300 bg-forest-950 border border-gold/30 p-7 relative">
+                <div class="fade-up delay-300 bg-forest-900 border border-gold/30 p-7 relative">
                     <p class="font-en text-gold/60 text-4xl font-bold mb-3">04</p>
                     <h3 class="text-gold text-base font-semibold mb-3 tracking-wider">ご利用開始</h3>
                     <p class="text-gray-400 text-xs leading-loose">以降は、ご利用のたびにご予約いただくだけ。回数を使い切るまでご自由にお使いいただけます。</p>
