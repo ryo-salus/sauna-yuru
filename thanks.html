@@ -6,6 +6,20 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="description" content="お問い合わせありがとうございます。プライベート薪サウナ Yu-Ru">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMCCEZTTVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JMCCEZTTVN');
+        // 法人フォームの送信完了（このページは送信後にのみ到達する）
+        gtag('event', 'contact_form_submit', {
+            form_name: 'corporate-inquiry',
+            page_location: location.href
+        });
+    </script>
+
     <title>お問い合わせありがとうございます | プライベート薪サウナ Yu-Ru</title>
 
     <link rel="canonical" href="https://sauna-yuru.netlify.app/thanks">
