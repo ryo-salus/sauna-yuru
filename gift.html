@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMCCEZTTVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JMCCEZTTVN');
+    </script>
+
+    <meta name="description" content="鹿児島のプライベート薪サウナ Yu-Ru のギフトチケット。Premiumルーム2時間の完全貸切をそのまま贈れます。券面に金額は入りません。メールでお届け、そのままLINEやSNSで転送も可能。">
+    <meta property="og:title" content="Yu-Ru ギフトチケット｜大切な人に、深く休まる時間を贈る">
+    <meta property="og:description" content="モノではなく「ととのう時間」を。Premiumルーム2時間・完全貸切のギフトチケット。券面に金額は記載されません。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sauna-yuru.netlify.app/gift">
+    <meta property="og:image" content="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg">
+    <meta property="og:site_name" content="プライベート薪サウナ Yu-Ru">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="canonical" href="https://sauna-yuru.netlify.app/gift">
+    <link rel="icon" type="image/png" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+    <link rel="apple-touch-icon" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+
+    <title>ギフトチケット｜大切な人に、深く休まる時間を贈る｜プライベート薪サウナ Yu-Ru</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'iv':        '#FAF7F0', // ベースの生成り
+                        'iv-deep':   '#F3EDE1', // 一段濃い生成り
+                        'iv-line':   '#E3DACA', // 罫線
+                        'ink':       '#2A2621', // 主要テキスト
+                        'ink-soft':  '#6B655A', // 補助テキスト
+                        'gold':      '#97762C', // 文字用ゴールド（白地でも読める濃さ）
+                        'gold-line': '#C9A84C', // 装飾線・ボタン用ゴールド
+                        'gold-pale': '#EFE4C8',
+                    },
+                    fontFamily: {
+                        'serif':  ['"Noto Serif JP"', 'serif'],
+                        'cinzel': ['"Cinzel"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { font-size: 16px; }
+        body {
+            background-color: #FAF7F0;
+            color: #2A2621;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "palt" 1;
+            letter-spacing: 0.06em;
+            padding-bottom: 86px; /* 追従CTA分 */
+        }
+        @media (min-width: 768px) { body { padding-bottom: 0; } }
+
+        /* 白地に映えるロゴ（元素材が白のため反転） */
+        .logo-dark { filter: invert(1); }
+
+        .label {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 0.68rem;
+            letter-spacing: 0.45em;
+            color: #97762C;
+            display: block;
+        }
+        .heading {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            position: relative;
+            display: inline-block;
+        }
+        .heading::after {
+            content: '';
+            display: block;
+            width: 2.5rem; height: 1px;
+            background: #C9A84C;
+            margin: 1.1rem auto 0;
+        }
+        .rule { width: 44px; height: 1px; background: #C9A84C; margin: 0 auto; }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #F3EDE1; }
+        ::-webkit-scrollbar-thumb { background: #D9CBA9; border-radius: 3px; }
+
+        .btn-gold {
+            background: #C9A84C;
+            color: #1F1B14;
+            transition: background-color .35s ease, box-shadow .35s ease, transform .35s ease;
+            box-shadow: 0 10px 26px -12px rgba(151, 118, 44, 0.55);
+        }
+        .btn-gold:hover {
+            background: #B99436;
+            box-shadow: 0 14px 30px -12px rgba(151, 118, 44, 0.7);
+            transform: translateY(-1px);
+        }
+
+        /* ===== ヒーロー：招待状のような二重罫線フレーム ===== */
+        #hero {
+            background:
+                radial-gradient(120% 80% at 50% 0%, #FFFDF8 0%, #FAF7F0 45%, #F3EDE1 100%);
+        }
+        .frame-outer {
+            border: 1px solid #DCCFB2;
+            position: relative;
+        }
+        .frame-outer::before {
+            content: '';
+            position: absolute; inset: 7px;
+            border: 1px solid #EADFC6;
+            pointer-events: none;
+        }
+        /* 四隅の小さな金の印 */
+        .corner {
+            position: absolute; width: 9px; height: 9px;
+            border-color: #C9A84C; border-style: solid; border-width: 0;
+        }
+        .corner-tl { top: -1px; left: -1px; border-top-width: 1px; border-left-width: 1px; }
+        .corner-tr { top: -1px; right: -1px; border-top-width: 1px; border-right-width: 1px; }
+        .corner-bl { bottom: -1px; left: -1px; border-bottom-width: 1px; border-left-width: 1px; }
+        .corner-br { bottom: -1px; right: -1px; border-bottom-width: 1px; border-right-width: 1px; }
+
+        /* 見出しの装飾（左右に伸びる細線） */
+        .ornament {
+            display: flex; align-items: center; justify-content: center; gap: 14px;
+        }
+        .ornament::before, .ornament::after {
+            content: ''; height: 1px; width: 34px; background: #D8C79E;
+        }
+
+        /* ===== ギフト券 ===== */
+        .ticket {
+            position: relative;
+            background: linear-gradient(160deg, #FFFFFF 0%, #FDFBF6 55%, #F7F1E4 100%);
+            border: 1px solid #DCCFB2;
+            box-shadow: 0 30px 60px -32px rgba(60, 48, 20, 0.35);
+        }
+        .ticket::before {
+            content: '';
+            position: absolute; inset: 9px;
+            border: 1px solid #EADFC6;
+            pointer-events: none;
+        }
+        .notch {
+            position: absolute; top: 50%; width: 22px; height: 22px;
+            background: #F3EDE1; border-radius: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #DCCFB2;
+        }
+
+        /* ===== フロー図 ===== */
+        .lane {
+            background: #FFFFFF;
+            border: 1px solid #E3DACA;
+            padding: 28px 22px 30px;
+        }
+        .lane-head {
+            display: flex; align-items: center; gap: 10px;
+            padding-bottom: 16px; margin-bottom: 26px;
+            border-bottom: 1px solid #EFE7D8;
+        }
+        .lane-avatar {
+            width: 34px; height: 34px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 13px; flex-shrink: 0;
+        }
+        .lane-a .lane-avatar { background: #F6EFDC; color: #97762C; }
+        .lane-b .lane-avatar { background: #EDF1EA; color: #5B7355; }
+
+        .step { position: relative; padding-left: 68px; padding-bottom: 34px; }
+        .step:last-child { padding-bottom: 0; }
+        .step-icon {
+            position: absolute; left: 0; top: 0;
+            width: 50px; height: 50px; border-radius: 50%;
+            border: 1px solid #D8C79E; background: #FFFDF8;
+            display: flex; align-items: center; justify-content: center;
+            color: #97762C; font-size: 16px;
+        }
+        .step:not(:last-child)::before {
+            content: ''; position: absolute;
+            left: 25px; top: 54px; bottom: 6px; width: 1px;
+            background: repeating-linear-gradient(to bottom, #D8C79E 0 4px, transparent 4px 9px);
+        }
+        .step-no {
+            font-family: 'Cinzel', serif; font-size: 10px;
+            letter-spacing: .2em; color: #B49A63; display: block; margin-bottom: 4px;
+        }
+        .badge-time {
+            display: inline-flex; align-items: center; gap: 5px;
+            margin-top: 9px; padding: 4px 11px;
+            border: 1px solid #DCCFB2; border-radius: 999px;
+            font-size: 10.5px; letter-spacing: .12em; color: #97762C;
+            background: #FDFAF2;
+        }
+
+        /* 受け渡しの矢印 */
+        .handoff {
+            display: flex; align-items: center; justify-content: center;
+            gap: 10px; padding: 18px 0;
+        }
+        .handoff-line { height: 1px; width: 42px; background: #D8C79E; }
+        .handoff-mark {
+            width: 44px; height: 44px; border-radius: 50%;
+            border: 1px dashed #C9A84C; background: #FFFDF8;
+            display: flex; align-items: center; justify-content: center;
+            color: #97762C; font-size: 15px; flex-shrink: 0;
+        }
+        @media (min-width: 768px) {
+            .handoff { flex-direction: column; padding: 0 6px; align-self: center; }
+            .handoff-line { width: 1px; height: 42px; }
+        }
+
+        /* FAQ */
+        .faq-content { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s cubic-bezier(.25,1,.5,1); }
+        .faq-content > div { overflow: hidden; }
+        .faq-item.active .faq-content { grid-template-rows: 1fr; }
+        .faq-icon { transition: transform .35s ease; }
+        .faq-item.active .faq-icon { transform: rotate(180deg); }
+
+        #sticky-cta {
+            position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+            background: rgba(250, 247, 240, 0.96);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid #E3DACA;
+            box-shadow: 0 -8px 24px -18px rgba(60,48,20,.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-iv/90 backdrop-blur-md border-b border-iv-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="https://sauna-yuru.netlify.app/" class="flex items-center space-x-3 hover:opacity-70 transition duration-300">
+                    <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="" class="h-8 w-auto logo-dark opacity-85">
+                    <span class="font-cinzel text-lg tracking-[0.25em] text-ink">Yu-Ru</span>
+                </a>
+                <a href="https://square.link/u/hQMT1A1k" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block btn-gold px-8 py-2.5 font-serif text-xs tracking-[0.25em]">
+                    ギフトを購入する
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== ヒーロー（写真なし・招待状の設え） ===== -->
+        <section id="hero" class="min-h-screen flex items-center justify-center px-5 pt-28 pb-20">
+            <div class="frame-outer w-full max-w-2xl px-5 py-16 sm:px-14 sm:py-24 text-center bg-white/40">
+                <span class="corner corner-tl"></span>
+                <span class="corner corner-tr"></span>
+                <span class="corner corner-bl"></span>
+                <span class="corner corner-br"></span>
+
+                <p class="ornament label mb-12">GIFT TICKET</p>
+
+                <h1 class="font-serif text-[1.45rem] sm:text-4xl md:text-[2.75rem] tracking-[0.04em] sm:tracking-[0.1em] text-ink font-normal leading-[1.9] mb-10">
+                    モノではなく、<br>
+                    <span class="text-gold">深く休まる時間</span>を贈る。
+                </h1>
+
+                <div class="rule mb-10"></div>
+
+                <p class="font-serif text-[13px] sm:text-[15px] text-ink-soft leading-loose tracking-wider mb-14">
+                    鹿児島の大自然に佇む、完全貸切の薪サウナ。<br>
+                    Premiumルーム2時間を、そのまま贈れるチケットです。
+                </p>
+
+                <a href="#buy" class="inline-block btn-gold px-12 py-4 sm:px-16 sm:py-5 font-serif text-[15px] sm:text-base tracking-[0.25em]">
+                    ギフトを贈る
+                </a>
+
+                <p class="font-serif text-[11px] text-ink-soft/80 mt-7 tracking-[0.15em]">
+                    15,000円（税込）／有効期限 6ヶ月
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== 選ばれる理由 ===== -->
+        <section class="py-24 md:py-32 bg-white border-t border-iv-line">
+            <div class="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 md:mb-20">
+                    <span class="label mb-4">Why Gift</span>
+                    <h2 class="heading font-cinzel text-2xl md:text-3xl text-ink">選ばれる理由</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+                    <div class="text-center px-2">
+                        <div class="w-14 h-14 mx-auto mb-7 rounded-full border border-gold-line/50 flex items-center justify-center">
+                            <i class="fa-solid fa-eye-slash text-gold text-lg" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-serif text-[15px] text-ink tracking-[0.14em] mb-4">金額が伝わらない</h3>
+                        <p class="font-serif text-[13px] text-ink-soft leading-loose tracking-wide">
+                            券面に金額は一切記載しません。値段を気にせず受け取っていただける、贈り物としての気配りです。
+                        </p>
+                    </div>
+                    <div class="text-center px-2 md:border-l md:border-r md:border-iv-line">
+                        <div class="w-14 h-14 mx-auto mb-7 rounded-full border border-gold-line/50 flex items-center justify-center">
+                            <i class="fa-regular fa-paper-plane text-gold text-lg" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-serif text-[15px] text-ink tracking-[0.14em] mb-4">そのまま送れる</h3>
+                        <p class="font-serif text-[13px] text-ink-soft leading-loose tracking-wide">
+                            メールで画像をお届けします。LINEやInstagramでそのまま転送でき、手軽にお届けできます。
+                        </p>
+                    </div>
+                    <div class="text-center px-2">
+                        <div class="w-14 h-14 mx-auto mb-7 rounded-full border border-gold-line/50 flex items-center justify-center">
+                            <i class="fa-solid fa-user-group text-gold text-lg" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-serif text-[15px] text-ink tracking-[0.14em] mb-4">最大4名まで一緒に</h3>
+                        <p class="font-serif text-[13px] text-ink-soft leading-loose tracking-wide">
+                            1組貸切のチケットです。おひとりでも、ご家族やご友人と最大4名でも、追加料金なくご利用いただけます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== お贈りするチケット ===== -->
+        <section class="py-24 md:py-32 bg-iv-deep border-t border-iv-line">
+            <div class="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8">
+                <div class="text-center mb-14">
+                    <span class="label mb-4">Your Gift</span>
+                    <h2 class="heading font-cinzel text-2xl md:text-3xl text-ink">お贈りするチケット</h2>
+                </div>
+
+                <div class="ticket max-w-xl mx-auto px-8 py-14 md:px-14 md:py-16 text-center">
+                    <span class="notch" style="left:-12px;"></span>
+                    <span class="notch" style="right:-12px;"></span>
+
+                    <p class="font-cinzel text-gold text-2xl md:text-[1.75rem] tracking-[0.4em] mb-3 pl-[0.4em]">Yu-Ru</p>
+                    <p class="font-serif text-[10px] text-ink-soft/80 tracking-[0.3em] mb-9">PRIVATE SAUNA</p>
+
+                    <div class="rule mb-9"></div>
+
+                    <p class="font-serif text-[10px] text-ink-soft/80 tracking-[0.4em] mb-5">GIFT TICKET</p>
+                    <p class="font-serif text-[17px] md:text-xl text-ink tracking-[0.14em] leading-[2] mb-4">
+                        Premium ルーム<br>2時間 ご利用券
+                    </p>
+                    <p class="font-serif text-[11px] text-ink-soft tracking-[0.16em] mb-11">完全貸切／最大4名様まで</p>
+
+                    <div class="border-t border-iv-line pt-7">
+                        <p class="font-serif text-[10px] text-ink-soft/90 tracking-[0.2em] leading-[2.2]">
+                            ご予約は公式LINEより承ります<br>
+                            有効期限：ご購入日から6ヶ月
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-center font-serif text-[11px] text-ink-soft/80 mt-9 tracking-wider leading-loose">
+                    ※ イメージです。金額は記載されません。</p>
+            </div>
+        </section>
+
+        <!-- ===== 贈り方・使い方 ===== -->
+        <section class="py-24 md:py-32 bg-white border-t border-iv-line">
+            <div class="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="label mb-4">How to Use</span>
+                    <h2 class="heading font-cinzel text-2xl md:text-3xl text-ink">贈り方・使い方</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-0 md:gap-3 items-stretch">
+
+                    <!-- ▼ 贈る方のレーン -->
+                    <div class="lane lane-a">
+                        <div class="lane-head">
+                            <span class="lane-avatar"><i class="fa-solid fa-gift" aria-hidden="true"></i></span>
+                            <div>
+                                <p class="font-serif text-[13px] text-ink tracking-[0.16em]">贈る方</p>
+                                <p class="font-serif text-[10px] text-ink-soft tracking-[0.1em]">＝ あなた</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-icon"><i class="fa-regular fa-credit-card" aria-hidden="true"></i></span>
+                            <span class="step-no">STEP 01</span>
+                            <h3 class="font-serif text-[14px] text-ink tracking-[0.14em] mb-2">ご購入</h3>
+                            <p class="font-serif text-[12.5px] text-ink-soft leading-[2] tracking-wide">
+                                購入ボタンからクレジットカードでお支払い。会員登録は不要です。
+                            </p>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-icon"><i class="fa-regular fa-envelope-open" aria-hidden="true"></i></span>
+                            <span class="step-no">STEP 02</span>
+                            <h3 class="font-serif text-[14px] text-ink tracking-[0.14em] mb-2">チケットが届く</h3>
+                            <p class="font-serif text-[12.5px] text-ink-soft leading-[2] tracking-wide">
+                                ご登録のメールアドレス宛に、チケット画像をお送りします。
+                            </p>
+                            <span class="badge-time">
+                                <i class="fa-regular fa-clock" aria-hidden="true"></i>48時間以内にお届け
+                            </span>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-icon"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i></span>
+                            <span class="step-no">STEP 03</span>
+                            <h3 class="font-serif text-[14px] text-ink tracking-[0.14em] mb-2">贈る</h3>
+                            <p class="font-serif text-[12.5px] text-ink-soft leading-[2] tracking-wide">
+                                届いた画像をそのまま転送。印刷して手渡しも可能です。
+                            </p>
+                            <span class="mt-3 flex flex-wrap gap-1.5">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border border-iv-line rounded-full text-[10px] text-ink-soft tracking-wide"><i class="fa-brands fa-line text-[#06C755]" aria-hidden="true"></i>LINE</span>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border border-iv-line rounded-full text-[10px] text-ink-soft tracking-wide"><i class="fa-brands fa-instagram" aria-hidden="true"></i>DM</span>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border border-iv-line rounded-full text-[10px] text-ink-soft tracking-wide"><i class="fa-regular fa-envelope" aria-hidden="true"></i>メール</span>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border border-iv-line rounded-full text-[10px] text-ink-soft tracking-wide"><i class="fa-solid fa-print" aria-hidden="true"></i>印刷</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- ▼ 受け渡し -->
+                    <div class="handoff">
+                        <span class="handoff-line"></span>
+                        <span class="handoff-mark"><i class="fa-solid fa-arrow-down md:hidden" aria-hidden="true"></i><i class="fa-solid fa-arrow-right hidden md:inline" aria-hidden="true"></i></span>
+                        <span class="handoff-line"></span>
+                    </div>
+
+                    <!-- ▼ 受け取った方のレーン -->
+                    <div class="lane lane-b">
+                        <div class="lane-head">
+                            <span class="lane-avatar"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                            <div>
+                                <p class="font-serif text-[13px] text-ink tracking-[0.16em]">受け取った方</p>
+                                <p class="font-serif text-[10px] text-ink-soft tracking-[0.1em]">＝ 贈られた大切な方</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-icon"><i class="fa-brands fa-line" aria-hidden="true"></i></span>
+                            <span class="step-no">STEP 04</span>
+                            <h3 class="font-serif text-[14px] text-ink tracking-[0.14em] mb-2">公式LINEで予約</h3>
+                            <p class="font-serif text-[12.5px] text-ink-soft leading-[2] tracking-wide">
+                                チケット画像を公式LINEに送り、ご希望日時をお知らせいただくだけ。
+                            </p>
+                            <span class="badge-time">
+                                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>ご購入日から6ヶ月以内
+                            </span>
+                        </div>
+
+                        <div class="step">
+                            <span class="step-icon" style="border-color:#C9A84C; background:#FBF6E9;"><i class="fa-solid fa-fire" aria-hidden="true"></i></span>
+                            <span class="step-no">STEP 05</span>
+                            <h3 class="font-serif text-[14px] text-gold tracking-[0.14em] mb-2">ご来店・ご利用</h3>
+                            <p class="font-serif text-[12.5px] text-ink-soft leading-[2] tracking-wide">
+                                Premiumルームを2時間、完全貸切でお過ごしいただけます。
+                            </p>
+                            <span class="mt-3 flex flex-wrap gap-1.5">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border border-iv-line rounded-full text-[10px] text-ink-soft tracking-wide"><i class="fa-solid fa-check text-gold" aria-hidden="true"></i>タオル・アメニティ完備</span>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border border-iv-line rounded-full text-[10px] text-ink-soft tracking-wide"><i class="fa-solid fa-person-swimming" aria-hidden="true"></i>水着のみご持参</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 border border-gold-line/40 bg-iv px-7 py-8 md:px-9">
+                    <p class="font-serif text-[11px] text-gold tracking-[0.25em] mb-4">
+                        <i class="fa-regular fa-lightbulb mr-2" aria-hidden="true"></i>こんな場面に
+                    </p>
+                    <p class="font-serif text-[13px] text-ink-soft leading-loose tracking-wide">
+                        誕生日・記念日／父の日・母の日／退職や異動のお祝い／頑張っている自分へのご褒美に。
+                        「何を贈るか」で迷ったとき、<span class="text-ink">形に残らない時間</span>という選択肢です。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ご購入 ===== -->
+        <section id="buy" class="py-24 md:py-32 bg-iv-deep border-t border-iv-line scroll-mt-20">
+            <div class="max-w-2xl mx-auto px-5 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="label mb-4">Order</span>
+                    <h2 class="heading font-cinzel text-2xl md:text-3xl text-ink">ご購入</h2>
+                </div>
+
+                <div class="bg-white border border-gold-line/45 px-7 py-10 md:px-12 md:py-14 shadow-[0_24px_50px_-30px_rgba(60,48,20,0.35)]">
+                    <p class="font-serif text-[15px] md:text-base text-ink tracking-[0.14em] text-center leading-relaxed mb-2">
+                        Premiumルーム 2時間ご利用券
+                    </p>
+                    <p class="font-serif text-[11px] text-ink-soft tracking-[0.16em] text-center mb-9">
+                        完全貸切／最大4名さままで
+                    </p>
+
+                    <div class="text-center border-t border-b border-iv-line py-9 mb-9">
+                        <p class="font-cinzel text-gold text-[2.5rem] md:text-5xl tracking-widest leading-none">¥15,000</p>
+                        <p class="font-serif text-[11px] text-ink-soft mt-4 tracking-[0.15em]">税込・発行手数料込み</p>
+                    </div>
+
+                    <dl class="space-y-4 mb-10 font-serif text-[13px]">
+                        <div class="flex justify-between gap-4">
+                            <dt class="text-ink-soft tracking-[0.14em] flex-shrink-0">お届け</dt>
+                            <dd class="text-ink text-right">メールで画像を送付<br class="sm:hidden">（48時間以内）</dd>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <dt class="text-ink-soft tracking-[0.14em] flex-shrink-0">有効期限</dt>
+                            <dd class="text-ink text-right">ご購入日から6ヶ月</dd>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <dt class="text-ink-soft tracking-[0.14em] flex-shrink-0">お支払い</dt>
+                            <dd class="text-ink text-right">クレジットカード</dd>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                            <dt class="text-ink-soft tracking-[0.14em] flex-shrink-0">ご予約</dt>
+                            <dd class="text-ink text-right">公式LINEにて承ります</dd>
+                        </div>
+                    </dl>
+
+                    <a href="https://square.link/u/hQMT1A1k" target="_blank" rel="noopener noreferrer" class="block btn-gold text-center py-5 font-serif text-[15px] md:text-base tracking-[0.25em]">
+                        ギフトを購入する
+                    </a>
+                    <p class="font-serif text-[10px] text-ink-soft/80 text-center mt-4 tracking-[0.12em]">
+                        Square の決済ページへ移動します（別タブで開きます）
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section class="py-24 bg-white border-t border-iv-line">
+            <div class="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+                <div class="text-center mb-14">
+                    <span class="label mb-4">FAQ</span>
+                    <h2 class="heading font-cinzel text-2xl md:text-3xl text-ink">よくあるご質問</h2>
+                </div>
+
+                <div>
+                    <div class="faq-item border-b border-iv-line">
+                        <button type="button" class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.closest('.faq-item').classList.toggle('active')">
+                            <span class="font-serif text-[14px] md:text-[15px] text-ink pr-4 group-hover:text-gold transition">券面に金額は載りますか？</span>
+                            <svg class="faq-icon w-5 h-5 text-ink-soft group-hover:text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content"><div class="pb-6 pr-8 font-serif text-[13px] text-ink-soft leading-loose">
+                            記載されません。贈られた方に金額が伝わることはありません。
+                        </div></div>
+                    </div>
+
+                    <div class="faq-item border-b border-iv-line">
+                        <button type="button" class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.closest('.faq-item').classList.toggle('active')">
+                            <span class="font-serif text-[14px] md:text-[15px] text-ink pr-4 group-hover:text-gold transition">差額の支払いや、おつりは出ますか？</span>
+                            <svg class="faq-icon w-5 h-5 text-ink-soft group-hover:text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content"><div class="pb-6 pr-8 font-serif text-[13px] text-ink-soft leading-loose">
+                            金額券ではなく「Premiumルーム2時間の1回利用券」です。追加のお支払いは不要で、おつりも発生しません。受け取った方は、そのままご利用いただけます。
+                        </div></div>
+                    </div>
+
+                    <div class="faq-item border-b border-iv-line">
+                        <button type="button" class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.closest('.faq-item').classList.toggle('active')">
+                            <span class="font-serif text-[14px] md:text-[15px] text-ink pr-4 group-hover:text-gold transition">有効期限を過ぎたらどうなりますか？</span>
+                            <svg class="faq-icon w-5 h-5 text-ink-soft group-hover:text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content"><div class="pb-6 pr-8 font-serif text-[13px] text-ink-soft leading-loose">
+                            ご購入日から6ヶ月を過ぎますとご利用いただけません。期限の延長・払い戻しは承っておりませんので、贈られる際は期限もあわせてお伝えいただけますと安心です。
+                        </div></div>
+                    </div>
+
+                    <div class="faq-item border-b border-iv-line">
+                        <button type="button" class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.closest('.faq-item').classList.toggle('active')">
+                            <span class="font-serif text-[14px] md:text-[15px] text-ink pr-4 group-hover:text-gold transition">何名まで一緒に利用できますか？</span>
+                            <svg class="faq-icon w-5 h-5 text-ink-soft group-hover:text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content"><div class="pb-6 pr-8 font-serif text-[13px] text-ink-soft leading-loose">
+                            1組貸切のチケットです。推奨は2〜4名さまで、人数が増えても追加料金はかかりません。おひとりでのご利用も可能です。
+                        </div></div>
+                    </div>
+
+                    <div class="faq-item border-b border-iv-line">
+                        <button type="button" class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.closest('.faq-item').classList.toggle('active')">
+                            <span class="font-serif text-[14px] md:text-[15px] text-ink pr-4 group-hover:text-gold transition">持ち物は必要ですか？</span>
+                            <svg class="faq-icon w-5 h-5 text-ink-soft group-hover:text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content"><div class="pb-6 pr-8 font-serif text-[13px] text-ink-soft leading-loose">
+                            タオル・シャンプー等のアメニティは無料で完備しております。水着のご着用をお願いしておりますので、そちらのみご持参ください。お忘れの場合はレンタル水着（1,000円）もございますが、枚数に限りがございます。
+                        </div></div>
+                    </div>
+
+                    <div class="faq-item border-b border-iv-line">
+                        <button type="button" class="w-full flex justify-between items-center py-5 text-left focus:outline-none group" onclick="this.closest('.faq-item').classList.toggle('active')">
+                            <span class="font-serif text-[14px] md:text-[15px] text-ink pr-4 group-hover:text-gold transition">チケットが届きません</span>
+                            <svg class="faq-icon w-5 h-5 text-ink-soft group-hover:text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content"><div class="pb-6 pr-8 font-serif text-[13px] text-ink-soft leading-loose">
+                            迷惑メールフォルダをご確認ください。48時間を過ぎても届かない場合は、お手数ですが公式LINEまたは
+                            <a href="mailto:private.sauna.yuru@gmail.com" class="text-gold underline underline-offset-2">private.sauna.yuru@gmail.com</a>
+                            までご連絡ください。
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== アクセス ===== -->
+        <section class="py-20 bg-iv-deep border-t border-iv-line">
+            <div class="max-w-2xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+                <span class="label mb-4">Access</span>
+                <p class="font-serif text-[14px] text-ink tracking-[0.16em] mb-4">プライベート薪サウナ Yu-Ru</p>
+                <p class="font-serif text-[12px] text-ink-soft leading-loose tracking-wider">
+                    〒899-5203 鹿児島県姶良市加治木町小山田2144<br>
+                    鹿児島空港より車で約10分／鹿児島市街地より約35分・専用駐車場完備<br>
+                    定休日：毎週月曜・木曜
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-iv-line pt-14 pb-10">
+        <div class="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="" class="h-8 w-auto mb-4 logo-dark opacity-60 mx-auto" loading="lazy" decoding="async">
+            <p class="font-cinzel text-sm tracking-[0.3em] text-ink-soft mb-8">Yu-Ru</p>
+
+            <div class="flex justify-center space-x-7 mb-9">
+                <a href="https://www.instagram.com/sauna_yu_ru/" target="_blank" rel="noopener noreferrer" aria-label="公式Instagram" class="text-ink-soft hover:text-gold transition"><i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i></a>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" aria-label="公式LINE" class="text-ink-soft hover:text-[#06C755] transition"><i class="fa-brands fa-line text-lg" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[11px] text-ink-soft mb-9 tracking-widest font-serif">
+                <a href="https://sauna-yuru.netlify.app/" class="hover:text-gold transition-colors">トップページ</a>
+                <a href="../tokushoho.html" class="hover:text-gold transition-colors">特定商取引法に基づく表記</a>
+                <a href="../privacy-policy.html" class="hover:text-gold transition-colors">プライバシーポリシー</a>
+                <a href="../cancel-policy.html" class="hover:text-gold transition-colors">キャンセルポリシー</a>
+            </div>
+
+            <p class="text-[10px] text-ink-soft/70 font-cinzel tracking-[0.35em] uppercase">© 2026 Yu-Ru. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 追従CTA（モバイルのみ） -->
+    <div id="sticky-cta" class="md:hidden px-4 py-3">
+        <div class="flex items-center gap-3">
+            <div class="flex-shrink-0">
+                <p class="font-cinzel text-gold text-lg leading-none">¥15,000</p>
+                <p class="font-serif text-[9px] text-ink-soft tracking-wider mt-1">税込・6ヶ月有効</p>
+            </div>
+            <a href="https://square.link/u/hQMT1A1k" target="_blank" rel="noopener noreferrer" class="btn-gold flex-grow text-center py-3.5 font-serif text-[14px] tracking-[0.2em]">
+                ギフトを購入する
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // GA4: 外部リンクのクリック計測
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href]').forEach(function (link) {
+                var href = link.href;
+                var eventName = null;
+                if (href.indexOf('square.link') !== -1) eventName = 'gift_purchase_click';
+                else if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
+                else if (href.indexOf('square.site') !== -1 || href.indexOf('squareup.com') !== -1) eventName = 'square_booking_click';
+                if (eventName) {
+                    link.addEventListener('click', function () {
+                        if (typeof gtag === 'function') {
+                            gtag('event', eventName, { link_url: href, page_location: location.href });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
