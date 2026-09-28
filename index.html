@@ -27,7 +27,7 @@
     <meta property="og:description" content="鹿児島の田園風景と桜島を望む、完全貸切の高級プライベート薪サウナ。日常の多忙から解放される、究極の癒し空間。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sauna-yuru.netlify.app/">
-    <meta property="og:image" content="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg">
+    <meta property="og:image" content="https://sauna-jpn.com/wp-content/uploads/2026/03/IMG_5906.jpg">
     <meta property="og:site_name" content="プライベート薪サウナ Yu-Ru">
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
@@ -113,10 +113,12 @@
 
         /* ===== Hero ===== */
         #hero-section {
-            background-image: linear-gradient(rgba(5, 10, 6, 0.35), rgba(11, 18, 12, 0.75));
+            /* TODO: 軽量化したJPEG版をアップロード後、下記URLを差し替え */
+            background-image: linear-gradient(rgba(5, 10, 6, 0.35), rgba(11, 18, 12, 0.75)),
+                              url('https://sauna-jpn.com/wp-content/uploads/2026/08/80026F87-CD1B-46F7-BD61-ECD6B61131C6-1024x819.png');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            background-color: #050a06;
         }
 
         /* ===== Glass Header ===== */
@@ -211,7 +213,7 @@
         "alternateName": "Yu-Ru",
         "description": "鹿児島県姶良市の田園風景と桜島を望む、完全貸切の高級プライベート薪サウナ。トレーラーサウナとテントサウナの2タイプを完備。鹿児島空港から車で約10分。",
         "url": "https://sauna-yuru.netlify.app/",
-        "image": "https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg",
+        "image": "https://sauna-jpn.com/wp-content/uploads/2026/03/IMG_5906.jpg",
         "email": "private.sauna.yuru@gmail.com",
         "priceRange": "¥10,000〜¥14,000",
         "currenciesAccepted": "JPY",
@@ -479,7 +481,12 @@
                     <!-- Premium -->
                     <div class="room-card room-card-premium flex flex-col group overflow-hidden">
                         <div class="h-60 img-hover-zoom relative">
-                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/IMG_6145.jpg" alt="Premium Trailer Sauna" class="room-img w-full h-full object-cover opacity-95 transition duration-700" style="filter: contrast(1.08) saturate(0.85) brightness(0.92) sepia(0.12);" loading="lazy" decoding="async">
+                            <img src="https://sauna-jpn.com/wp-content/uploads/2026/08/IMG_6299-768x1365.jpg"
+                                 srcset="https://sauna-jpn.com/wp-content/uploads/2026/08/IMG_6299-576x1024.jpg 576w,
+                                         https://sauna-jpn.com/wp-content/uploads/2026/08/IMG_6299-768x1365.jpg 768w,
+                                         https://sauna-jpn.com/wp-content/uploads/2026/08/IMG_6299-864x1536.jpg 864w"
+                                 sizes="(min-width: 768px) 436px, 100vw"
+                                 alt="Premiumルームから望む田園風景と桜島" class="room-img w-full h-full object-cover opacity-95 transition duration-700" style="filter: contrast(1.08) saturate(0.85) brightness(0.92) sepia(0.12);" loading="lazy" decoding="async">
                             <div class="absolute top-4 left-4 bg-yu-gold text-yu-black text-[10px] font-cinzel font-normal px-3 py-1 tracking-[0.2em]">Premium</div>
                         </div>
                         <div class="p-8 flex-grow flex flex-col">

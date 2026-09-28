@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMCCEZTTVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JMCCEZTTVN');
+    </script>
+    <!-- Microsoft ヒートマップツール測定用 -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ydy493tlb0");
+    </script>
+
+    <meta name="description" content="プライベート薪サウナ Yu-Ru の公式LINEスタンプカード。ご利用1回につきスタンプ1個、毎月10日は2倍で2個。3個でオロポ、6個でYu-Ru限定サウナハット、10個でPremiumルーム2時間無料＆殿堂入り。有効期限なし、他の割引との併用もOK。">
+    <meta property="og:title" content="LINEスタンプカード｜通うたびに、うれしいことが。｜プライベート薪サウナ Yu-Ru">
+    <meta property="og:description" content="ご利用1回でスタンプ1個、毎月10日は2倍。3個でオロポ、6個で限定サウナハット、10個でPremiumルーム無料。有効期限なし・併用OK。鹿児島・姶良のプライベート薪サウナ Yu-Ru。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sauna-yuru.netlify.app/stamp">
+    <meta property="og:image" content="https://sauna-jpn.com/wp-content/uploads/2026/03/IMG_5906.jpg">
+    <meta property="og:site_name" content="プライベート薪サウナ Yu-Ru">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="canonical" href="https://sauna-yuru.netlify.app/stamp">
+    <link rel="icon" type="image/png" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+    <link rel="apple-touch-icon" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+
+    <title>LINEスタンプカード｜通うたびに、うれしいことが。｜プライベート薪サウナ Yu-Ru</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'line': '#06C755',
+                        'line-dark': '#04A544',
+                        'line-pale': '#E7F8EE',
+                        'ink': '#243029',
+                        'ink-soft': '#6C7A72',
+                        'ink-faint': '#9AA79F',
+                        'soft': '#F2FAF5',
+                        'pop-orange': '#FF8A3D',
+                        'pop-blue': '#3B9AE1',
+                        'pop-gold': '#E3A81B',
+                        'pop-pink': '#FF4D88',
+                    },
+                    fontFamily: {
+                        'round': ['"M PLUS Rounded 1c"', '"Hiragino Maru Gothic ProN"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { font-size: 16px; scroll-padding-top: 5rem; }
+        body {
+            background-color: #FFFFFF;
+            color: #243029;
+            font-family: 'M PLUS Rounded 1c', 'Hiragino Maru Gothic ProN', sans-serif;
+            font-weight: 500;
+            -webkit-font-smoothing: antialiased;
+            font-feature-settings: "palt" 1;
+            letter-spacing: 0.02em;
+        }
+
+        /* ロゴは白抜き素材のため、明るい背景では反転させる */
+        .logo-dark { filter: invert(1); }
+
+        /* ===== ヒーロー背景（写真を使わないポップな面） ===== */
+        #hero {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 12% 18%, rgba(6, 199, 85, 0.16), transparent 42%),
+                radial-gradient(circle at 88% 12%, rgba(255, 184, 71, 0.20), transparent 44%),
+                radial-gradient(circle at 78% 88%, rgba(6, 199, 85, 0.13), transparent 46%),
+                radial-gradient(circle at 20% 92%, rgba(59, 154, 225, 0.12), transparent 44%),
+                #F2FAF5;
+        }
+        /* うっすらドット */
+        #hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(36, 48, 41, 0.07) 1.4px, transparent 1.4px);
+            background-size: 22px 22px;
+            pointer-events: none;
+        }
+        /* ふわふわ浮かぶ丸 */
+        .blob {
+            position: absolute;
+            border-radius: 9999px;
+            pointer-events: none;
+            animation: float 7s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(-14px); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .blob { animation: none; }
+        }
+
+        /* ===== 吹き出し ===== */
+        .bubble {
+            position: relative;
+            background: #FFFFFF;
+            border-radius: 9999px;
+            box-shadow: 0 6px 18px rgba(36, 48, 41, 0.10);
+        }
+        .bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-top: 10px solid #FFFFFF;
+        }
+
+        /* ===== カード共通 ===== */
+        .card {
+            background: #FFFFFF;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(36, 48, 41, 0.08);
+        }
+
+        /* ===== スタンプ台紙 ===== */
+        .sheet {
+            background: #FFFFFF;
+            border-radius: 28px;
+            box-shadow: 0 18px 44px rgba(36, 48, 41, 0.13);
+        }
+        .stamp {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 9999px;
+            border: 2px dashed #D6E2DA;
+            background: #F7FAF8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #B9C6BE;
+        }
+        .stamp.is-reward {
+            border-style: solid;
+            border-width: 3px;
+            color: #FFFFFF;
+            font-size: 1.3rem;
+        }
+        .stamp.r-orange { border-color: #FFD3B2; background: #FF8A3D; box-shadow: 0 6px 16px rgba(255, 138, 61, 0.35); }
+        .stamp.r-blue   { border-color: #C3E0F7; background: #3B9AE1; box-shadow: 0 6px 16px rgba(59, 154, 225, 0.32); }
+        .stamp.r-gold   { border-color: #F6DFA4; background: #E3A81B; box-shadow: 0 6px 16px rgba(227, 168, 27, 0.36); }
+
+        .stamp-cap {
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1.45;
+            text-align: center;
+            margin-top: 0.5rem;
+            min-height: 2.9em;
+        }
+
+        /* ===== 特典カードの上帯 ===== */
+        .ribbon {
+            border-radius: 9999px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+        }
+
+        /* ===== ボタン ===== */
+        .btn-line {
+            background: #06C755;
+            color: #FFFFFF;
+            border-radius: 9999px;
+            font-weight: 800;
+            box-shadow: 0 8px 20px rgba(6, 199, 85, 0.35);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+        .btn-line:hover {
+            background: #04A544;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 26px rgba(6, 199, 85, 0.42);
+        }
+        .btn-ghost {
+            border: 2px solid #D6E2DA;
+            border-radius: 9999px;
+            font-weight: 700;
+            color: #3F5147;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+        .btn-ghost:hover { border-color: #06C755; color: #04A544; }
+
+        /* ===== 流れのステップ ===== */
+        .step-num {
+            width: 2rem; height: 2rem;
+            border-radius: 9999px;
+            background: #06C755;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 0.9rem;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        /* ===== Q&A ===== */
+        details.qa {
+            background: #FFFFFF;
+            border-radius: 18px;
+            box-shadow: 0 6px 18px rgba(36, 48, 41, 0.07);
+        }
+        details.qa > summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-weight: 700;
+        }
+        details.qa > summary::-webkit-details-marker { display: none; }
+        details.qa > summary .chev { transition: transform 0.25s ease; }
+        details.qa[open] > summary .chev { transform: rotate(180deg); }
+
+        /* ===== 毎月10日 スタンプ2倍デー ===== */
+        .dbl {
+            border-radius: 28px;
+            background: linear-gradient(135deg, #FF9A4D 0%, #FF6B5E 52%, #FF4D88 100%);
+            box-shadow: 0 14px 34px rgba(255, 96, 122, 0.28);
+        }
+        .pill-dbl {
+            background: linear-gradient(90deg, #FF8A3D 0%, #FF4D88 100%);
+            color: #FFFFFF;
+        }
+
+        /* ===== はじめての方の計算式 ===== */
+        .calc-chip {
+            background: #F2FAF5;
+            border-radius: 9999px;
+            padding: 0.5rem 0.7rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #3F5147;
+            white-space: nowrap;
+        }
+        .calc-op {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: #9AA79F;
+        }
+        .calc-sum {
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        @media (min-width: 640px) {
+            .calc-chip { font-size: 0.875rem; padding: 0.55rem 1rem; }
+            .calc-sum { font-size: 2rem; }
+        }
+
+        /* ===== 殿堂入り ===== */
+        .hall {
+            border-radius: 28px;
+            background: linear-gradient(135deg, #FFF6DD 0%, #FDEBC0 48%, #F7DFA4 100%);
+            box-shadow: 0 14px 34px rgba(227, 168, 27, 0.25);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/85 backdrop-blur-md border-b border-black/5">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center h-16">
+                <a href="https://sauna-yuru.netlify.app/" class="flex items-center gap-2.5 hover:opacity-70 transition">
+                    <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru ロゴ" class="h-8 w-auto logo-dark">
+                    <span class="text-base font-extrabold tracking-wide text-ink">Yu-Ru</span>
+                </a>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="btn-line text-xs sm:text-sm px-4 sm:px-6 py-2.5">
+                    <i class="fa-brands fa-line mr-1.5" aria-hidden="true"></i>友だち追加
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+
+        <!-- ===== ヒーロー ===== -->
+        <section id="hero" class="px-4 pt-14 pb-20 sm:pt-20 sm:pb-24">
+            <span class="blob w-24 h-24 sm:w-32 sm:h-32 bg-line/10 left-[4%] top-[18%]" aria-hidden="true"></span>
+            <span class="blob w-16 h-16 sm:w-20 sm:h-20 bg-pop-gold/15 right-[7%] top-[9%]" style="animation-delay:-2.5s" aria-hidden="true"></span>
+            <span class="blob w-20 h-20 bg-pop-blue/10 right-[12%] bottom-[10%]" style="animation-delay:-4.5s" aria-hidden="true"></span>
+
+            <div class="relative max-w-3xl mx-auto text-center">
+
+                <p class="bubble inline-block text-line-dark text-xs sm:text-sm font-extrabold px-5 py-2.5 mb-8">
+                    <i class="fa-brands fa-line mr-1.5" aria-hidden="true"></i>Yu-Ru 公式LINE ではじまりました
+                </p>
+
+                <h1 class="text-[1.85rem] leading-[1.45] sm:text-[2.7rem] sm:leading-[1.4] font-extrabold text-ink mb-5">
+                    通うたびに、<br>
+                    <span class="text-line">うれしいこと</span>が。
+                </h1>
+
+                <p class="text-sm sm:text-lg text-ink-soft font-medium leading-relaxed mb-10">
+                    サウナに入るだけで、スタンプが1個。<br>
+                    貯まったら、そのぶん返ってきます。
+                </p>
+
+                <!-- スタンプ台紙 -->
+                <div class="sheet px-5 py-7 sm:px-10 sm:py-9 text-left">
+                    <div class="flex items-center justify-between mb-7">
+                        <p class="text-sm sm:text-base font-extrabold text-ink">Yu-Ru スタンプカード</p>
+                        <p class="text-[11px] sm:text-xs font-bold text-line-dark bg-line-pale px-3 py-1.5 rounded-full">1回で1個</p>
+                    </div>
+
+                    <div class="grid grid-cols-5 gap-x-2.5 gap-y-4 sm:gap-x-4">
+                        <div class="flex flex-col items-center"><div class="stamp">1</div><p class="stamp-cap">&nbsp;</p></div>
+                        <div class="flex flex-col items-center"><div class="stamp">2</div><p class="stamp-cap">&nbsp;</p></div>
+                        <div class="flex flex-col items-center">
+                            <div class="stamp is-reward r-orange"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></div>
+                            <p class="stamp-cap text-pop-orange">オロポ</p>
+                        </div>
+                        <div class="flex flex-col items-center"><div class="stamp">4</div><p class="stamp-cap">&nbsp;</p></div>
+                        <div class="flex flex-col items-center"><div class="stamp">5</div><p class="stamp-cap">&nbsp;</p></div>
+                        <div class="flex flex-col items-center">
+                            <div class="stamp is-reward r-blue"><i class="fa-solid fa-hat-cowboy" aria-hidden="true"></i></div>
+                            <p class="stamp-cap text-pop-blue">サウナ<br>ハット</p>
+                        </div>
+                        <div class="flex flex-col items-center"><div class="stamp">7</div><p class="stamp-cap">&nbsp;</p></div>
+                        <div class="flex flex-col items-center"><div class="stamp">8</div><p class="stamp-cap">&nbsp;</p></div>
+                        <div class="flex flex-col items-center"><div class="stamp">9</div><p class="stamp-cap">&nbsp;</p></div>
+                        <div class="flex flex-col items-center">
+                            <div class="stamp is-reward r-gold"><i class="fa-solid fa-crown" aria-hidden="true"></i></div>
+                            <p class="stamp-cap text-pop-gold">Premium<br>無料</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-5 border-t border-dashed border-black/10 flex flex-wrap justify-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-ink-soft bg-soft rounded-full px-3.5 py-2">
+                            <i class="fa-solid fa-infinity text-line" aria-hidden="true"></i>有効期限なし
+                        </span>
+                        <span class="pill-dbl inline-flex items-center gap-1.5 text-xs font-extrabold rounded-full px-3.5 py-2">
+                            <i class="fa-solid fa-calendar-day" aria-hidden="true"></i>毎月10日はスタンプ2倍
+                        </span>
+                    </div>
+                </div>
+
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="btn-line inline-block text-base sm:text-lg px-10 sm:px-14 py-4 mt-9 w-full sm:w-auto">
+                    <i class="fa-brands fa-line mr-2" aria-hidden="true"></i>LINEで友だち追加する
+                </a>
+                <p class="text-xs text-ink-faint font-medium mt-4">友だち追加をすると、カードが自動で発行されます</p>
+            </div>
+        </section>
+
+        <!-- ===== 3つの特典 ===== -->
+        <section class="px-4 py-16 sm:py-24 bg-white">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-xs font-extrabold text-line tracking-widest mb-3">REWARDS</p>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-ink leading-snug">もらえるものは、この3つ。</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- 3個 -->
+                    <div class="card p-7 text-center border-t-[6px] border-pop-orange">
+                        <span class="ribbon inline-block bg-pop-orange text-sm px-5 py-1.5 mb-6">スタンプ 3個</span>
+                        <div class="w-20 h-20 mx-auto rounded-full bg-pop-orange/10 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-mug-hot text-pop-orange text-3xl" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-ink mb-3">オロポ</h3>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed">
+                            サウナのあとの定番ドリンク。<br>
+                            ご一緒の皆さまぶん、<br class="hidden md:block">まとめてお出しします。
+                        </p>
+                        <p class="inline-block text-xs font-bold text-pop-orange bg-pop-orange/10 rounded-full px-4 py-1.5 mt-5">
+                            グループ全員にプレゼント
+                        </p>
+                    </div>
+
+                    <!-- 6個 -->
+                    <div class="card p-7 text-center border-t-[6px] border-pop-blue">
+                        <span class="ribbon inline-block bg-pop-blue text-sm px-5 py-1.5 mb-6">スタンプ 6個</span>
+                        <div class="w-20 h-20 mx-auto rounded-full bg-pop-blue/10 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-hat-cowboy text-pop-blue text-3xl" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-ink mb-3">限定サウナハット</h3>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed">
+                            Yu-Ruでしか手に入らない<br class="hidden md:block">オリジナル。頭を熱から守って、<br class="hidden md:block">ととのいが深まります。
+                        </p>
+                        <p class="inline-block text-xs font-bold text-pop-blue bg-pop-blue/10 rounded-full px-4 py-1.5 mt-5">
+                            お一人様 1点
+                        </p>
+                    </div>
+
+                    <!-- 10個 -->
+                    <div class="card p-7 text-center border-t-[6px] border-pop-gold">
+                        <span class="ribbon inline-block bg-pop-gold text-sm px-5 py-1.5 mb-6">スタンプ 10個</span>
+                        <div class="w-20 h-20 mx-auto rounded-full bg-pop-gold/10 flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-crown text-pop-gold text-3xl" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-ink mb-3">Premiumルーム<br class="md:hidden">2時間 無料</h3>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed">
+                            いちばん人気のトレーラーサウナを<br class="hidden md:block">まるごと貸切で。
+                        </p>
+                        <p class="inline-block text-xs font-bold text-pop-gold bg-pop-gold/10 rounded-full px-4 py-1.5 mt-5">
+                            通常 14,000円 → 0円
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- 殿堂入り -->
+                <div class="hall mt-8 px-6 py-9 sm:px-12 sm:py-10 text-center">
+                    <p class="text-xs font-extrabold text-pop-gold tracking-widest mb-3">HALL OF FAME</p>
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-ink mb-4">
+                        <i class="fa-solid fa-trophy text-pop-gold mr-2" aria-hidden="true"></i>10個ぜんぶ貯めたら「殿堂入り」
+                    </h3>
+                    <p class="text-sm text-ink-soft font-medium leading-relaxed">
+                        10回も通ってくださった証として、<br class="hidden sm:block">
+                        カードはここで完成。<br class="sm:hidden">Yu-Ruの「殿堂入り」となります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 貯め方 ===== -->
+        <section class="px-4 py-16 sm:py-24 bg-soft">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-xs font-extrabold text-line tracking-widest mb-3">HOW TO COLLECT</p>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-ink leading-snug">スタンプの貯め方</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                    <div class="card p-8 text-center">
+                        <div class="w-16 h-16 mx-auto rounded-full bg-line-pale flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-fire text-line text-2xl" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-ink mb-4">サウナを利用する</h3>
+                        <p class="text-4xl font-extrabold text-line mb-4">＋1<span class="text-base ml-1">個</span></p>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed">
+                            ご利用1回につき1個。<br>お部屋やプランは問いません。
+                        </p>
+                    </div>
+
+                    <div class="card p-8 text-center">
+                        <div class="w-16 h-16 mx-auto rounded-full bg-line-pale flex items-center justify-center mb-5">
+                            <i class="fa-solid fa-star text-line text-2xl" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-ink mb-4">初回にGoogle口コミ</h3>
+                        <p class="text-4xl font-extrabold text-line mb-4">＋1<span class="text-base ml-1">個</span></p>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed">
+                            はじめてのご来店のときに<br>口コミを書いていただくと1個。
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- 毎月10日は2倍デー -->
+                <div class="dbl mt-6 px-6 py-9 sm:px-12 sm:py-10 text-center text-white">
+                    <p class="text-xs font-extrabold tracking-widest opacity-90 mb-3">DOUBLE STAMP DAY</p>
+                    <h3 class="text-xl sm:text-2xl font-extrabold leading-snug mb-5">
+                        <i class="fa-solid fa-calendar-day mr-2" aria-hidden="true"></i>毎月10日は、<br class="sm:hidden">スタンプ2倍デー
+                    </h3>
+                    <p class="inline-flex items-baseline gap-2 bg-white/25 rounded-full px-6 py-3 mb-5">
+                        <span class="text-sm font-bold">この日のご利用は</span>
+                        <span class="text-3xl sm:text-4xl font-extrabold leading-none">＋2</span>
+                        <span class="text-sm font-bold">個</span>
+                    </p>
+                    <p class="text-sm font-medium opacity-95 leading-relaxed">
+                        10日に来るだけで、いつもの2回分。<br class="sm:hidden">ゴールまでの道のりが、一気に縮まります。
+                    </p>
+                    <p class="text-xs font-medium opacity-85 leading-relaxed mt-5 pt-4 border-t border-white/25">
+                        ※ 10日が定休日（毎週月曜・木曜）にあたる月は、実施いたしません。
+                    </p>
+                </div>
+
+                <div class="card mt-6 px-5 py-8 sm:px-10 text-center bg-line-pale shadow-none">
+                    <p class="text-base sm:text-xl font-extrabold text-ink mb-6">
+                        はじめての方は、<br class="sm:hidden">こんなに貯まります
+                    </p>
+
+                    <!-- ふだんの日 -->
+                    <div class="bg-white rounded-2xl px-4 py-5 sm:px-7 mb-3">
+                        <p class="text-xs font-extrabold text-ink-faint mb-4">ふだんの日にデビュー</p>
+                        <div class="flex items-center justify-center gap-1.5 sm:gap-3">
+                            <span class="calc-chip">ご利用<b class="text-line ml-1">＋1</b></span>
+                            <span class="calc-op">＋</span>
+                            <span class="calc-chip">口コミ<b class="text-line ml-1">＋1</b></span>
+                            <span class="calc-op">＝</span>
+                            <span class="calc-sum text-line">2<span class="text-xs ml-0.5">個</span></span>
+                        </div>
+                        <p class="text-[11px] font-bold text-ink-faint mt-4">あと1個で、オロポに届きます</p>
+                    </div>
+
+                    <!-- 10日デビュー -->
+                    <div class="bg-white rounded-2xl px-4 py-5 sm:px-7 border-2 border-pop-pink/40">
+                        <p class="text-xs font-extrabold text-pop-pink mb-4">
+                            <i class="fa-solid fa-calendar-day mr-1" aria-hidden="true"></i>10日にデビューすると
+                        </p>
+                        <div class="flex items-center justify-center gap-1.5 sm:gap-3">
+                            <span class="calc-chip">ご利用<b class="text-pop-pink ml-1">＋2</b></span>
+                            <span class="calc-op">＋</span>
+                            <span class="calc-chip">口コミ<b class="text-pop-pink ml-1">＋1</b></span>
+                            <span class="calc-op">＝</span>
+                            <span class="calc-sum text-pop-pink">3<span class="text-xs ml-0.5">個</span></span>
+                        </div>
+                        <p class="pill-dbl inline-block text-xs sm:text-sm font-extrabold rounded-full px-5 py-2.5 mt-5">
+                            <i class="fa-solid fa-mug-hot mr-1.5" aria-hidden="true"></i>初回でいきなりオロポに到達
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 流れ ===== -->
+        <section class="px-4 py-16 sm:py-24 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-xs font-extrabold text-line tracking-widest mb-3">HOW IT WORKS</p>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-ink leading-snug">使い方は、かんたん4ステップ</h2>
+                </div>
+
+                <ol class="space-y-4">
+                    <li class="card p-6 flex items-start gap-4">
+                        <span class="step-num flex-shrink-0 mt-0.5">1</span>
+                        <div>
+                            <h3 class="text-base font-extrabold text-ink mb-1.5">公式LINEを友だち追加</h3>
+                            <p class="text-sm text-ink-soft font-medium leading-relaxed">追加した時点で、スタンプカードが自動で発行されます。アプリのインストールは不要です。</p>
+                        </div>
+                    </li>
+                    <li class="card p-6 flex items-start gap-4">
+                        <span class="step-num flex-shrink-0 mt-0.5">2</span>
+                        <div>
+                            <h3 class="text-base font-extrabold text-ink mb-1.5">いつもどおり予約して、来店</h3>
+                            <p class="text-sm text-ink-soft font-medium leading-relaxed">ご予約方法は今までと変わりません。特別な手続きはありません。</p>
+                        </div>
+                    </li>
+                    <li class="card p-6 flex items-start gap-4">
+                        <span class="step-num flex-shrink-0 mt-0.5">3</span>
+                        <div>
+                            <h3 class="text-base font-extrabold text-ink mb-1.5">スタッフがスタンプを押します</h3>
+                            <p class="text-sm text-ink-soft font-medium leading-relaxed">ご来店時にスタッフがお付けします。<span class="text-ink font-bold">お帰りのあとは押せません</span>ので、その場でお受け取りください。</p>
+                        </div>
+                    </li>
+                    <li class="card p-6 flex items-start gap-4">
+                        <span class="step-num flex-shrink-0 mt-0.5">4</span>
+                        <div>
+                            <h3 class="text-base font-extrabold text-ink mb-1.5">貯まったら、スタッフに見せるだけ</h3>
+                            <p class="text-sm text-ink-soft font-medium leading-relaxed">3個・6個・10個に届いたら、ご来店時にスタッフへお声がけください。その場で特典をお渡しします。</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== Q&A ===== -->
+        <section class="px-4 py-16 sm:py-24 bg-soft">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-xs font-extrabold text-line tracking-widest mb-3">Q &amp; A</p>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-ink leading-snug">よくあるご質問</h2>
+                </div>
+
+                <div class="space-y-3">
+
+                    <details class="qa p-5 sm:p-6" open>
+                        <summary class="text-ink text-sm sm:text-base">
+                            <span class="text-line font-extrabold flex-shrink-0">Q.</span>
+                            <span class="flex-1">スタンプに有効期限はありますか？</span>
+                            <i class="fa-solid fa-chevron-down chev text-ink-faint text-xs mt-1.5" aria-hidden="true"></i>
+                        </summary>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed mt-4 pl-7">
+                            <strong class="text-ink">ありません。</strong>期限を気にせず、ご自分のペースでゆっくり貯めていただけます。
+                        </p>
+                    </details>
+
+                    <details class="qa p-5 sm:p-6">
+                        <summary class="text-ink text-sm sm:text-base">
+                            <span class="text-line font-extrabold flex-shrink-0">Q.</span>
+                            <span class="flex-1">毎月10日の「2倍デー」とは何ですか？</span>
+                            <i class="fa-solid fa-chevron-down chev text-ink-faint text-xs mt-1.5" aria-hidden="true"></i>
+                        </summary>
+                        <div class="text-sm text-ink-soft font-medium leading-relaxed mt-4 pl-7 space-y-3">
+                            <p>毎月10日にご利用いただくと、スタンプが1個ではなく<strong class="text-ink">2個</strong>貯まります。ご予約の方法も料金も、いつもと変わりません。この日を狙ってお越しいただくと、早くゴールに近づきます。</p>
+                            <p>はじめてのご来店が10日で、Google口コミもご投稿いただいた場合は<strong class="text-pop-pink">合計3個</strong>。<strong class="text-ink">初回でオロポに到達</strong>します。</p>
+                            <p class="text-ink-faint text-xs">※ 10日が定休日（毎週月曜・木曜）にあたる月は、実施いたしません。前日への繰り上げや翌日への繰り下げもございませんので、ご了承ください。</p>
+                        </div>
+                    </details>
+
+                    <details class="qa p-5 sm:p-6">
+                        <summary class="text-ink text-sm sm:text-base">
+                            <span class="text-line font-extrabold flex-shrink-0">Q.</span>
+                            <span class="flex-1">10個貯まったら、そのあとはどうなりますか？</span>
+                            <i class="fa-solid fa-chevron-down chev text-ink-faint text-xs mt-1.5" aria-hidden="true"></i>
+                        </summary>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed mt-4 pl-7">
+                            Premiumルーム2時間無料の特典をお受け取りいただき、<strong class="text-ink">「殿堂入り」</strong>となります。カードはそこで完成です。
+                        </p>
+                    </details>
+
+                    <details class="qa p-5 sm:p-6">
+                        <summary class="text-ink text-sm sm:text-base">
+                            <span class="text-line font-extrabold flex-shrink-0">Q.</span>
+                            <span class="flex-1">何人かで行った場合、特典はどうなりますか？</span>
+                            <i class="fa-solid fa-chevron-down chev text-ink-faint text-xs mt-1.5" aria-hidden="true"></i>
+                        </summary>
+                        <div class="text-sm text-ink-soft font-medium leading-relaxed mt-4 pl-7 space-y-2">
+                            <p><strong class="text-pop-orange">オロポ（3個）</strong>… ご一緒にお越しの皆さまぶんをお出しします。</p>
+                            <p><strong class="text-pop-blue">サウナハット（6個）</strong>… お一人様 1点のお渡しとなります。</p>
+                        </div>
+                    </details>
+
+                    <details class="qa p-5 sm:p-6">
+                        <summary class="text-ink text-sm sm:text-base">
+                            <span class="text-line font-extrabold flex-shrink-0">Q.</span>
+                            <span class="flex-1">「Yu-Ruの日」など、ほかの割引と一緒に使えますか？</span>
+                            <i class="fa-solid fa-chevron-down chev text-ink-faint text-xs mt-1.5" aria-hidden="true"></i>
+                        </summary>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed mt-4 pl-7">
+                            <strong class="text-ink">併用いただけます。</strong>割引をご利用の回も、スタンプは通常どおり1個お付けします。
+                        </p>
+                    </details>
+
+                    <details class="qa p-5 sm:p-6">
+                        <summary class="text-ink text-sm sm:text-base">
+                            <span class="text-line font-extrabold flex-shrink-0">Q.</span>
+                            <span class="flex-1">押してもらうのを忘れました。あとから押せますか？</span>
+                            <i class="fa-solid fa-chevron-down chev text-ink-faint text-xs mt-1.5" aria-hidden="true"></i>
+                        </summary>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed mt-4 pl-7">
+                            申し訳ございません。スタンプは<strong class="text-ink">ご来店時のみ</strong>のお付けとなります。お帰りのあとは対応いたしかねますので、その場でお声がけください。
+                        </p>
+                    </details>
+
+                    <details class="qa p-5 sm:p-6">
+                        <summary class="text-ink text-sm sm:text-base">
+                            <span class="text-line font-extrabold flex-shrink-0">Q.</span>
+                            <span class="flex-1">専用のアプリは必要ですか？</span>
+                            <i class="fa-solid fa-chevron-down chev text-ink-faint text-xs mt-1.5" aria-hidden="true"></i>
+                        </summary>
+                        <p class="text-sm text-ink-soft font-medium leading-relaxed mt-4 pl-7">
+                            必要ありません。<strong class="text-ink">LINEだけ</strong>でご利用いただけます。カードを持ち歩く必要も、なくす心配もありません。
+                        </p>
+                    </details>
+
+                </div>
+
+                <p class="text-xs text-ink-faint font-medium text-center mt-8 leading-relaxed">
+                    ※ 特典の内容は、予告なく変更となる場合がございます。
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="px-4 py-16 sm:py-24 bg-white">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-ink leading-snug mb-5">
+                    まずは友だち追加から。
+                </h2>
+                <p class="text-sm sm:text-base text-ink-soft font-medium leading-relaxed mb-10">
+                    追加した時点でカードが発行されます。<br>
+                    次のご来店から、さっそく1個目が貯まります。
+                </p>
+
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" class="btn-line inline-block text-base sm:text-lg px-10 sm:px-16 py-4 w-full sm:w-auto">
+                    <i class="fa-brands fa-line mr-2" aria-hidden="true"></i>LINEで友だち追加する
+                </a>
+
+                <p class="mt-8">
+                    <a href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer" class="btn-ghost inline-block text-sm px-8 py-3">
+                        ご予約はこちら
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-soft border-t border-black/5 pt-12 pb-10 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru ロゴ" class="h-9 w-auto mb-2 logo-dark opacity-70 mx-auto" loading="lazy" decoding="async">
+            <p class="text-sm font-extrabold text-ink/70 mb-6">プライベート薪サウナ Yu-Ru</p>
+
+            <div class="flex justify-center gap-5 mb-8">
+                <a href="https://www.instagram.com/sauna_yu_ru/" target="_blank" rel="noopener noreferrer" aria-label="公式Instagram" class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-ink-soft hover:text-pop-orange transition"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" aria-label="公式LINE" class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-ink-soft hover:text-line transition"><i class="fa-brands fa-line" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs text-ink-soft font-medium mb-8">
+                <a href="https://sauna-yuru.netlify.app/" class="hover:text-line transition">トップページ</a>
+                <a href="../tokushoho.html" class="hover:text-line transition">特定商取引法に基づく表記</a>
+                <a href="../privacy-policy.html" class="hover:text-line transition">プライバシーポリシー</a>
+                <a href="../cancel-policy.html" class="hover:text-line transition">キャンセルポリシー</a>
+            </div>
+
+            <p class="text-[10px] text-ink-faint tracking-wider">© 2026 Yu-Ru. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // GA4: LINE・Square予約リンクのクリック計測
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href]').forEach(function (link) {
+                var href = link.href;
+                var eventName = null;
+                if (href.indexOf('lin.ee') !== -1 || href.indexOf('page.line.me') !== -1) eventName = 'line_click';
+                else if (href.indexOf('square.site') !== -1 || href.indexOf('squareup.com') !== -1) eventName = 'square_booking_click';
+                if (eventName) {
+                    link.addEventListener('click', function () {
+                        if (typeof gtag === 'function') {
+                            gtag('event', eventName, { link_url: href, page_location: location.href });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
