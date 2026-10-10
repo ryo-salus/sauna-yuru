@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMCCEZTTVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JMCCEZTTVN');
+    </script>
+    <!-- Microsoft ヒートマップツール測定用 -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ydy493tlb0");
+    </script>
+
+    <meta name="description" content="鹿児島・姶良の貸切薪サウナYu-Ruで、星空を眺める夜の外気浴。お客様の写真とともに夜サウナの魅力をご紹介。月の満ち欠けカレンダーで、新月〜半月ごろの日程選びを。">
+    <meta property="og:title" content="星空サウナ｜鹿児島・姶良の貸切サウナ Yu-Ru">
+    <meta property="og:description" content="見上げる星空。何もしない、贅沢。自然に囲まれた貸切サウナで過ごす夜と、月の満ち欠けカレンダー。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sauna-yuru.netlify.app/starry-night">
+    <meta property="og:image" content="https://sauna-jpn.com/wp-content/uploads/2026/10/IMG_2846-rotated.jpeg">
+    <meta property="og:site_name" content="プライベート薪サウナ Yu-Ru">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="canonical" href="https://sauna-yuru.netlify.app/starry-night">
+    <link rel="icon" type="image/png" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+    <link rel="apple-touch-icon" href="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png">
+
+    <title>星空サウナ・月の満ち欠けカレンダー｜鹿児島・姶良 Yu-Ru</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yu-black': '#1A1A1A',
+                        'yu-green': '#0B120C',
+                        'yu-gold': '#C9A84C',
+                        'yu-gold-light': '#E8D5A3',
+                        'yu-text': '#EDE8DF',
+                        'yu-subtext': '#8A8A8A',
+                        'yu-dark': '#050a06',
+                    },
+                    fontFamily: {
+                        'serif': ['"Noto Serif JP"', 'serif'],
+                        'cinzel': ['"Cinzel"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;background:#050a06;color:#EDE8DF;font-family:"Noto Serif JP",serif;font-weight:300;-webkit-font-smoothing:antialiased;letter-spacing:.06em}
+.wrap{max-width:1152px;margin:0 auto;padding:0 24px}
+.section-label{display:block;color:#C9A84C;font-size:11px;letter-spacing:.24em;margin-bottom:20px}
+.logo-invert{filter:invert(1) brightness(1.8);mix-blend-mode:lighten}
+.bg-glass{background:rgba(5,10,6,.9);backdrop-filter:blur(16px);border-bottom:1px solid #c9a84c30}
+.star-section{padding:96px 0}
+.star-copy{font-size:15px;line-height:2.3;color:#EDE8DFcc}
+.star-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:14px 24px;border:1px solid #C9A84C;color:#C9A84C;font-size:13px;letter-spacing:.1em;transition:background .2s,color .2s}
+.star-button:hover{background:#C9A84C;color:#050a06}
+.star-button.solid{background:#C9A84C;color:#050a06}
+a:focus-visible,button:focus-visible{outline:2px solid #E8D5A3;outline-offset:4px}
+.moon-panel{border:1px solid #c9a84c50;padding:32px;background:#0B120C}
+.moon-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:24px 0}
+.moon-toolbar button{width:44px;height:44px;border:1px solid #c9a84c60;color:#E8D5A3;background:transparent;cursor:pointer}
+.moon-toolbar button:disabled{opacity:.25;cursor:default}
+.moon-table{width:100%;table-layout:fixed;border-collapse:collapse}
+.moon-table th{font-weight:300;font-size:12px;color:#EDE8DF99;padding:10px 0}
+.moon-table td{padding:3px;vertical-align:top}
+.moon-day{width:100%;min-height:100px;border:1px solid #ffffff12;background:#050a0680;color:#EDE8DF;display:flex;flex-direction:column;align-items:center;gap:7px;padding:9px 2px;cursor:pointer;font-family:inherit}
+.moon-day svg{width:26px;height:26px}
+.moon-day .day-number{font-size:14px}
+.moon-day .moon-label{font-size:10px;line-height:1.5;letter-spacing:0}
+.moon-day.is-suggested{background:#c9a84c14;border-color:#c9a84c60}
+.moon-day.is-suggested .moon-label{color:#E8D5A3}
+.moon-day.is-today .day-number{text-decoration:underline;text-underline-offset:4px}
+.moon-day[aria-pressed="true"]{outline:2px solid #C9A84C;outline-offset:-2px}
+.moon-day.is-past{opacity:.55}
+.moon-detail{margin-top:24px;border-top:1px solid #c9a84c40;padding-top:24px;min-height:140px}
+.moon-note{font-size:12px;color:#EDE8DFa8;line-height:2}
+.moon-legend{font-size:12px;color:#E8D5A3;line-height:2}
+.moon-legend::before{content:"";display:inline-block;width:12px;height:12px;background:#c9a84c25;border:1px solid #C9A84C;margin-right:8px}
+[hidden]{display:none!important}
+@media(max-width:600px){.wrap{padding:0 20px}.star-section{padding:64px 0}.moon-panel{padding:18px 8px}.moon-table td{padding:2px}.moon-day{min-height:91px;gap:6px}.moon-day .moon-label{font-size:9px}.moon-day svg{width:23px;height:23px}.moon-toolbar{padding:0 4px}.moon-note,.moon-detail,.moon-legend{margin-left:6px;margin-right:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+        /* Original photo stays unchanged; brightness is a display-only aid. */
+        .starlight-frame { position:relative; overflow:hidden; border:0; background:transparent; box-shadow:0 18px 48px rgba(0,0,0,.18); }
+        .starlight-frame img { display:block; width:100%; height:auto; filter:none; transform:scale(1); transition:filter .6s ease,transform 4s ease-out; }
+        .starlight-frame.is-revealed img { transform:scale(1.045); }
+        .starlight-frame.is-bright img { filter:brightness(2); }
+        .starlight-controls { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:16px; }
+        .starlight-toggle { min-height:44px; padding:10px 16px; border:1px solid #C9A84C; background:rgba(201,168,76,.08); color:#E8D5A3; font-family:inherit; font-size:12px; letter-spacing:.06em; cursor:pointer; }
+        .starlight-toggle:hover,.starlight-toggle[aria-pressed="true"] { background:#C9A84C; color:#050a06; }
+        .starlight-toggle:focus-visible { outline:2px solid #E8D5A3; outline-offset:4px; }
+        .starlight-hint { color:#EDE8DFb3; font-size:11px; line-height:1.8; }
+        @media(prefers-reduced-motion:reduce) { .starlight-frame img { transition:none; transform:none!important; } }
+
+</style>
+</head>
+<body>
+<header class="fixed w-full top-0 z-50 bg-glass">
+ <div class="wrap flex items-center justify-between h-20">
+  <a href="https://sauna-yuru.netlify.app/" class="flex items-center gap-3" aria-label="Yu-Ru トップページ">
+   <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="" class="h-9 w-auto logo-invert">
+   <span class="font-cinzel text-lg text-white tracking-[0.25em]">Yu-Ru</span>
+  </a>
+  <a class="star-button" href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer">空き状況・ご予約</a>
+ </div>
+</header>
+<main class="pt-20">
+ <section class="star-section">
+  <div class="wrap">
+   <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div>
+     <span class="section-label">鹿児島・姶良で過ごす、貸切サウナの夜</span>
+     <p class="font-cinzel text-sm tracking-[0.25em] text-yu-gold mb-8">Sauna Under the Stars</p>
+     <h1 class="text-3xl md:text-5xl font-light leading-relaxed tracking-wider text-yu-text mb-8">見上げる星空。<br>何もしない、贅沢。</h1>
+     <p class="star-copy mb-8">薪のぬくもりに包まれたあと、夜風の中へ。<br>晴れた夜には、外気浴をしながら空を眺めるひととき。<br>自然に囲まれたプライベート空間で、<br>いつもとは違う「休む時間」を。</p>
+     <a class="star-button" href="#moon-calendar">月のカレンダーで日程を探す <span aria-hidden="true">↓</span></a>
+    </div>
+    <figure>
+                    <div class="starlight-frame" id="starlight-photo">
+     <img src="https://sauna-jpn.com/wp-content/uploads/2026/10/IMG_2846-rotated.jpeg" width="3024" height="4032" alt="お客様が撮影したYu-Ruの夜のサウナ風景" class="starlight-image" fetchpriority="high" decoding="async">
+                    </div>
+                    <div class="starlight-controls">
+                        <button type="button" class="starlight-toggle" aria-controls="starlight-photo" aria-pressed="false" hidden><span aria-hidden="true">☼</span> <span class="starlight-button-label">星空を明るく見る</span></button>
+                        <span class="starlight-hint" id="starlight-status" role="status">無加工表示（明るさ・色補正なし）</span>
+                    </div>
+     <figcaption class="moon-note mt-3">写真：お客様よりご提供。通常表示は、ご提供写真に明るさ・色の加工を加えていません。実際の見え方は天候や撮影条件により異なります。</figcaption>
+    </figure>
+   </div>
+  </div>
+ </section>
+ <section class="star-section bg-yu-green border-y border-yu-gold/15">
+  <div class="wrap">
+   <span class="section-label">星空だけでなく、この時間を楽しむために</span>
+   <h2 class="text-2xl md:text-3xl text-yu-gold font-light leading-relaxed mb-12">誰にも急かされない夜を、<br class="sm:hidden">大切な人と。</h2>
+   <div class="grid md:grid-cols-3 gap-10">
+    <div><p class="font-cinzel text-yu-gold mb-4">01 / Warmth</p><h3 class="text-lg mb-4">薪のぬくもりから、夜風へ。</h3><p class="star-copy">サウナで温まったあとは、屋外でひと休み。昼間とは違う自然の表情を感じながら、自分のペースで過ごせます。</p></div>
+    <div><p class="font-cinzel text-yu-gold mb-4">02 / Private</p><h3 class="text-lg mb-4">会話も、沈黙も、心地よく。</h3><p class="star-copy">気兼ねなく語り合ったり、言葉を休めて空を見上げたり。貸切だからこそ、過ごし方は自分たち次第です。</p></div>
+    <div><p class="font-cinzel text-yu-gold mb-4">03 / Nature</p><h3 class="text-lg mb-4">空の表情に、日常を忘れる。</h3><p class="star-copy">星が見える日も、月明かりが美しい日も。同じ場所でも、夜ごとに変わる自然との出会いをお楽しみください。</p></div>
+   </div>
+  </div>
+ </section>
+ <section id="moon-calendar" class="star-section" aria-labelledby="calendar-heading">
+  <div class="wrap">
+   <div class="max-w-3xl mb-12">
+    <span class="section-label">夜を選ぶ、小さなヒント</span>
+    <h2 id="calendar-heading" class="text-2xl md:text-4xl font-light text-yu-gold leading-relaxed mb-6">星空を楽しむなら、<br>月の満ち欠けもチェック。</h2>
+    <p class="star-copy">まず候補にしたいのは、新月前後から上弦の半月ごろ。満月のころより月の明るい部分が小さく、日程選びのひとつの目安になります。ただし、半月でも月が空に出ている時間帯には月明かりの影響があります。</p>
+    <p class="star-copy mt-4">下弦の半月から新月へ向かう時期も、夕方〜夜の月が昇る前なら候補に。月の形だけでなく、当日の月の出入り・天気も合わせて確認しましょう。</p>
+   </div>
+   <div class="moon-panel max-w-4xl mx-auto">
+    <p class="font-cinzel text-yu-gold text-xs tracking-[0.25em]">Moon Calendar</p>
+    <p class="moon-note mt-3">各日21時（日本時間）の月相・月の照らされている割合の概算です。21時は計算基準であり、営業時間を示すものではありません。</p>
+    <p id="calendar-fallback" class="moon-note mt-4">カレンダーを表示できない場合は、JavaScriptが有効になっていることをご確認のうえ、ページを再読み込みしてください。</p>
+    <div id="calendar-interactive" hidden>
+     <div class="moon-toolbar">
+      <button id="moon-prev" type="button" aria-label="前の月を見る">←</button>
+      <h3 id="moon-month" class="text-lg md:text-2xl text-yu-gold" aria-live="polite"></h3>
+      <button id="moon-next" type="button" aria-label="次の月を見る">→</button>
+     </div>
+     <p class="moon-legend mb-4">金色の枠＋「候補」：新月前後〜上弦の半月の目安</p>
+     <table class="moon-table" aria-label="月の満ち欠けカレンダー">
+      <caption class="sr-only" id="moon-caption"></caption>
+      <thead><tr><th scope="col">日</th><th scope="col">月</th><th scope="col">火</th><th scope="col">水</th><th scope="col">木</th><th scope="col">金</th><th scope="col">土</th></tr></thead>
+      <tbody id="moon-days"></tbody>
+     </table>
+     <div id="moon-detail" class="moon-detail" aria-live="polite" aria-atomic="true"></div>
+     <p class="moon-note">※候補日は天候・眺望・営業日・予約の空きを保証しません。日付の選択内容は予約ページには引き継がれません。</p>
+    </div>
+    <p class="moon-note mt-6">計算はSunCalcによる概算です。「新月ごろ」「満月ごろ」は厳密な発生日時ではありません。山や木々による遮り、雲、周囲の照明によっても見え方は変わります。</p>
+   </div>
+  </div>
+ </section>
+ <section class="star-section bg-yu-green border-y border-yu-gold/15">
+  <div class="wrap max-w-3xl">
+   <span class="section-label">ご予約の前に</span>
+   <h2 class="text-2xl text-yu-gold mb-8">自然の夜を楽しむためのご案内</h2>
+   <ul class="star-copy space-y-4 list-disc pl-5">
+    <li>星空の見え方は天候・月明かりなどに左右されます。星が見えることをお約束するプランではないため、当日の天候を理由としたご返金・日程変更は承っておりません。</li>
+    <li>夜の営業・空き状況は予約ページをご確認ください。ご予約の受付は、ご利用開始時刻の12時間前までです。</li>
+    <li>サウナ利用時は水着の着用が必須です。夜の外気浴に備え、羽織るものがあると便利です。</li>
+    <li>荒天・災害などにより当施設が営業を取りやめる場合は、別日への振替または全額ご返金にて対応いたします。日時変更・キャンセルの条件は、<a href="../cancel-policy.html" class="text-yu-gold underline underline-offset-4">注意事項</a>をご確認ください。</li>
+   </ul>
+  </div>
+ </section>
+ <section class="star-section text-center">
+  <div class="wrap">
+   <span class="section-label">いつもの夜を、少し特別に。</span>
+   <h2 class="text-2xl md:text-3xl text-yu-gold leading-relaxed mb-8">次の休息は、空を見上げる時間に。</h2>
+   <p class="star-copy mb-8">鹿児島県姶良市のプライベート薪サウナ Yu-Ru。<br>お気に入りのお部屋で、夜のひとときをお楽しみください。</p>
+   <p class="moon-note" style="max-width:640px;margin:0 auto 24px">
+    ※ 星が見えることを保証するプランではなく、天候によるご返金・日程変更は承っておりません。
+   </p>
+   <a class="star-button solid" href="https://my-site-105792-105015.square.site/" target="_blank" rel="noopener noreferrer">夜の空き状況を確認する <span aria-hidden="true">↗</span></a>
+   <p class="mt-6"><a href="https://sauna-yuru.netlify.app/#rooms" class="text-sm text-yu-gold underline underline-offset-4">お部屋・料金を見る</a></p>
+  </div>
+ </section>
+</main>
+    <!-- Footer -->
+    <footer class="bg-yu-dark border-t border-white/5 pt-16 pb-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="https://sauna-jpn.com/wp-content/uploads/2026/06/image.png" alt="Yu-Ru Logo" class="h-10 w-auto mb-3 logo-invert opacity-60 mx-auto" loading="lazy" decoding="async">
+            <p class="font-cinzel text-sm tracking-[0.3em] text-yu-text/60 mb-8">Yu-Ru</p>
+
+            <div class="flex justify-center space-x-6 mb-10">
+                <a href="https://www.instagram.com/sauna_yu_ru/" target="_blank" rel="noopener noreferrer" aria-label="公式Instagram" class="text-yu-subtext hover:text-yu-gold transition duration-300"><i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i></a>
+                <a href="https://page.line.me/782iympa" target="_blank" rel="noopener noreferrer" aria-label="公式LINE" class="text-yu-subtext hover:text-[#06C755] transition duration-300"><i class="fa-brands fa-line text-lg" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[10px] md:text-xs text-yu-subtext mb-10 tracking-widest font-serif">
+                <a href="../tokushoho.html" class="hover:text-yu-gold transition-colors">特定商取引法に基づく表記</a>
+                <a href="../privacy-policy.html" class="hover:text-yu-gold transition-colors">プライバシーポリシー</a>
+                <a href="../cancel-policy.html" class="hover:text-yu-gold transition-colors">注意事項</a>
+            </div>
+
+            <p class="text-[10px] text-yu-subtext/60 font-cinzel tracking-[0.35em] uppercase">© 2026 Yu-Ru. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+<!-- SunCalc v1.9.0, vendored inline to keep this feature page self-contained. -->
+<script>
+/*
+Copyright (c) 2014, Vladimir Agafonkin
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of
+      conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list
+      of conditions and the following disclaimer in the documentation and/or other materials
+      provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+/*
+ (c) 2011-2015, Vladimir Agafonkin
+ SunCalc is a JavaScript library for calculating sun/moon position and light phases.
+ https://github.com/mourner/suncalc
+*/
+
+(function () { 'use strict';
+
+// shortcuts for easier to read formulas
+
+var PI   = Math.PI,
+    sin  = Math.sin,
+    cos  = Math.cos,
+    tan  = Math.tan,
+    asin = Math.asin,
+    atan = Math.atan2,
+    acos = Math.acos,
+    rad  = PI / 180;
+
+// sun calculations are based on http://aa.quae.nl/en/reken/zonpositie.html formulas
+
+
+// date/time constants and conversions
+
+var dayMs = 1000 * 60 * 60 * 24,
+    J1970 = 2440588,
+    J2000 = 2451545;
+
+function toJulian(date) { return date.valueOf() / dayMs - 0.5 + J1970; }
+function fromJulian(j)  { return new Date((j + 0.5 - J1970) * dayMs); }
+function toDays(date)   { return toJulian(date) - J2000; }
+
+
+// general calculations for position
+
+var e = rad * 23.4397; // obliquity of the Earth
+
+function rightAscension(l, b) { return atan(sin(l) * cos(e) - tan(b) * sin(e), cos(l)); }
+function declination(l, b)    { return asin(sin(b) * cos(e) + cos(b) * sin(e) * sin(l)); }
+
+function azimuth(H, phi, dec)  { return atan(sin(H), cos(H) * sin(phi) - tan(dec) * cos(phi)); }
+function altitude(H, phi, dec) { return asin(sin(phi) * sin(dec) + cos(phi) * cos(dec) * cos(H)); }
+
+function siderealTime(d, lw) { return rad * (280.16 + 360.9856235 * d) - lw; }
+
+function astroRefraction(h) {
+    if (h < 0) // the following formula works for positive altitudes only.
+        h = 0; // if h = -0.08901179 a div/0 would occur.
+
+    // formula 16.4 of "Astronomical Algorithms" 2nd edition by Jean Meeus (Willmann-Bell, Richmond) 1998.
+    // 1.02 / tan(h + 10.26 / (h + 5.10)) h in degrees, result in arc minutes -> converted to rad:
+    return 0.0002967 / Math.tan(h + 0.00312536 / (h + 0.08901179));
+}
+
+// general sun calculations
+
+function solarMeanAnomaly(d) { return rad * (357.5291 + 0.98560028 * d); }
+
+function eclipticLongitude(M) {
+
+    var C = rad * (1.9148 * sin(M) + 0.02 * sin(2 * M) + 0.0003 * sin(3 * M)), // equation of center
+        P = rad * 102.9372; // perihelion of the Earth
+
+    return M + C + P + PI;
+}
+
+function sunCoords(d) {
+
+    var M = solarMeanAnomaly(d),
+        L = eclipticLongitude(M);
+
+    return {
+        dec: declination(L, 0),
+        ra: rightAscension(L, 0)
+    };
+}
+
+
+var SunCalc = {};
+
+
+// calculates sun position for a given date and latitude/longitude
+
+SunCalc.getPosition = function (date, lat, lng) {
+
+    var lw  = rad * -lng,
+        phi = rad * lat,
+        d   = toDays(date),
+
+        c  = sunCoords(d),
+        H  = siderealTime(d, lw) - c.ra;
+
+    return {
+        azimuth: azimuth(H, phi, c.dec),
+        altitude: altitude(H, phi, c.dec)
+    };
+};
+
+
+// sun times configuration (angle, morning name, evening name)
+
+var times = SunCalc.times = [
+    [-0.833, 'sunrise',       'sunset'      ],
+    [  -0.3, 'sunriseEnd',    'sunsetStart' ],
+    [    -6, 'dawn',          'dusk'        ],
+    [   -12, 'nauticalDawn',  'nauticalDusk'],
+    [   -18, 'nightEnd',      'night'       ],
+    [     6, 'goldenHourEnd', 'goldenHour'  ]
+];
+
+// adds a custom time to the times config
+
+SunCalc.addTime = function (angle, riseName, setName) {
+    times.push([angle, riseName, setName]);
+};
+
+
+// calculations for sun times
+
+var J0 = 0.0009;
+
+function julianCycle(d, lw) { return Math.round(d - J0 - lw / (2 * PI)); }
+
+function approxTransit(Ht, lw, n) { return J0 + (Ht + lw) / (2 * PI) + n; }
+function solarTransitJ(ds, M, L)  { return J2000 + ds + 0.0053 * sin(M) - 0.0069 * sin(2 * L); }
+
+function hourAngle(h, phi, d) { return acos((sin(h) - sin(phi) * sin(d)) / (cos(phi) * cos(d))); }
+function observerAngle(height) { return -2.076 * Math.sqrt(height) / 60; }
+
+// returns set time for the given sun altitude
+function getSetJ(h, lw, phi, dec, n, M, L) {
+
+    var w = hourAngle(h, phi, dec),
+        a = approxTransit(w, lw, n);
+    return solarTransitJ(a, M, L);
+}
+
+
+// calculates sun times for a given date, latitude/longitude, and, optionally,
+// the observer height (in meters) relative to the horizon
+
+SunCalc.getTimes = function (date, lat, lng, height) {
+
+    height = height || 0;
+
+    var lw = rad * -lng,
+        phi = rad * lat,
+
+        dh = observerAngle(height),
+
+        d = toDays(date),
+        n = julianCycle(d, lw),
+        ds = approxTransit(0, lw, n),
+
+        M = solarMeanAnomaly(ds),
+        L = eclipticLongitude(M),
+        dec = declination(L, 0),
+
+        Jnoon = solarTransitJ(ds, M, L),
+
+        i, len, time, h0, Jset, Jrise;
+
+
+    var result = {
+        solarNoon: fromJulian(Jnoon),
+        nadir: fromJulian(Jnoon - 0.5)
+    };
+
+    for (i = 0, len = times.length; i < len; i += 1) {
+        time = times[i];
+        h0 = (time[0] + dh) * rad;
+
+        Jset = getSetJ(h0, lw, phi, dec, n, M, L);
+        Jrise = Jnoon - (Jset - Jnoon);
+
+        result[time[1]] = fromJulian(Jrise);
+        result[time[2]] = fromJulian(Jset);
+    }
+
+    return result;
+};
+
+
+// moon calculations, based on http://aa.quae.nl/en/reken/hemelpositie.html formulas
+
+function moonCoords(d) { // geocentric ecliptic coordinates of the moon
+
+    var L = rad * (218.316 + 13.176396 * d), // ecliptic longitude
+        M = rad * (134.963 + 13.064993 * d), // mean anomaly
+        F = rad * (93.272 + 13.229350 * d),  // mean distance
+
+        l  = L + rad * 6.289 * sin(M), // longitude
+        b  = rad * 5.128 * sin(F),     // latitude
+        dt = 385001 - 20905 * cos(M);  // distance to the moon in km
+
+    return {
+        ra: rightAscension(l, b),
+        dec: declination(l, b),
+        dist: dt
+    };
+}
+
+SunCalc.getMoonPosition = function (date, lat, lng) {
+
+    var lw  = rad * -lng,
+        phi = rad * lat,
+        d   = toDays(date),
+
+        c = moonCoords(d),
+        H = siderealTime(d, lw) - c.ra,
+        h = altitude(H, phi, c.dec),
+        // formula 14.1 of "Astronomical Algorithms" 2nd edition by Jean Meeus (Willmann-Bell, Richmond) 1998.
+        pa = atan(sin(H), tan(phi) * cos(c.dec) - sin(c.dec) * cos(H));
+
+    h = h + astroRefraction(h); // altitude correction for refraction
+
+    return {
+        azimuth: azimuth(H, phi, c.dec),
+        altitude: h,
+        distance: c.dist,
+        parallacticAngle: pa
+    };
+};
+
+
+// calculations for illumination parameters of the moon,
+// based on http://idlastro.gsfc.nasa.gov/ftp/pro/astro/mphase.pro formulas and
+// Chapter 48 of "Astronomical Algorithms" 2nd edition by Jean Meeus (Willmann-Bell, Richmond) 1998.
+
+SunCalc.getMoonIllumination = function (date) {
+
+    var d = toDays(date || new Date()),
+        s = sunCoords(d),
+        m = moonCoords(d),
+
+        sdist = 149598000, // distance from Earth to Sun in km
+
+        phi = acos(sin(s.dec) * sin(m.dec) + cos(s.dec) * cos(m.dec) * cos(s.ra - m.ra)),
+        inc = atan(sdist * sin(phi), m.dist - sdist * cos(phi)),
+        angle = atan(cos(s.dec) * sin(s.ra - m.ra), sin(s.dec) * cos(m.dec) -
+                cos(s.dec) * sin(m.dec) * cos(s.ra - m.ra));
+
+    return {
+        fraction: (1 + cos(inc)) / 2,
+        phase: 0.5 + 0.5 * inc * (angle < 0 ? -1 : 1) / Math.PI,
+        angle: angle
+    };
+};
+
+
+function hoursLater(date, h) {
+    return new Date(date.valueOf() + h * dayMs / 24);
+}
+
+// calculations for moon rise/set times are based on http://www.stargazing.net/kepler/moonrise.html article
+
+SunCalc.getMoonTimes = function (date, lat, lng, inUTC) {
+    var t = new Date(date);
+    if (inUTC) t.setUTCHours(0, 0, 0, 0);
+    else t.setHours(0, 0, 0, 0);
+
+    var hc = 0.133 * rad,
+        h0 = SunCalc.getMoonPosition(t, lat, lng).altitude - hc,
+        h1, h2, rise, set, a, b, xe, ye, d, roots, x1, x2, dx;
+
+    // go in 2-hour chunks, each time seeing if a 3-point quadratic curve crosses zero (which means rise or set)
+    for (var i = 1; i <= 24; i += 2) {
+        h1 = SunCalc.getMoonPosition(hoursLater(t, i), lat, lng).altitude - hc;
+        h2 = SunCalc.getMoonPosition(hoursLater(t, i + 1), lat, lng).altitude - hc;
+
+        a = (h0 + h2) / 2 - h1;
+        b = (h2 - h0) / 2;
+        xe = -b / (2 * a);
+        ye = (a * xe + b) * xe + h1;
+        d = b * b - 4 * a * h1;
+        roots = 0;
+
+        if (d >= 0) {
+            dx = Math.sqrt(d) / (Math.abs(a) * 2);
+            x1 = xe - dx;
+            x2 = xe + dx;
+            if (Math.abs(x1) <= 1) roots++;
+            if (Math.abs(x2) <= 1) roots++;
+            if (x1 < -1) x1 = x2;
+        }
+
+        if (roots === 1) {
+            if (h0 < 0) rise = i + x1;
+            else set = i + x1;
+
+        } else if (roots === 2) {
+            rise = i + (ye < 0 ? x2 : x1);
+            set = i + (ye < 0 ? x1 : x2);
+        }
+
+        if (rise && set) break;
+
+        h0 = h2;
+    }
+
+    var result = {};
+
+    if (rise) result.rise = hoursLater(t, rise);
+    if (set) result.set = hoursLater(t, set);
+
+    if (!rise && !set) result[ye > 0 ? 'alwaysUp' : 'alwaysDown'] = true;
+
+    return result;
+};
+
+
+// export as Node module / AMD module / browser variable
+if (typeof exports === 'object' && typeof module !== 'undefined') module.exports = SunCalc;
+else if (typeof define === 'function' && define.amd) define(SunCalc);
+else window.SunCalc = SunCalc;
+
+}());
+
+</script>
+<script>
+
+(function () {
+    'use strict';
+    // Daily samples at 21:00 JST (12:00 UTC); independent of the visitor's timezone.
+    const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Tokyo', year:'numeric', month:'numeric', day:'numeric'}).formatToParts(new Date());
+    const part = type => Number(parts.find(p => p.type === type).value);
+    const today = {year:part('year'), month:part('month') - 1, day:part('day')};
+    const baseMonth = today.year * 12 + today.month;
+    let offset = 0;
+    function dataFor(year, month, day) {
+        const date = new Date(Date.UTC(year, month, day, 12));
+        const illumination = SunCalc.getMoonIllumination(date);
+        const phase = illumination.phase;
+        let label;
+        if (phase < .025 || phase > .975) label = '新月ごろ';
+        else if (phase < .225) label = '満ちる月';
+        else if (phase < .275) label = '上弦ごろ';
+        else if (phase < .475) label = '満ちる月';
+        else if (phase < .525) label = '満月ごろ';
+        else if (phase < .725) label = '欠ける月';
+        else if (phase < .775) label = '下弦ごろ';
+        else label = '欠ける月';
+        return {year, month, day, phase, fraction:illumination.fraction, label,
+            suggested:phase <= .25 || phase >= .98,
+            past:Date.UTC(year,month,day) < Date.UTC(today.year,today.month,today.day)};
+    }
+    function moonSVG(data) {
+        // Illuminated disk, with a curved terminator; illustration, not sky orientation.
+        const points = [];
+        const waxing = data.phase < .5;
+        const sign = waxing ? 1 : -1;
+        const terminator = 1 - 2 * data.fraction;
+        for (let i=0; i<=24; i++) {
+            const y = -1 + i/12;
+            const x = sign * terminator * Math.sqrt(Math.max(0,1-y*y));
+            points.push((16+x*13).toFixed(2)+','+(16+y*13).toFixed(2));
+        }
+        for (let i=24; i>=0; i--) {
+            const y = -1 + i/12;
+            const x = sign * Math.sqrt(Math.max(0,1-y*y));
+            points.push((16+x*13).toFixed(2)+','+(16+y*13).toFixed(2));
+        }
+        return '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#050a06" stroke="#8e825e"/><polygon points="'+points.join(' ')+'" fill="#e8d5a3"/></svg>';
+    }
+    function advice(data) {
+        if (data.phase < .025 || data.phase > .975) return '新月前後の目安です。月明かりの少ない夜を選びたい方の候補に。天気や周囲の明るさもご確認ください。';
+        if (data.phase <= .25) return '新月から上弦の半月へ向かう時期です。星空を楽しむ日の候補に。ただし、月が出ている間は月明かりの影響があります。';
+        if (data.phase >= .75) return '下弦から新月へ向かう時期です。夜の月が昇る前も候補になります。月の出の時刻と予約できる時間を合わせてご確認ください。';
+        return '月の明るい部分が大きい時期です。星空だけでなく月明かりのある外気浴も楽しみ方のひとつ。星を優先するなら新月前後もご検討ください。';
+    }
+    function select(data, button) {
+        document.querySelectorAll('.moon-day[aria-pressed="true"]').forEach(b=>b.setAttribute('aria-pressed','false'));
+        button.setAttribute('aria-pressed','true');
+        const detail = document.getElementById('moon-detail');
+        const heading = document.createElement('h4');
+        heading.className = 'text-yu-gold text-lg mb-3';
+        heading.textContent = data.year+'年'+(data.month+1)+'月'+data.day+'日 — '+data.label;
+        const description = document.createElement('p');
+        description.className = 'moon-note';
+        description.textContent = '21時の照らされている割合：約'+Math.round(data.fraction*100)+'%。'+advice(data)+(data.past?' ※過去の日付です。':'');
+        detail.replaceChildren(heading,description);
+    }
+    function render() {
+        const value = baseMonth + offset;
+        const year = Math.floor(value/12);
+        const month = value - year*12;
+        const title = year+'年 '+(month+1)+'月';
+        document.getElementById('moon-month').textContent = title;
+        document.getElementById('moon-caption').textContent = title+'の月相（日本時間21時の概算）。日付を選ぶと詳細を表示します。';
+        document.getElementById('moon-prev').disabled = offset <= -1;
+        document.getElementById('moon-next').disabled = offset >= 12;
+        const body = document.getElementById('moon-days');
+        body.replaceChildren();
+        const start = new Date(Date.UTC(year,month,1)).getUTCDay();
+        const count = new Date(Date.UTC(year,month+1,0)).getUTCDate();
+        const total = Math.ceil((start+count)/7)*7;
+        let initial;
+        for(let i=0;i<total;i++) {
+            if(i%7 === 0) body.appendChild(document.createElement('tr'));
+            const td = document.createElement('td');
+            body.lastChild.appendChild(td);
+            const day = i-start+1;
+            if(day<1 || day>count) continue;
+            const data = dataFor(year,month,day);
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'moon-day'+(data.suggested?' is-suggested':'')+(data.past?' is-past':'');
+            button.setAttribute('aria-pressed','false');
+            button.setAttribute('aria-label',(month+1)+'月'+day+'日、'+data.label+'、照らされている割合約'+Math.round(data.fraction*100)+'%'+(data.suggested?'、星空の日程候補':'')+(data.past?'、過去の日付':''));
+            if(offset === 0 && day === today.day) {
+                button.classList.add('is-today');
+                button.setAttribute('aria-current','date');
+            }
+            button.innerHTML = '<span class="day-number">'+day+'</span>'+moonSVG(data)+'<span class="moon-label">'+data.label+(data.suggested?'<br>候補':'')+'</span>';
+            button.addEventListener('click',()=>select(data,button));
+            td.appendChild(button);
+            if(day === (offset === 0 ? today.day : 1)) initial = {data,button};
+        }
+        if(initial) select(initial.data,initial.button);
+    }
+    try {
+        if(typeof SunCalc === 'undefined') return;
+        render();
+        document.getElementById('moon-prev').addEventListener('click',()=>{if(offset>-1){offset--;render();}});
+        document.getElementById('moon-next').addEventListener('click',()=>{if(offset<12){offset++;render();}});
+        document.getElementById('calendar-interactive').hidden = false;
+        document.getElementById('calendar-fallback').hidden = true;
+    } catch (error) {
+        // Keep the static guide and reload instructions visible on calculation failure.
+        document.getElementById('calendar-interactive').hidden = true;
+        document.getElementById('calendar-fallback').hidden = false;
+        console.warn('Moon calendar unavailable', error);
+    }
+}());
+document.querySelectorAll('a[href]').forEach(function(link) {
+    if (link.hostname.endsWith('.square.site')) {
+        link.addEventListener('click',function() {
+            if(typeof gtag === 'function') gtag('event','square_booking_click',{link_url:link.href,page_location:location.href});
+        });
+    } else if (link.hostname === 'page.line.me' || link.hostname === 'lin.ee') {
+        link.addEventListener('click',function() {
+            if(typeof gtag === 'function') gtag('event','line_click',{link_url:link.href,page_location:location.href});
+        });
+    }
+});
+
+</script>
+
+    <script>
+    (function () {
+        document.querySelectorAll('.starlight-toggle').forEach(function (button) {
+            var frame = document.getElementById(button.getAttribute('aria-controls'));
+            if (!frame) return;
+            button.hidden = false;
+            button.addEventListener('click', function () {
+                var brighter = button.getAttribute('aria-pressed') !== 'true';
+                button.setAttribute('aria-pressed', String(brighter));
+                frame.classList.toggle('is-bright', brighter);
+                button.querySelector('.starlight-button-label').textContent = brighter ? '無加工表示に戻す' : '星空を明るく見る';
+                var status = document.getElementById('starlight-status');
+                if (status) status.textContent = brighter ? '明るさを上げて表示中（元の写真は変更していません）' : '無加工表示（明るさ・色補正なし）';
+            });
+        });
+        // A single four-second zoom on entry; no endless motion.
+        if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {threshold:0.15});
+            document.querySelectorAll('.starlight-frame').forEach(function (frame) { observer.observe(frame); });
+        }
+    }());
+    </script>
+
+</body>
+</html>
