@@ -1,2 +1,3 @@
-# Keep the new feature URL working when the repository is deployed as-is.
-/starry-night /特集/starry-night.html 200
+# 現在このファイルに有効なルールはありません。
+# すべてのHTMLはリポジトリ直下に配置されており、
+# Cloudflare が /starry-night のような拡張子なしURLを自動で解決します。
